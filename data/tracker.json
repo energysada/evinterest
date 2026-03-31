@@ -1,0 +1,544 @@
+{
+  "title": "Fuel Prices & EV Interest Tracker — Week of March 30, 2026",
+  "subtitle": "Brent: $116/bbl (+60% since Feb 28)  |  Edition #1",
+  "countries": [
+    "US",
+    "UK",
+    "Germany",
+    "France",
+    "South Korea",
+    "China",
+    "India",
+    "Australia",
+    "Vietnam"
+  ],
+  "sections": [
+    {
+      "name": "WEEKLY VARIABLES",
+      "metrics": [
+        {
+          "label": "Avg. gasoline price (week of Mar 24)",
+          "source": "",
+          "values": [
+            {
+              "country": "US",
+              "value": "$3.98/gal",
+              "link": null
+            },
+            {
+              "country": "UK",
+              "value": "151.4p/L",
+              "link": null
+            },
+            {
+              "country": "Germany",
+              "value": "€2.15/L",
+              "link": null
+            },
+            {
+              "country": "France",
+              "value": "€1.77/L",
+              "link": null
+            },
+            {
+              "country": "South Korea",
+              "value": "₩1,850/L",
+              "link": null
+            },
+            {
+              "country": "China",
+              "value": "¥9+/L (95 oct)",
+              "link": null
+            },
+            {
+              "country": "India",
+              "value": "Rs 100/L (held)",
+              "link": null
+            },
+            {
+              "country": "Australia",
+              "value": "A$2.37/L",
+              "link": null
+            },
+            {
+              "country": "Vietnam",
+              "value": "+50% since Feb 28",
+              "link": null
+            }
+          ]
+        },
+        {
+          "label": "Gasoline price % change (Feb 25 → Mar 29)",
+          "source": "",
+          "values": [
+            {
+              "country": "US",
+              "value": "+34%",
+              "link": null
+            },
+            {
+              "country": "UK",
+              "value": "+12%",
+              "link": null
+            },
+            {
+              "country": "Germany",
+              "value": "+18%",
+              "link": null
+            },
+            {
+              "country": "France",
+              "value": "+14%",
+              "link": null
+            },
+            {
+              "country": "South Korea",
+              "value": "+20%",
+              "link": null
+            },
+            {
+              "country": "China",
+              "value": "+15%",
+              "link": null
+            },
+            {
+              "country": "India",
+              "value": "0% (govt held)",
+              "link": null
+            },
+            {
+              "country": "Australia",
+              "value": "+22%",
+              "link": null
+            },
+            {
+              "country": "Vietnam",
+              "value": "+50%",
+              "link": null
+            }
+          ]
+        },
+        {
+          "label": "EV interest signal (since Feb 28)",
+          "source": "",
+          "values": [
+            {
+              "country": "US",
+              "value": "EV searches rose 3.1pp to 23.8%.\n(Edmunds)",
+              "link": "https://www.edmunds.com/car-news/electrified-vehicle-research-gas-prices-data.html"
+            },
+            {
+              "country": "UK",
+              "value": "New car EV leads up 28% since the start of the conflict, and used EV leads up 15%.\n(AutoTrader)",
+              "link": "https://www.motortrader.com/motor-trader-news/automotive-news/middle-east-fuel-crisis-sparks-sharp-rise-in-ev-interest-online-27-03-2026"
+            },
+            {
+              "country": "Germany",
+              "value": "EV search share tripled from 12% to 36%; dealer enquiries up 66%.\n(mobile.de)",
+              "link": "https://www.rte.ie/news/business/2026/0326/1565266-used-ev-sales-jump-in-europe/"
+            },
+            {
+              "country": "France",
+              "value": "EV sales share nearly doubled from 6.5% to 12.7%; EV enquiries up 50%.\n(Aramis Auto, OLX)",
+              "link": "https://www.rte.ie/news/business/2026/0326/1565266-used-ev-sales-jump-in-europe/"
+            },
+            {
+              "country": "South Korea",
+              "value": "EV search volume up 28% in first week of March vs pre-war.\n(Herald Economy)",
+              "link": "https://biz.heraldcorp.com/article/10688761"
+            },
+            {
+              "country": "China",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "India",
+              "value": "EV registrations in first 3 weeks of March reached 85% of full March 2025 total.\n(Vahan)",
+              "link": "https://www.whalesbook.com/news/English/auto/Indias-EV-Surge-Fueled-by-Global-Energy-Shock-Stable-Local-Prices/69c0d6a86f83ea9b7de9b33a"
+            },
+            {
+              "country": "Australia",
+              "value": "EV searches up 77% week-on-week, nearly tripled month-on-month.\n(carsales.com.au)",
+              "link": "https://www.carsales.com.au/editorial/details/ev-consideration-skyrockets-in-australia-151687/"
+            },
+            {
+              "country": "Vietnam",
+              "value": "VinFast dealer sales doubled to 250 units in 3 weeks; showroom traffic quadrupled.\n(Bloomberg)",
+              "link": "https://www.bloomberg.com/news/articles/2026-03-19/byd-showrooms-are-bustling-across-asia-after-iran-oil-shock"
+            }
+          ]
+        },
+        {
+          "label": "Google searches: \"electric car\" / equiv (% chg, Feb 25 → Mar 29)",
+          "source": "Google Trends",
+          "values": [
+            {
+              "country": "US",
+              "value": "+37%",
+              "link": null
+            },
+            {
+              "country": "UK",
+              "value": "+36%",
+              "link": null
+            },
+            {
+              "country": "Germany",
+              "value": "+61%",
+              "link": null
+            },
+            {
+              "country": "France",
+              "value": "+45%",
+              "link": null
+            },
+            {
+              "country": "South Korea",
+              "value": "+14%",
+              "link": null
+            },
+            {
+              "country": "China",
+              "value": "+128%",
+              "link": null
+            },
+            {
+              "country": "India",
+              "value": "-11%",
+              "link": null
+            },
+            {
+              "country": "Australia",
+              "value": "+104%",
+              "link": null
+            },
+            {
+              "country": "Vietnam",
+              "value": "+68%",
+              "link": null
+            }
+          ]
+        },
+        {
+          "label": "Google searches: \"EV\" / abbrev equiv (% chg, Feb 25 → Mar 29)",
+          "source": "",
+          "values": [
+            {
+              "country": "US",
+              "value": "+3%",
+              "link": null
+            },
+            {
+              "country": "UK",
+              "value": "+3%",
+              "link": null
+            },
+            {
+              "country": "Germany",
+              "value": "+13%",
+              "link": null
+            },
+            {
+              "country": "France",
+              "value": "+37%",
+              "link": null
+            },
+            {
+              "country": "South Korea",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "China",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "India",
+              "value": "+7%",
+              "link": null
+            },
+            {
+              "country": "Australia",
+              "value": "+150%",
+              "link": null
+            },
+            {
+              "country": "Vietnam",
+              "value": "+61%",
+              "link": null
+            }
+          ]
+        },
+        {
+          "label": "Google searches: \"used EV\" / equiv (% chg, Feb 25 → Mar 29)",
+          "source": "",
+          "values": [
+            {
+              "country": "US",
+              "value": "+82%",
+              "link": null
+            },
+            {
+              "country": "UK",
+              "value": "0%",
+              "link": null
+            },
+            {
+              "country": "Germany",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "France",
+              "value": "+216%",
+              "link": null
+            },
+            {
+              "country": "South Korea",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "China",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "India",
+              "value": "-33%",
+              "link": null
+            },
+            {
+              "country": "Australia",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Vietnam",
+              "value": "0%",
+              "link": null
+            }
+          ]
+        },
+        {
+          "label": "EV app rankings (Google Play, Auto category, Feb 25 vs Mar 25)",
+          "source": "Sensor Tower, Google Play, Android only",
+          "values": [
+            {
+              "country": "US",
+              "value": "EVgo: new entry at #21",
+              "link": null
+            },
+            {
+              "country": "UK",
+              "value": "Fuel Finder UK: new entry at #5\nFuelio: new entry at #20\nOhme stable at #15",
+              "link": null
+            },
+            {
+              "country": "Germany",
+              "value": "ladeapp: new entry at #20\nEWE Go #8→#7 (↑1)",
+              "link": null
+            },
+            {
+              "country": "France",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "South Korea",
+              "value": "SK Electlink #18→#16 (↑2)\nOilnow: new entry at #22",
+              "link": null
+            },
+            {
+              "country": "China",
+              "value": "No Google Play",
+              "link": null
+            },
+            {
+              "country": "India",
+              "value": "No EV apps in top 25",
+              "link": null
+            },
+            {
+              "country": "Australia",
+              "value": "Chargefox #4→#3 (↑1)\nNIU e-scooter #25→#16 (↑9)",
+              "link": null
+            },
+            {
+              "country": "Vietnam",
+              "value": "VinFast #6→#2 (↑4)\nVinFast E-Scooter #9→#3 (↑6)\nDat Bike #24→#16 (↑8)",
+              "link": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MARKET CHARACTERISTICS",
+      "metrics": [
+        {
+          "label": "Oil import dependence (% of oil consumed that is imported)",
+          "source": "IEA",
+          "values": [
+            {
+              "country": "US",
+              "value": "40%",
+              "link": null
+            },
+            {
+              "country": "UK",
+              "value": "45%",
+              "link": null
+            },
+            {
+              "country": "Germany",
+              "value": "95%",
+              "link": null
+            },
+            {
+              "country": "France",
+              "value": "98%",
+              "link": null
+            },
+            {
+              "country": "South Korea",
+              "value": "95%",
+              "link": null
+            },
+            {
+              "country": "China",
+              "value": "70%",
+              "link": null
+            },
+            {
+              "country": "India",
+              "value": "85%",
+              "link": null
+            },
+            {
+              "country": "Australia",
+              "value": "90%",
+              "link": null
+            },
+            {
+              "country": "Vietnam",
+              "value": "95%",
+              "link": null
+            }
+          ]
+        },
+        {
+          "label": "Feb '26 EV sales",
+          "source": "BNEF",
+          "values": [
+            {
+              "country": "US",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "UK",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Germany",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "France",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "South Korea",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "China",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "India",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Australia",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Vietnam",
+              "value": "",
+              "link": null
+            }
+          ]
+        },
+        {
+          "label": "Mar '26 EV sales",
+          "source": "BNEF",
+          "values": [
+            {
+              "country": "US",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "UK",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Germany",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "France",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "South Korea",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "China",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "India",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Australia",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Vietnam",
+              "value": "",
+              "link": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "GT EV Index: Google Trends indexed to Feb 23=100. US/UK/AU='electric car'/'EV', DE='Elektroauto', KR='전기차', CN='电动车', VN='xe điện'. France/India: not yet pulled.",
+    "App Rankings: Google Play, Auto & Vehicles, Sensor Tower free tier, Android only. China: no Google Play. India: no EV apps in top 25.",
+    "Approximate placeholders: EV market share, % Chinese EVs, oil import dependence. Will be refined with BNEF/IEA actuals.",
+    "India: govt holding pump prices flat via Rs 10/L excise cut (Mar 27). Interest signal is muted by price stability — but EV registrations tracking strong.",
+    "Gasoline price baseline: last available pump price before Iran strikes (Feb 28, 2026). % change calculated vs that baseline. Source to be standardized to GlobalPetrolPrices.com."
+  ]
+}

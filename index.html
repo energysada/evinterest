@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EV Interest Tracker | DC Energy Research</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Fuel Prices & EV Interest Tracker</h1>
+            <div class="header-meta">
+                <span id="edition-badge"></span>
+                <span id="brent-badge"></span>
+                <span id="date-badge"></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Commentary -->
+        <section id="commentary-section">
+            <h2>Key Takeaways</h2>
+            <ul id="commentary-list"></ul>
+        </section>
+
+        <!-- Tracker Table -->
+        <section id="tracker-section">
+            <h2>Tracker Table</h2>
+            <div class="table-scroll">
+                <table id="tracker-table"></table>
+            </div>
+            <div id="tracker-notes"></div>
+        </section>
+
+        <!-- News Feed -->
+        <section id="news-section">
+            <h2>Country News Feed</h2>
+            <div class="news-controls">
+                <div class="filter-group">
+                    <label>Country:</label>
+                    <select id="country-filter">
+                        <option value="all">All Countries</option>
+                        <option value="key" selected>Key Countries Only</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Category:</label>
+                    <select id="category-filter">
+                        <option value="all" selected>All</option>
+                    </select>
+                </div>
+                <span id="news-count"></span>
+            </div>
+            <table id="news-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Country</th>
+                        <th>Category</th>
+                        <th>Signal / Headline</th>
+                        <th>Key Data Point</th>
+                        <th>Source</th>
+                    </tr>
+                </thead>
+                <tbody id="news-body"></tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>DC Energy Research | Data updated <span id="footer-date"></span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
