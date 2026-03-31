@@ -1472,5 +1472,38 @@
     "source_name": "RNZ",
     "source_url": "https://www.rnz.co.nz/news/national/589843/rising-petrol-prices-sees-spike-in-trade-me-searches-for-electric-vehicles",
     "key_country": false
+  },
+  {
+    "date": "2026-03-26",
+    "region": "Europe",
+    "country": "Denmark",
+    "category": "Platform Signal",
+    "headline": "Bilbasen: rising EV searches reported",
+    "data_point": "No specific % given; qualitative signal",
+    "source_name": "Reuters/RTE",
+    "source_url": "https://www.rte.ie/news/business/2026/0326/1565266-used-ev-sales-jump-in-europe/",
+    "key_country": false
+  },
+  {
+    "date": "2026-03-26",
+    "region": "Europe",
+    "country": "UK",
+    "category": "Platform Signal",
+    "headline": "Marketcheck: 'clear and sustained escalation' in used EV sales since war began",
+    "data_point": "UK automotive data firm; specific % not quantified",
+    "source_name": "Reuters/RTE",
+    "source_url": "https://www.rte.ie/news/business/2026/0326/1565266-used-ev-sales-jump-in-europe/",
+    "key_country": true
+  },
+  {
+    "date": "2026-03-26",
+    "region": "Europe",
+    "country": "Global",
+    "category": "Fuel Price",
+    "headline": "EU avg petrol up 12% to €1.84/L (Feb 23 to Mar 16)",
+    "data_point": "€2/L noted as psychological turning point",
+    "source_name": "Reuters/RTE",
+    "source_url": "https://www.rte.ie/news/business/2026/0326/1565266-used-ev-sales-jump-in-europe/",
+    "key_country": true
   }
 ]
