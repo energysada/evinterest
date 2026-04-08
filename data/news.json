@@ -2814,5 +2814,16 @@
     "source_name": "Reuters / Finn.no",
     "source_url": "https://www.timeslive.co.za/motoring/2026-03-26-used-ev-sales-jump-in-europe-as-iran-war-drives-up-petrol-prices/",
     "key_country": false
+  },
+  {
+    "date": "2026-04-01",
+    "region": "Europe",
+    "country": "Europe",
+    "category": "Market Data",
+    "headline": "Reuters: Tesla March registrations soar in key European markets — France +203%, Norway +178%",
+    "data_point": "France 9,569 (+203% YoY, just below Dec 2023 all-time high of 9,572); Norway 6,150 (+178%); Sweden 1,447 (+144%); Denmark 1,784 (+96%); Belgium 1,806 (+89%); Netherlands 1,819 (+72%); Italy 2,920 (+32%); Spain 2,477 (+25%); Switzerland 674 (+1.7%); Portugal 1,189 (-1.7%). Q1: France +108%, Norway +95%, Denmark +50%, Sweden +48%, Spain +43%, Italy +32%. BNP Paribas/Cetelem (Flavien Neuvy): 'Impact on March registrations still marginal as that plays more on order books — we'll see the effects of this Iran war factor over the coming months.' Renault/Dacia France CEO: inquiries for electric and LPG cars at dealerships and on websites have spiked.",
+    "source_name": "Reuters",
+    "source_url": "https://www.reuters.com/business/autos-transportation/tesla-march-car-registrations-soar-key-european-markets-2026-04-01/",
+    "key_country": true
   }
 ]
