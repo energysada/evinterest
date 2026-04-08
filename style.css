@@ -78,6 +78,19 @@ tr.metric-continuation .metric-label-cont {
     background: #fafafa;
 }
 
+/* ============ NEWSFEED DATE GROUPING ============ */
+#news-table tr.date-group-start td {
+    border-top: 1px solid #d4d4d4 !important;
+}
+#news-table .date-cell-first {
+    font-weight: 600;
+    color: #111;
+    white-space: nowrap;
+}
+#news-table .date-cell-cont {
+    color: #bbb;
+}
+
 /* ============ HEADER ============ */
 header {
     background: #fff;

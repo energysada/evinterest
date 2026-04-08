@@ -415,13 +415,28 @@ function filterNews() {
     const tbody = document.getElementById('news-body');
     tbody.innerHTML = '';
 
+    // Group by date only when sorting by date (otherwise grouping is meaningless)
+    const groupByDate = sortCol === 'date';
+    let prevDate = null;
+
     filtered.forEach(item => {
         const tr = document.createElement('tr');
+        const isNewDate = groupByDate && item.date !== prevDate;
+        if (groupByDate && prevDate !== null && isNewDate) {
+            tr.className = 'date-group-start';
+        }
 
-        // Date
+        // Date — show only on first row of each date group when sorted by date
         const dateTd = document.createElement('td');
-        dateTd.textContent = item.date.replace('2026-', '');
+        if (!groupByDate || isNewDate) {
+            dateTd.textContent = item.date.replace('2026-', '');
+            if (groupByDate) dateTd.className = 'date-cell-first';
+        } else {
+            dateTd.textContent = '';
+            dateTd.className = 'date-cell-cont';
+        }
         tr.appendChild(dateTd);
+        prevDate = item.date;
 
         // Country
         const countryTd = document.createElement('td');
