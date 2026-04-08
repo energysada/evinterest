@@ -553,11 +553,35 @@ function buildSideNav() {
     ];
     const nav = document.createElement('nav');
     nav.id = 'side-nav';
-    nav.innerHTML = '<div class="side-nav-title">On this page</div>' +
+    nav.innerHTML =
+        '<button id="side-nav-close" title="Hide navigation" aria-label="Hide navigation">\u00D7</button>' +
+        '<div class="side-nav-title">On this page</div>' +
         '<ul>' + items.map(it =>
             '<li><a href="#' + it.id + '" data-target="' + it.id + '">' + it.label + '</a></li>'
         ).join('') + '</ul>';
     document.body.appendChild(nav);
+
+    // Toggle button (shown when nav is hidden)
+    const showBtn = document.createElement('button');
+    showBtn.id = 'side-nav-show';
+    showBtn.title = 'Show navigation';
+    showBtn.setAttribute('aria-label', 'Show navigation');
+    showBtn.innerHTML = '&#9776;'; // hamburger
+    document.body.appendChild(showBtn);
+
+    // Restore prior state
+    if (localStorage.getItem('sideNavHidden') === '1') {
+        document.body.classList.add('side-nav-hidden');
+    }
+
+    document.getElementById('side-nav-close').addEventListener('click', function() {
+        document.body.classList.add('side-nav-hidden');
+        localStorage.setItem('sideNavHidden', '1');
+    });
+    showBtn.addEventListener('click', function() {
+        document.body.classList.remove('side-nav-hidden');
+        localStorage.setItem('sideNavHidden', '0');
+    });
 
     // Smooth scroll on click
     nav.querySelectorAll('a').forEach(a => {

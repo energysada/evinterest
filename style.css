@@ -27,6 +27,7 @@ body {
     z-index: 100;
     max-height: calc(100vh - 130px);
     overflow-y: auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
 #side-nav .side-nav-title {
     font-size: 10px;
@@ -36,6 +37,7 @@ body {
     letter-spacing: 0.5px;
     margin-bottom: 8px;
     padding-bottom: 6px;
+    padding-right: 18px;
     border-bottom: 1px solid #eee;
 }
 #side-nav ul {
@@ -64,8 +66,50 @@ body {
     background: #f5f5f5;
     font-weight: 600;
 }
-@media (max-width: 1280px) {
+#side-nav-close {
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 1;
+    color: #888;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+#side-nav-close:hover { background: #f0f0f0; color: #111; }
+
+#side-nav-show {
+    position: fixed;
+    top: 100px;
+    left: 12px;
+    z-index: 100;
+    display: none;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #555;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+#side-nav-show:hover { background: #f5f5f5; color: #111; }
+
+body.side-nav-hidden #side-nav { display: none; }
+body.side-nav-hidden #side-nav-show { display: block; }
+
+/* When side nav is visible, push main content right so they don't overlap */
+body:not(.side-nav-hidden) main {
+    padding-left: 220px;
+}
+@media (max-width: 700px) {
+    body:not(.side-nav-hidden) main { padding-left: 12px; }
     #side-nav { display: none; }
+    #side-nav-show { display: block; }
 }
 
 /* ============ INDICATOR CONTINUATION ROWS ============ */
