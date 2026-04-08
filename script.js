@@ -14,6 +14,20 @@ async function loadJSON(path) {
     }
 }
 
+function formatNewsDate(isoDate) {
+    // "2026-02-27" -> "2-27 Wed"
+    if (!isoDate) return '';
+    const parts = isoDate.split('-');
+    if (parts.length !== 3) return isoDate;
+    const y = parseInt(parts[0], 10);
+    const m = parseInt(parts[1], 10);
+    const d = parseInt(parts[2], 10);
+    // Use UTC to avoid timezone shifting the day
+    const dt = new Date(Date.UTC(y, m - 1, d));
+    const days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+    return `${m}-${String(d).padStart(2,'0')} ${days[dt.getUTCDay()]}`;
+}
+
 function categoryClass(cat) {
     const c = (cat || '').toLowerCase();
     if (c.includes('platform'))   return 'cat-platform';
@@ -429,7 +443,7 @@ function filterNews() {
         // Date — show only on first row of each date group when sorted by date
         const dateTd = document.createElement('td');
         if (!groupByDate || isNewDate) {
-            dateTd.textContent = item.date.replace('2026-', '');
+            dateTd.textContent = formatNewsDate(item.date);
             if (groupByDate) dateTd.className = 'date-cell-first';
         } else {
             dateTd.textContent = '';
