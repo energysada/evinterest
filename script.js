@@ -204,14 +204,7 @@ function renderTracker(tracker, indicatorLinks) {
                     const td = document.createElement('td');
                     if (isExtra(countryName)) td.classList.add('extra-country-col');
 
-                    if (partLink && partText) {
-                        const a = document.createElement('a');
-                        a.href = partLink;
-                        a.target = '_blank';
-                        a.rel = 'noopener';
-                        a.textContent = partText;
-                        td.appendChild(a);
-                    } else if ((isGasRow || isGoogleRow) && partText && /[+-]?\d+%/.test(partText)) {
+                    if ((isGasRow || isGoogleRow) && partText && /[+-]?\d+%/.test(partText)) {
                         // Structured rendering for gas / GT rows: history → current → (price) [Peak]
                         let beforeText = '';
                         let afterText = partText.trim();
@@ -289,6 +282,24 @@ function renderTracker(tracker, indicatorLinks) {
                             peakSpan.textContent = peakText;
                             td.appendChild(peakSpan);
                         }
+                        // If gas/google cell also has a link, wrap the whole cell content in a link
+                        if (partLink) {
+                            const wrap = document.createElement('a');
+                            wrap.href = partLink;
+                            wrap.target = '_blank';
+                            wrap.rel = 'noopener';
+                            wrap.style.textDecoration = 'none';
+                            wrap.style.color = 'inherit';
+                            while (td.firstChild) wrap.appendChild(td.firstChild);
+                            td.appendChild(wrap);
+                        }
+                    } else if (partLink && partText) {
+                        const a = document.createElement('a');
+                        a.href = partLink;
+                        a.target = '_blank';
+                        a.rel = 'noopener';
+                        a.textContent = partText;
+                        td.appendChild(a);
                     } else {
                         td.textContent = partText;
                     }

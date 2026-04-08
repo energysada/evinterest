@@ -87,7 +87,7 @@
             {
               "country": "Canada",
               "value": "+10% +18% +25% +30% +33% --> +34% (~C$1.74/L) | Peak +34%",
-              "link": "https://www.commbank.com.au"
+              "link": null
             }
           ]
         },
@@ -137,12 +137,12 @@
             },
             {
               "country": "China",
-              "value": "BYD overseas demand surging\n\nWang Chuanfu calls crisis \"golden window\"",
-              "link": "https://electrek.co/2026/04/06/byd-ev-orders-surge-to-another-level-overseas-energy-crisis/"
+              "value": "Limited platform-level data; primary EV signals via wholesale/registration data",
+              "link": null
             },
             {
               "country": "India",
-              "value": "Limited platform-level data\n\nprimary signals via E2W sales (see below)",
+              "value": "—",
               "link": null
             },
             {
@@ -345,7 +345,7 @@
             },
             {
               "country": "New Zealand",
-              "value": "Inventory shortages\n\n\"off the boat\" sales",
+              "value": "Inventory shortages; dealer lots reportedly running short on used BEV stock",
               "link": "https://cleantechnica.com/2026/04/04/car-yards-empty-as-ev-sales-surge-in-australia/"
             },
             {
@@ -416,7 +416,7 @@
             },
             {
               "country": "New Zealand",
-              "value": "Car yards emptied\n\ndealer sales +30-50% MoM Auckland/Christchurch",
+              "value": "Auckland/Christchurch dealer EV sales +30-50% MoM",
               "link": "https://www.nzherald.co.nz/nz/fuel-price-spike-sees-ev-sales-jump-up-to-50-in-auckland-chr"
             },
             {
@@ -563,7 +563,7 @@
             },
             {
               "country": "China",
-              "value": "-44% +71% +54% -16% -43% --> -37%",
+              "value": "n/a (Google blocked in mainland China)",
               "link": null
             },
             {
@@ -634,7 +634,7 @@
             },
             {
               "country": "China",
-              "value": "+5% +12% +18% +22% +28% --> +24%",
+              "value": "n/a (Google blocked in mainland China)",
               "link": null
             },
             {
@@ -705,7 +705,7 @@
             },
             {
               "country": "China",
-              "value": "",
+              "value": "n/a (Google blocked in mainland China)",
               "link": null
             },
             {
