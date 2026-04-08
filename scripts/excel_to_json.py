@@ -164,18 +164,19 @@ def main():
     brent_str = "$94/bbl"
     brent_change = "+31% since Feb 28"
     try:
-        import urllib.request
-        req = urllib.request.Request(
+        import requests
+        resp = requests.get(
             'https://query1.finance.yahoo.com/v8/finance/chart/BZ=F?interval=1d&range=2d',
-            headers={'User-Agent': 'Mozilla/5.0'}
+            headers={'User-Agent': 'Mozilla/5.0'},
+            timeout=10
         )
-        with urllib.request.urlopen(req, timeout=10) as resp:
-            data = json.loads(resp.read())
-            price = data['chart']['result'][0]['meta']['regularMarketPrice']
-            baseline = 72
-            pct = ((price - baseline) / baseline) * 100
-            brent_str = f"${price:.0f}/bbl"
-            brent_change = f"+{pct:.0f}% since Feb 28"
+        data = resp.json()
+        price = data['chart']['result'][0]['meta']['regularMarketPrice']
+        baseline = 72
+        pct = ((price - baseline) / baseline) * 100
+        brent_str = f"${price:.0f}/bbl"
+        brent_change = f"+{pct:.0f}% since Feb 28" if pct >= 0 else f"{pct:.0f}% since Feb 28"
+        print(f"  Brent live: {brent_str} ({brent_change})")
     except Exception as e:
         print(f"  [WARN] Brent fetch failed, using fallback: {e}")
     meta = {
