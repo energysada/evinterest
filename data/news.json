@@ -2825,5 +2825,16 @@
     "source_name": "Reuters",
     "source_url": "https://www.reuters.com/business/autos-transportation/tesla-march-car-registrations-soar-key-european-markets-2026-04-01/",
     "key_country": true
+  },
+  {
+    "date": "2026-03-29",
+    "region": "Asia-Pacific",
+    "country": "Philippines",
+    "category": "Policy",
+    "headline": "DTI pivots from combustion-friendly RACE to EV Incentive Strategy (EVIS) as crisis response; EO pending",
+    "data_point": "Dept of Trade and Industry drops RACE programme in favour of EVIS following Marcos Mar 24 State of National Energy Emergency (EO 110); framework: ~PHP 9B per EV manufacturer, production support up to 40% of tooling/equipment investment, tax breaks, charging mandates. DOJ legal opinion issued Mar 29; FIRB review ongoing as of Apr 6-8; executive order not yet issued.",
+    "source_name": "Context.ph / Manila Bulletin / BusinessWorld",
+    "source_url": "https://context.ph/2026/04/08/dti-pivots-to-ev-incentives-amid-fuel-risks/",
+    "key_country": false
   }
 ]
