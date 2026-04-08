@@ -39,11 +39,11 @@ LOCAL_TERMS = {
     },
 }
 
-# Row mapping in Draft Table (after splitting browsing into 11 platform rows)
+# Row mapping in Draft Table
 ROW_MAP = {
-    "electric car": 23,
-    "EV": 24,
-    "used EV": 25,
+    "electric car": 13,
+    "EV": 14,
+    "used EV": 15,
 }
 
 USED_EV_COUNTRIES = {"US", "UK"}
