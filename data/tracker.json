@@ -93,11 +93,11 @@
         },
         {
           "label": "Browsing / search activity on platforms",
-          "source": "",
+          "source": "Edmunds, mobile.de, Encar, carsales",
           "values": [
             {
               "country": "US",
-              "value": "23.8% Edmunds research share\n\nCarGurus new listing views +31%, used +40% (Q1 vs Q4)",
+              "value": "23.8% Edmunds research share",
               "link": "https://www.globenewswire.com/news-release/2026/04/07/3269242/0/en/Car-Buyers-are-Changing-Lanes-CarGurus-Reveals-Where-Consumers-are-Finding-Value.html"
             },
             {
@@ -112,8 +112,8 @@
             },
             {
               "country": "Germany",
-              "value": "mobile.de: +24pp in EV search share (12% Feb 28 → 36% as of Mar 26, on 3/26 Reuters)\n\nCarwow: +8pp in EV configs built on consumer marketplace, from 55% Feb 28 to 63% as of Mar 12 (Handelsblatt)\n\nMeinAuto: +40% EV web traffic since Feb 28 (as of Mar 12)",
-              "link": "https://www.handelsblatt.com/mobilitaet/elektromobilitaet/elektromobilitaet-hohe-spritpreise-lassen-interesse-an-e-autos-steigen-01/100207380.html"
+              "value": "mobile.de: +24pp in EV search share (12% Feb 28 → 36% as of Mar 26, on 3/26 Reuters)",
+              "link": "https://www.timeslive.co.za/motoring/2026-03-26-used-ev-sales-jump-in-europe-as-iran-war-drives-up-petrol-prices/"
             },
             {
               "country": "France",
@@ -127,37 +127,37 @@
             },
             {
               "country": "Vietnam",
-              "value": "—",
+              "value": "",
               "link": null
             },
             {
               "country": "New Zealand",
-              "value": "Trade Me EV searches +142% MoM\n\n125K searches in first half Mar (Trade Me)",
+              "value": "Trade Me EV searches +142% MoM",
               "link": "https://www.1news.co.nz"
             },
             {
               "country": "China",
-              "value": "BYD overseas demand surging\n\nWang Chuanfu calls crisis \"golden window\"",
+              "value": "BYD overseas demand surging",
               "link": "https://electrek.co/2026/04/06/byd-ev-orders-surge-to-another-level-overseas-energy-crisis/"
             },
             {
               "country": "India",
-              "value": "Limited platform-level data\n\nprimary signals via E2W sales (see below)",
+              "value": "Limited platform-level data",
               "link": null
             },
             {
               "country": "Pakistan",
-              "value": "E-motorbike outlets overwhelmed with enquiries\n\nsales +70% MoM",
+              "value": "E-motorbike outlets overwhelmed with enquiries",
               "link": "https://tribune.com.pk/story/2601483/soaring-costs-fuel-shortage-fears-drive-pakistan-to-electric-motorbikes"
             },
             {
               "country": "Cambodia",
-              "value": "—",
+              "value": "",
               "link": null
             },
             {
               "country": "Canada",
-              "value": "—",
+              "value": "",
               "link": null
             }
           ]
@@ -179,17 +179,17 @@
             {
               "country": "UK",
               "value": "AutoTrader: new EV leads +28%, used +15% (Motor Trader)",
-              "link": null
+              "link": "https://www.motortrader.com/motor-trader-news/automotive-news/middle-east-fuel-crisis-sparks-sharp-rise-in-ev-interest-online-27-03-2026"
             },
             {
               "country": "Germany",
               "value": "+66% mobile.de dealer enquiries",
-              "link": null
+              "link": "https://www.timeslive.co.za/motoring/2026-03-26-used-ev-sales-jump-in-europe-as-iran-war-drives-up-petrol-prices/"
             },
             {
               "country": "France",
               "value": "+50% (OLX France)",
-              "link": null
+              "link": "https://www.timeslive.co.za/motoring/2026-03-26-used-ev-sales-jump-in-europe-as-iran-war-drives-up-petrol-prices/"
             },
             {
               "country": "South Korea",
@@ -245,7 +245,7 @@
             {
               "country": "Australia",
               "value": "Loans +161% MoM (CommBank)",
-              "link": null
+              "link": "https://www.commbank.com.au/articles/newsroom/2026/04/fuel-crisis-drives-record-aussie-electric-car-sales.html"
             },
             {
               "country": "UK",
@@ -290,7 +290,7 @@
             {
               "country": "Pakistan",
               "value": "PAVE subsidy 270K applications (7x target)",
-              "link": null
+              "link": "https://tribune.com.pk/story/2601483/soaring-costs-fuel-shortage-fears-drive-pakistan-to-electric-motorbikes"
             },
             {
               "country": "Cambodia",
@@ -300,7 +300,7 @@
             {
               "country": "Canada",
               "value": "EVAP $2.275B portal launched Mar 31",
-              "link": null
+              "link": "https://www.canada.ca"
             }
           ]
         },
@@ -310,52 +310,52 @@
           "values": [
             {
               "country": "US",
-              "value": "Q1 +12% YoY\n\navg $34,600 (Cox)",
-              "link": null
+              "value": "Q1 +12% YoY",
+              "link": "https://www.recurrentauto.com/research/used-electric-vehicle-buying-report"
             },
             {
               "country": "Australia",
               "value": "Used EV demand surging amid stock shortages",
-              "link": null
+              "link": "https://cleantechnica.com/2026/04/04/car-yards-empty-as-ev-sales-surge-in-australia/"
             },
             {
               "country": "UK",
-              "value": "Used EVs 19.5% of 0-5yr leads (ATH, AutoTrader)\n\nOctopus 4x in 6 months\n\nMarketcheck daily sales 1,100+/day post-war vs 561-965 pre-war",
-              "link": null
+              "value": "Used EVs 19.5% of 0-5yr leads (ATH, AutoTrader)",
+              "link": "https://www.motortrader.com/motor-trader-news/automotive-news/middle-east-fuel-crisis-sparks-sharp-rise-in-ev-interest-online-27-03-2026"
             },
             {
               "country": "Germany",
               "value": "mobile.de used EV dealer enquiries +66%",
-              "link": null
+              "link": "https://www.timeslive.co.za/motoring/2026-03-26-used-ev-sales-jump-in-europe-as-iran-war-drives-up-petrol-prices/"
             },
             {
               "country": "France",
               "value": "Aramis Auto EV sales share 6.5% → 12.7% (2x)",
-              "link": null
+              "link": "https://www.timeslive.co.za/motoring/2026-03-26-used-ev-sales-jump-in-europe-as-iran-war-drives-up-petrol-prices/"
             },
             {
               "country": "South Korea",
-              "value": "—",
+              "value": "",
               "link": null
             },
             {
               "country": "Vietnam",
-              "value": "—",
+              "value": "",
               "link": null
             },
             {
               "country": "New Zealand",
-              "value": "Inventory shortages\n\n\"off the boat\" sales",
-              "link": null
+              "value": "Inventory shortages",
+              "link": "https://cleantechnica.com/2026/04/04/car-yards-empty-as-ev-sales-surge-in-australia/"
             },
             {
               "country": "China",
-              "value": "—",
+              "value": "",
               "link": null
             },
             {
               "country": "India",
-              "value": "—",
+              "value": "",
               "link": null
             },
             {
@@ -381,43 +381,43 @@
           "values": [
             {
               "country": "US",
-              "value": "—",
+              "value": "",
               "link": null
             },
             {
               "country": "Australia",
               "value": "BEV inventory shortages (CleanTechnica)",
-              "link": null
+              "link": "https://cleantechnica.com/2026/04/04/car-yards-empty-as-ev-sales-surge-in-australia/"
             },
             {
               "country": "UK",
-              "value": "Polestar 3x\n\nKia +84% YoY (Mirage News)",
-              "link": null
+              "value": "Polestar 3x",
+              "link": "https://www.miragenews.com/tesla-polestar-sales-surge-amid-global-fuel-1649512/"
             },
             {
               "country": "Germany",
-              "value": "—",
+              "value": "",
               "link": null
             },
             {
               "country": "France",
-              "value": "—",
+              "value": "",
               "link": null
             },
             {
               "country": "South Korea",
-              "value": "—",
+              "value": "",
               "link": null
             },
             {
               "country": "Vietnam",
               "value": "Showroom traffic 4x (VinFast / Bloomberg)",
-              "link": null
+              "link": "https://vietnamnet.vn/en/affordable-electric-cars-reshape-vietnam-s-auto-market-in-2026-2503290.html"
             },
             {
               "country": "New Zealand",
-              "value": "Car yards emptied\n\ndealer sales +30-50% MoM Auckland/Christchurch",
-              "link": null
+              "value": "Car yards emptied",
+              "link": "https://www.nzherald.co.nz/nz/fuel-price-spike-sees-ev-sales-jump-up-to-50-in-auckland-chr"
             },
             {
               "country": "China",
@@ -432,12 +432,12 @@
             {
               "country": "Pakistan",
               "value": "E-motorbike sales +70% MoM at retail outlets",
-              "link": null
+              "link": "https://tribune.com.pk/story/2601483/soaring-costs-fuel-shortage-fears-drive-pakistan-to-electric-motorbikes"
             },
             {
               "country": "Cambodia",
               "value": "Monthly EV registrations doubled Jan→Feb (488→1,078)",
-              "link": null
+              "link": "https://www.akp.gov.kh/post/detail/366087"
             },
             {
               "country": "Canada",
@@ -458,7 +458,7 @@
             {
               "country": "Australia",
               "value": "55% (+19pp vs Nov 2025, carsales)",
-              "link": null
+              "link": "https://www.carsales.com.au/editorial/details/ev-consideration-skyrockets-in-australia-151687/"
             },
             {
               "country": "UK",
@@ -1022,11 +1022,5 @@
       ]
     }
   ],
-  "notes": [
-    "GT EV Index: Google Trends indexed to Feb 23=100. US/UK/AU='electric car'/'EV', DE='Elektroauto', KR='전기차', CN='电动车', VN='xe điện'. France/India: not yet pulled.",
-    "App Rankings: Google Play, Auto & Vehicles, Sensor Tower free tier, Android only. China: no Google Play. India: no EV apps in top 25.",
-    "Approximate placeholders: EV market share, % Chinese EVs, oil import dependence. Will be refined with BNEF/IEA actuals.",
-    "India: govt holding pump prices flat via Rs 10/L excise cut (Mar 27). Interest signal is muted by price stability — but EV registrations tracking strong.",
-    "Gasoline price baseline: last available pump price before Iran strikes (Feb 28, 2026). % change calculated vs that baseline. Source to be standardized to GlobalPetrolPrices.com."
-  ]
+  "notes": []
 }
