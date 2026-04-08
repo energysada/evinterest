@@ -158,14 +158,31 @@ def main():
         json.dump(news, f, indent=2, ensure_ascii=False)
     print(f"news.json: {len(news)} articles")
 
-    # 3. Meta
+    # 3. Meta — Brent fetched live from Yahoo Finance (best-effort)
     from datetime import date
     today = date.today().isoformat()
+    brent_str = "$94/bbl"
+    brent_change = "+31% since Feb 28"
+    try:
+        import urllib.request
+        req = urllib.request.Request(
+            'https://query1.finance.yahoo.com/v8/finance/chart/BZ=F?interval=1d&range=2d',
+            headers={'User-Agent': 'Mozilla/5.0'}
+        )
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            data = json.loads(resp.read())
+            price = data['chart']['result'][0]['meta']['regularMarketPrice']
+            baseline = 72
+            pct = ((price - baseline) / baseline) * 100
+            brent_str = f"${price:.0f}/bbl"
+            brent_change = f"+{pct:.0f}% since Feb 28"
+    except Exception as e:
+        print(f"  [WARN] Brent fetch failed, using fallback: {e}")
     meta = {
         "edition": 1,
         "date": today,
-        "brent": "$110/bbl",
-        "brent_change": "+52% since Feb 28",
+        "brent": brent_str,
+        "brent_change": brent_change,
         "last_updated": today,
     }
     with open(os.path.join(OUT, "meta.json"), "w") as f:
