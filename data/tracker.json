@@ -97,7 +97,7 @@
           "values": [
             {
               "country": "US",
-              "value": "23.8% Edmunds research share",
+              "value": "23.8% Edmunds research share\n\nCarGurus new listing views +31%, used +40% (Q1 vs Q4)",
               "link": "https://www.globenewswire.com/news-release/2026/04/07/3269242/0/en/Car-Buyers-are-Changing-Lanes-CarGurus-Reveals-Where-Consumers-are-Finding-Value.html"
             },
             {
@@ -112,8 +112,8 @@
             },
             {
               "country": "Germany",
-              "value": "mobile.de: +24pp in EV search share (12% Feb 28 → 36% as of Mar 26, on 3/26 Reuters)",
-              "link": "https://www.timeslive.co.za/motoring/2026-03-26-used-ev-sales-jump-in-europe-as-iran-war-drives-up-petrol-prices/"
+              "value": "mobile.de: +24pp in EV search share (12% Feb 28 → 36% as of Mar 26, on 3/26 Reuters)\n\nCarwow: +8pp in EV configs built on consumer marketplace, from 55% Feb 28 to 63% as of Mar 12 (Handelsblatt)\n\nMeinAuto: +40% EV web traffic since Feb 28 (as of Mar 12)",
+              "link": "https://www.handelsblatt.com/mobilitaet/elektromobilitaet/elektromobilitaet-hohe-spritpreise-lassen-interesse-an-e-autos-steigen-01/100207380.html"
             },
             {
               "country": "France",
@@ -127,37 +127,37 @@
             },
             {
               "country": "Vietnam",
-              "value": "",
+              "value": "—",
               "link": null
             },
             {
               "country": "New Zealand",
-              "value": "Trade Me EV searches +142% MoM",
+              "value": "Trade Me EV searches +142% MoM\n\n125K searches in first half Mar (Trade Me)",
               "link": "https://www.1news.co.nz"
             },
             {
               "country": "China",
-              "value": "BYD overseas demand surging",
+              "value": "BYD overseas demand surging\n\nWang Chuanfu calls crisis \"golden window\"",
               "link": "https://electrek.co/2026/04/06/byd-ev-orders-surge-to-another-level-overseas-energy-crisis/"
             },
             {
               "country": "India",
-              "value": "Limited platform-level data",
+              "value": "Limited platform-level data\n\nprimary signals via E2W sales (see below)",
               "link": null
             },
             {
               "country": "Pakistan",
-              "value": "E-motorbike outlets overwhelmed with enquiries",
+              "value": "E-motorbike outlets overwhelmed with enquiries\n\nsales +70% MoM",
               "link": "https://tribune.com.pk/story/2601483/soaring-costs-fuel-shortage-fears-drive-pakistan-to-electric-motorbikes"
             },
             {
               "country": "Cambodia",
-              "value": "",
+              "value": "—",
               "link": null
             },
             {
               "country": "Canada",
-              "value": "",
+              "value": "—",
               "link": null
             }
           ]
@@ -310,7 +310,7 @@
           "values": [
             {
               "country": "US",
-              "value": "Q1 +12% YoY",
+              "value": "Q1 +12% YoY\n\navg $34,600 (Cox)",
               "link": "https://www.recurrentauto.com/research/used-electric-vehicle-buying-report"
             },
             {
@@ -320,7 +320,7 @@
             },
             {
               "country": "UK",
-              "value": "Used EVs 19.5% of 0-5yr leads (ATH, AutoTrader)",
+              "value": "Used EVs 19.5% of 0-5yr leads (ATH, AutoTrader)\n\nOctopus 4x in 6 months\n\nMarketcheck daily sales 1,100+/day post-war vs 561-965 pre-war",
               "link": "https://www.motortrader.com/motor-trader-news/automotive-news/middle-east-fuel-crisis-sparks-sharp-rise-in-ev-interest-online-27-03-2026"
             },
             {
@@ -335,27 +335,27 @@
             },
             {
               "country": "South Korea",
-              "value": "",
+              "value": "—",
               "link": null
             },
             {
               "country": "Vietnam",
-              "value": "",
+              "value": "—",
               "link": null
             },
             {
               "country": "New Zealand",
-              "value": "Inventory shortages",
+              "value": "Inventory shortages\n\n\"off the boat\" sales",
               "link": "https://cleantechnica.com/2026/04/04/car-yards-empty-as-ev-sales-surge-in-australia/"
             },
             {
               "country": "China",
-              "value": "",
+              "value": "—",
               "link": null
             },
             {
               "country": "India",
-              "value": "",
+              "value": "—",
               "link": null
             },
             {
@@ -381,7 +381,7 @@
           "values": [
             {
               "country": "US",
-              "value": "",
+              "value": "—",
               "link": null
             },
             {
@@ -391,22 +391,22 @@
             },
             {
               "country": "UK",
-              "value": "Polestar 3x",
+              "value": "Polestar 3x\n\nKia +84% YoY (Mirage News)",
               "link": "https://www.miragenews.com/tesla-polestar-sales-surge-amid-global-fuel-1649512/"
             },
             {
               "country": "Germany",
-              "value": "",
+              "value": "—",
               "link": null
             },
             {
               "country": "France",
-              "value": "",
+              "value": "—",
               "link": null
             },
             {
               "country": "South Korea",
-              "value": "",
+              "value": "—",
               "link": null
             },
             {
@@ -416,7 +416,7 @@
             },
             {
               "country": "New Zealand",
-              "value": "Car yards emptied",
+              "value": "Car yards emptied\n\ndealer sales +30-50% MoM Auckland/Christchurch",
               "link": "https://www.nzherald.co.nz/nz/fuel-price-spike-sees-ev-sales-jump-up-to-50-in-auckland-chr"
             },
             {
