@@ -71,9 +71,10 @@ function renderHighlights(highlights) {
     });
 }
 
-function renderTracker(tracker) {
+function renderTracker(tracker, indicatorLinks) {
     const table = document.getElementById('tracker-table');
     const countries = tracker.countries;
+    indicatorLinks = indicatorLinks || {};
 
     // Default-visible Tier 1 markets (US-led, then Europe, then APAC core)
     const DEFAULT_VISIBLE = new Set(['US', 'Australia', 'UK', 'Germany', 'France', 'South Korea', 'Vietnam']);
@@ -138,144 +139,156 @@ function renderTracker(tracker) {
                 tbody.appendChild(subRow);
             }
 
-            const row = document.createElement('tr');
-
-            // Metric label
-            const labelTd = document.createElement('td');
-            if (isGT) {
-                // Map to friendly bold label
-                let keyword = 'searches';
-                for (const [k, v] of Object.entries(GT_KEYWORD_MAP)) {
-                    if (metric.label.includes(k)) { keyword = v; break; }
-                }
-                labelTd.innerHTML = `searches for <strong>${keyword}</strong>`;
-                labelTd.style.paddingLeft = '20px';
-            } else {
-                labelTd.textContent = metric.label;
-            }
-            row.appendChild(labelTd);
-
-            // Country values
+            // Determine how many rows this metric needs (split by \n\n in any cell)
             const isGasRow = metric.label.toLowerCase().includes('fuel price') || metric.label.toLowerCase().includes('gasoline');
             const isGoogleRow = metric.label.toLowerCase().startsWith('google:');
-            metric.values.forEach((v, idx) => {
-                const td = document.createElement('td');
-                if (isExtra(countries[idx])) td.classList.add('extra-country-col');
-                if (v.link && v.value) {
-                    const a = document.createElement('a');
-                    a.href = v.link;
-                    a.target = '_blank';
-                    a.rel = 'noopener';
-                    a.textContent = v.value;
-                    td.appendChild(a);
-                } else if ((isGasRow || isGoogleRow) && v.value && /[+-]?\d+%/.test(v.value)) {
-                    // Three cases:
-                    //   "X% Y% --> Z% (price) | Peak A%"  → weekly + current + peak
-                    //   "X% Y% --> Z%"                    → weekly + current
-                    //   "+216%"                           → single value
-                    let beforeText = '';
-                    let afterText = v.value.trim();
-                    let peakText = null;
-                    let peakNum = null;
+            const splitParts = metric.values.map(v => {
+                const txt = (v.value || '').trim();
+                if (!txt || txt === '—') return [];
+                // Don't split GT/gas rows — they have their own structured rendering
+                if (isGT || isGasRow) return [txt];
+                return txt.split(/\n\n+/).map(s => s.trim()).filter(Boolean);
+            });
+            const maxParts = Math.max(1, ...splitParts.map(p => p.length || 1));
+            const linkOverrides = indicatorLinks[metric.label] || {};
 
-                    // Extract Peak suffix if present
-                    const peakMatch = v.value.match(/\|\s*Peak\s*([+-]?\d+%)/i);
-                    if (peakMatch) {
-                        peakText = peakMatch[1];
-                        peakNum = parseInt(peakMatch[1], 10);
-                        afterText = v.value.replace(/\s*\|\s*Peak\s*[+-]?\d+%\s*$/i, '');
-                    }
+            for (let rowIdx = 0; rowIdx < maxParts; rowIdx++) {
+                const row = document.createElement('tr');
+                if (rowIdx > 0) row.className = 'metric-continuation';
 
-                    if (afterText.indexOf('-->') !== -1) {
-                        const parts = afterText.split('-->');
-                        beforeText = parts[0].trim() + ' \u2192 ';
-                        afterText = parts.slice(1).join('-->').trim();
-                    }
-
-                    // Extract the final % from afterText
-                    const pctMatch = afterText.match(/([+-]?\d+)%/);
-                    let pctNum = pctMatch ? parseInt(pctMatch[1], 10) : null;
-
-                    let cls = '';
-                    if (pctNum !== null) {
-                        if (isGasRow) {
-                            // Red gradient for fuel price hikes
-                            if (pctNum >= 40) cls = 'heat-red-3';
-                            else if (pctNum >= 25) cls = 'heat-red-2';
-                            else if (pctNum >= 10) cls = 'heat-red-1';
-                            else cls = 'heat-neutral';
-                        } else {
-                            // Green gradient for Google search increases
-                            if (pctNum >= 100) cls = 'heat-green-3';
-                            else if (pctNum >= 50) cls = 'heat-green-2';
-                            else if (pctNum >= 15) cls = 'heat-green-1';
-                            else if (pctNum < 0) cls = 'heat-red-2';
-                            else cls = 'heat-neutral';
+                // Metric label (only on first row; continuation rows get empty cell)
+                const labelTd = document.createElement('td');
+                if (rowIdx === 0) {
+                    if (isGT) {
+                        let keyword = 'searches';
+                        for (const [k, vv] of Object.entries(GT_KEYWORD_MAP)) {
+                            if (metric.label.includes(k)) { keyword = vv; break; }
                         }
-                    }
-
-                    const beforeSpan = document.createElement('span');
-                    beforeSpan.className = 'progression-history';
-                    beforeSpan.textContent = beforeText;
-                    td.appendChild(beforeSpan);
-
-                    // Split afterText into "current %" and "(price)" so only the % gets the heat color
-                    // afterText looks like "+38% ($4.14/gal)" or "+216%" or "0% (94.77 ₹/L)"
-                    const currentMatch = afterText.match(/^([+-]?\d+%)(.*)$/);
-                    if (currentMatch) {
-                        const pctOnly = currentMatch[1];
-                        const remainder = currentMatch[2];
-                        const afterSpan = document.createElement('span');
-                        afterSpan.className = 'progression-current ' + cls;
-                        afterSpan.textContent = pctOnly;
-                        td.appendChild(afterSpan);
-                        if (remainder.trim()) {
-                            const remainderSpan = document.createElement('span');
-                            remainderSpan.className = 'progression-price';
-                            remainderSpan.textContent = ' ' + remainder.trim();
-                            td.appendChild(remainderSpan);
-                        }
+                        labelTd.innerHTML = `searches for <strong>${keyword}</strong>`;
+                        labelTd.style.paddingLeft = '20px';
                     } else {
-                        const afterSpan = document.createElement('span');
-                        afterSpan.className = 'progression-current ' + cls;
-                        afterSpan.textContent = afterText;
-                        td.appendChild(afterSpan);
-                    }
-
-                    // Add Peak indicator if present
-                    if (peakText && peakNum !== null) {
-                        let peakCls = 'heat-neutral';
-                        if (isGasRow) {
-                            if (peakNum >= 40) peakCls = 'heat-red-3';
-                            else if (peakNum >= 25) peakCls = 'heat-red-2';
-                            else if (peakNum >= 10) peakCls = 'heat-red-1';
-                        } else {
-                            if (peakNum >= 100) peakCls = 'heat-green-3';
-                            else if (peakNum >= 50) peakCls = 'heat-green-2';
-                            else if (peakNum >= 15) peakCls = 'heat-green-1';
-                        }
-                        const peakLabel = document.createElement('span');
-                        peakLabel.className = 'peak-label';
-                        peakLabel.textContent = ' Peak ';
-                        td.appendChild(peakLabel);
-                        const peakSpan = document.createElement('span');
-                        peakSpan.className = 'progression-peak ' + peakCls;
-                        peakSpan.textContent = peakText;
-                        td.appendChild(peakSpan);
+                        labelTd.textContent = metric.label;
                     }
                 } else {
-                    td.textContent = v.value;
+                    labelTd.className = 'metric-label-cont';
                 }
-                row.appendChild(td);
-            });
+                row.appendChild(labelTd);
 
-            // Source — last column
-            const sourceTd = document.createElement('td');
-            sourceTd.textContent = metric.source;
-            sourceTd.className = 'source-col';
-            row.appendChild(sourceTd);
+                // Country cells for this sub-row
+                metric.values.forEach((v, idx) => {
+                    const countryName = countries[idx];
+                    const parts = splitParts[idx];
+                    const partText = parts[rowIdx] || '';
+                    const overrides = linkOverrides[countryName];
+                    let partLink = null;
+                    if (overrides && overrides[rowIdx]) {
+                        partLink = overrides[rowIdx].url;
+                    } else if (rowIdx === 0 && (parts.length <= 1)) {
+                        partLink = v.link;
+                    }
 
-            tbody.appendChild(row);
+                    const td = document.createElement('td');
+                    if (isExtra(countryName)) td.classList.add('extra-country-col');
+
+                    if (partLink && partText) {
+                        const a = document.createElement('a');
+                        a.href = partLink;
+                        a.target = '_blank';
+                        a.rel = 'noopener';
+                        a.textContent = partText;
+                        td.appendChild(a);
+                    } else if ((isGasRow || isGoogleRow) && partText && /[+-]?\d+%/.test(partText)) {
+                        // Structured rendering for gas / GT rows: history → current → (price) [Peak]
+                        let beforeText = '';
+                        let afterText = partText.trim();
+                        let peakText = null;
+                        let peakNum = null;
+                        const peakMatch = partText.match(/\|\s*Peak\s*([+-]?\d+%)/i);
+                        if (peakMatch) {
+                            peakText = peakMatch[1];
+                            peakNum = parseInt(peakMatch[1], 10);
+                            afterText = partText.replace(/\s*\|\s*Peak\s*[+-]?\d+%\s*$/i, '');
+                        }
+                        if (afterText.indexOf('-->') !== -1) {
+                            const ps = afterText.split('-->');
+                            beforeText = ps[0].trim() + ' \u2192 ';
+                            afterText = ps.slice(1).join('-->').trim();
+                        }
+                        const pctMatch = afterText.match(/([+-]?\d+)%/);
+                        const pctNum = pctMatch ? parseInt(pctMatch[1], 10) : null;
+                        let cls = '';
+                        if (pctNum !== null) {
+                            if (isGasRow) {
+                                if (pctNum >= 40) cls = 'heat-red-3';
+                                else if (pctNum >= 25) cls = 'heat-red-2';
+                                else if (pctNum >= 10) cls = 'heat-red-1';
+                                else cls = 'heat-neutral';
+                            } else {
+                                if (pctNum >= 100) cls = 'heat-green-3';
+                                else if (pctNum >= 50) cls = 'heat-green-2';
+                                else if (pctNum >= 15) cls = 'heat-green-1';
+                                else if (pctNum < 0) cls = 'heat-red-2';
+                                else cls = 'heat-neutral';
+                            }
+                        }
+                        const beforeSpan = document.createElement('span');
+                        beforeSpan.className = 'progression-history';
+                        beforeSpan.textContent = beforeText;
+                        td.appendChild(beforeSpan);
+                        const currentMatch = afterText.match(/^([+-]?\d+%)(.*)$/);
+                        if (currentMatch) {
+                            const pctOnly = currentMatch[1];
+                            const remainder = currentMatch[2];
+                            const afterSpan = document.createElement('span');
+                            afterSpan.className = 'progression-current ' + cls;
+                            afterSpan.textContent = pctOnly;
+                            td.appendChild(afterSpan);
+                            if (remainder.trim()) {
+                                const remainderSpan = document.createElement('span');
+                                remainderSpan.className = 'progression-price';
+                                remainderSpan.textContent = ' ' + remainder.trim();
+                                td.appendChild(remainderSpan);
+                            }
+                        } else {
+                            const afterSpan = document.createElement('span');
+                            afterSpan.className = 'progression-current ' + cls;
+                            afterSpan.textContent = afterText;
+                            td.appendChild(afterSpan);
+                        }
+                        if (peakText && peakNum !== null) {
+                            let peakCls = 'heat-neutral';
+                            if (isGasRow) {
+                                if (peakNum >= 40) peakCls = 'heat-red-3';
+                                else if (peakNum >= 25) peakCls = 'heat-red-2';
+                                else if (peakNum >= 10) peakCls = 'heat-red-1';
+                            } else {
+                                if (peakNum >= 100) peakCls = 'heat-green-3';
+                                else if (peakNum >= 50) peakCls = 'heat-green-2';
+                                else if (peakNum >= 15) peakCls = 'heat-green-1';
+                            }
+                            const peakLabel = document.createElement('span');
+                            peakLabel.className = 'peak-label';
+                            peakLabel.textContent = ' Peak ';
+                            td.appendChild(peakLabel);
+                            const peakSpan = document.createElement('span');
+                            peakSpan.className = 'progression-peak ' + peakCls;
+                            peakSpan.textContent = peakText;
+                            td.appendChild(peakSpan);
+                        }
+                    } else {
+                        td.textContent = partText;
+                    }
+                    row.appendChild(td);
+                });
+
+                // Source — only on first row
+                const sourceTd = document.createElement('td');
+                if (rowIdx === 0) sourceTd.textContent = metric.source;
+                sourceTd.className = 'source-col';
+                row.appendChild(sourceTd);
+
+                tbody.appendChild(row);
+            }
         });
     });
 
@@ -498,14 +511,59 @@ function renderPolicy(policy) {
     table.innerHTML = h;
 }
 
+function buildSideNav() {
+    const items = [
+        {id: 'summary-section', label: 'Executive Summary'},
+        {id: 'commentary-section', label: 'Key Takeaways'},
+        {id: 'highlights-section', label: 'Highlights This Week'},
+        {id: 'tracker-section', label: 'Indicators'},
+        {id: 'policy-section', label: 'Policy Timeline'},
+        {id: 'sales-section', label: 'March BEV Sales'},
+        {id: 'country-commentary-section', label: 'Country Commentary'},
+        {id: 'news-section', label: 'Newsfeed'},
+    ];
+    const nav = document.createElement('nav');
+    nav.id = 'side-nav';
+    nav.innerHTML = '<div class="side-nav-title">On this page</div>' +
+        '<ul>' + items.map(it =>
+            '<li><a href="#' + it.id + '" data-target="' + it.id + '">' + it.label + '</a></li>'
+        ).join('') + '</ul>';
+    document.body.appendChild(nav);
+
+    // Smooth scroll on click
+    nav.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', function(e) {
+            e.preventDefault();
+            const t = document.getElementById(this.dataset.target);
+            if (t) t.scrollIntoView({behavior: 'smooth', block: 'start'});
+        });
+    });
+
+    // Highlight active section on scroll
+    const links = Array.from(nav.querySelectorAll('a'));
+    function onScroll() {
+        let current = items[0].id;
+        const y = window.scrollY + 120;
+        for (const it of items) {
+            const el = document.getElementById(it.id);
+            if (el && el.offsetTop <= y) current = it.id;
+        }
+        links.forEach(l => l.classList.toggle('active', l.dataset.target === current));
+    }
+    window.addEventListener('scroll', onScroll, {passive: true});
+    onScroll();
+}
+
 async function init() {
-    let meta, commentary, tracker, news;
+    buildSideNav();
+    let meta, commentary, tracker, news, indicatorLinks;
     try {
-        [meta, commentary, tracker, news] = await Promise.all([
+        [meta, commentary, tracker, news, indicatorLinks] = await Promise.all([
             loadJSON('data/meta.json'),
             loadJSON('data/commentary.json'),
             loadJSON('data/tracker.json'),
             loadJSON('data/news.json'),
+            loadJSON('data/indicator_links.json'),
         ]);
     } catch (e) {
         console.error('init Promise.all error:', e);
@@ -518,7 +576,7 @@ async function init() {
         try { renderCommentary(commentary); } catch(e) { console.error('renderCommentary:', e); }
     }
     if (tracker) {
-        try { renderTracker(tracker); } catch(e) { console.error('renderTracker:', e); }
+        try { renderTracker(tracker, indicatorLinks); } catch(e) { console.error('renderTracker:', e); }
     }
     if (news) {
         try { renderNews(news); } catch(e) { console.error('renderNews:', e); }

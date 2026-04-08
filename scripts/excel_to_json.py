@@ -42,10 +42,34 @@ def parse_draft_table(wb):
 
     for row in range(5, ws.max_row + 1):
         label = ws.cell(row=row, column=1).value
-        if not label:
-            continue
+        label_str = str(label).strip() if label else ""
 
-        label_str = str(label).strip()
+        # Helper: read country values for this row
+        def read_values():
+            values = []
+            for c in countries:
+                cell = ws.cell(row=row, column=c["col"])
+                val = cell.value
+                link = cell.hyperlink.target if cell.hyperlink else None
+                values.append({
+                    "country": c["name"],
+                    "value": str(val) if val else "",
+                    "link": link,
+                })
+            return values
+
+        # Empty-label row = continuation of previous metric (if it has any country data)
+        if not label_str:
+            values = read_values()
+            has_data = any(v["value"] for v in values)
+            if has_data and current_section and current_section["metrics"]:
+                # Append as a continuation row to the last metric
+                current_section["metrics"].append({
+                    "label": None,  # null label = continuation
+                    "source": "",
+                    "values": values,
+                })
+            continue
 
         # Section header — check by name (merge may have been lost)
         if label_str in section_names:
@@ -69,16 +93,7 @@ def parse_draft_table(wb):
 
         # It's a metric row
         source = ws.cell(row=row, column=2).value or ""
-        values = []
-        for c in countries:
-            cell = ws.cell(row=row, column=c["col"])
-            val = cell.value
-            link = cell.hyperlink.target if cell.hyperlink else None
-            values.append({
-                "country": c["name"],
-                "value": str(val) if val else "",
-                "link": link,
-            })
+        values = read_values()
 
         metric_label = label_str.replace("\n", " ")
         current_section["metrics"].append({
