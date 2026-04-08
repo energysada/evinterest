@@ -3,50 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EV Interest Tracker | DC Energy Research</title>
-    <link rel="stylesheet" href="style.css">
+    <title>EV Interest Tracker</title>
+    <link rel="stylesheet" href="style.css?v=6">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
 </head>
 <body>
     <header>
         <div class="header-content">
-            <h1>Fuel Prices & EV Interest Tracker</h1>
-            <div class="header-meta">
-                <span id="edition-badge"></span>
-                <span id="brent-badge"></span>
-                <span id="date-badge"></span>
+            <div class="header-top">
+                <div class="header-title">
+                    <h1>EV Interest Tracker</h1>
+                    <p class="subtitle">Monitoring global EV demand signals amid the 2026 energy crisis</p>
+                </div>
+                <div class="header-stats">
+                    <div class="stat" id="brent-stat">
+                        <span class="stat-label">Brent Crude</span>
+                        <span class="stat-value" id="brent-badge">—</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Articles Tracked</span>
+                        <span class="stat-value" id="article-count">—</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Last Updated</span>
+                        <span class="stat-value" id="date-badge">—</span>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
 
     <main>
-        <!-- Commentary -->
+        <!-- Executive Summary -->
+        <section id="summary-section">
+            <h2>Executive Summary</h2>
+            <p id="summary-text"></p>
+        </section>
+
+        <!-- Key Takeaways (broader, month-long learnings) -->
         <section id="commentary-section">
             <h2>Key Takeaways</h2>
             <ul id="commentary-list"></ul>
         </section>
 
+        <!-- Key Highlights This Week -->
+        <section id="highlights-section">
+            <h2>Key Highlights This Week <span id="highlights-week" class="section-subtitle"></span></h2>
+            <ul id="highlights-list"></ul>
+        </section>
+
         <!-- Tracker Table -->
         <section id="tracker-section">
-            <h2>Tracker Table</h2>
+            <h2>Indicators</h2>
             <div class="table-scroll">
                 <table id="tracker-table"></table>
             </div>
             <div id="tracker-notes"></div>
         </section>
 
+        <!-- Policy Timeline -->
+        <section id="policy-section">
+            <h2>Policy Timeline</h2>
+            <p class="section-note">EV-supportive policy actions announced after the crisis began (Feb 28, 2026). Excludes policies announced earlier that merely took effect during the crisis window. Dates shown are announcement dates.</p>
+            <div class="table-scroll">
+                <table id="policy-table"></table>
+            </div>
+        </section>
+
+        <!-- March Sales -->
+        <section id="sales-section">
+            <h2>March 2026 BEV Sales</h2>
+            <div class="table-scroll">
+                <table id="sales-table"></table>
+            </div>
+        </section>
+
+        <!-- Country Commentary -->
+        <section id="country-commentary-section">
+            <h2>Country-by-Country Commentary</h2>
+            <p class="section-note" id="country-commentary-intro"></p>
+            <div id="country-commentary-list"></div>
+        </section>
+
         <!-- News Feed -->
         <section id="news-section">
-            <h2>Country News Feed</h2>
+            <h2>Newsfeed</h2>
             <div class="news-controls">
                 <div class="filter-group">
-                    <label>Country:</label>
+                    <label>Country</label>
                     <select id="country-filter">
-                        <option value="all">All Countries</option>
-                        <option value="key" selected>Key Countries Only</option>
+                        <option value="key" selected>Key Countries</option>
+                        <option value="Global">Global</option>
+                        <option value="all">All</option>
                     </select>
                 </div>
                 <div class="filter-group">
-                    <label>Category:</label>
+                    <label>Category</label>
                     <select id="category-filter">
                         <option value="all" selected>All</option>
                     </select>
@@ -70,9 +124,9 @@
     </main>
 
     <footer>
-        <p>DC Energy Research | Data updated <span id="footer-date"></span></p>
+        <p>energysada.com <span id="footer-date"></span></p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=6"></script>
 </body>
 </html>

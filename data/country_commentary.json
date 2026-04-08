@@ -1,0 +1,409 @@
+{
+  "intro": "Throughout this section, the pre-war baseline is Feb 28, 2026 (the day the global energy crisis began) unless otherwise noted. Where a different baseline applies — e.g., a YoY comparison or a survey from a prior period — that is stated explicitly.",
+  "countries": [
+    {
+      "code": "US",
+      "flag": "🇺🇸",
+      "name": "United States",
+      "sections": [
+        {
+          "label": "Gasoline price story",
+          "text": "US national average regular gasoline rose from $2.98/gal on Feb 26-28 (AAA pre-war reading) to $4.12/gal on Apr 7 — a +38% increase. Weekly trajectory: +1% (Mar 7) → +17% (Mar 14) → +25% (Mar 21) → +33% (Mar 28) → +34% (Apr 4) → +38% now. The biggest single-week jump was the second week of March when prices crossed $3.50/gal. This is the first time US prices have exceeded $4/gal since August 2022. In magnitude terms the +38% increase is moderate compared to Australia (+49%) and Vietnam (+19% net after govt tax cuts, +47% at peak), but it's still the largest US fuel price shock in over three years."
+        },
+        {
+          "label": "Browsing / search activity (top of funnel)",
+          "text": "Edmunds — EV shopper research share, defined as the percentage of all car shopping research activity on Edmunds.com that is for an electrified vehicle (BEV, PHEV, or hybrid). Pre-war level: 20.7% (week of Feb 24). Latest: 23.8% (week of Mar 9-15). That is a +3.1 percentage point absolute increase, or +15% in relative terms. Trajectory: 20.7% → 22.4% (week of Mar 2) → 23.8% (week of Mar 9-15). Highest weekly EV research share Edmunds has recorded in 2026. CarGurus — Q1 2026 quarterly review released April 7. New EV listing views were +31% in Q1 2026 vs Q4 2025 (the immediately prior quarter, not pre-war). Used EV listing views +40% vs Q4 2025. CarMax — EV and hybrid combined searches +12.8% during Mar 2-22 vs the same metric pre-war. Page views +9.3%. CarEdge — EV searches reported +20% (no specific baseline stated, likely month-on-month in March)."
+        },
+        {
+          "label": "Used EV demand",
+          "text": "Cox Automotive / Recurrent — used EV sales in Q1 2026 were +12% YoY (vs Q1 2025), reaching 93,500 units. Average used EV transaction price is now $34,600, approximately $1,300 above comparable used ICE vehicles. For context, in 2023 used EVs sold at a $10,000+ premium to comparable ICE; the convergence reflects two years of price compression. The +12% YoY used EV growth contrasts sharply with new EV sales which fell -28% YoY in the same Q1."
+        },
+        {
+          "label": "Google Trends weekly progression (% chg vs Feb 25-28 baseline)",
+          "text": "\"electric car\": +2% → +23% → +31% → +41% → +85% → +52% current. Trajectory peaked in W5 (Apr 4) and has come off slightly. \"EV\": +13% → +7% → +19% → +9% → +0% → +2% current. Notably weaker than \"electric car\" — suggests broader public response is searching for the full term, not the abbreviation. \"used EV\": +29% → +50% → +36% → +21% → +6% → +11% current."
+        },
+        {
+          "label": "Apps",
+          "text": "EV charging network app **EVgo** (one of the largest US public DC fast charging networks): new entry at #21 in Google Play Auto category (was not in top 25 pre-war)."
+        },
+        {
+          "label": "Conclusion",
+          "text": "The US story is bifurcated. Search interest is clearly responding to the $4/gal threshold across multiple independent platforms (Edmunds, CarGurus, CarMax, CarEdge, Google). But new BEV sales fell 28% YoY in Q1 because the $7,500 federal tax credit expired in September 2025 — that structural headwind appears to outweigh the fuel price tailwind for new vehicle purchases. The 12% YoY used EV sales growth is where the actual purchase response is happening, supported by the convergence of used EV prices with comparable ICE. Cox Automotive survey indicates $6/gal as the threshold at which a majority of US consumers would seriously consider switching; current national average is $4.12/gal. Read: interest exists and is documented across platforms, but conversion to new purchases is held back by the tax credit gap, with the used EV channel absorbing what conversion is happening."
+        }
+      ]
+    },
+    {
+      "code": "AU",
+      "flag": "🇦🇺",
+      "name": "Australia",
+      "sections": [
+        {
+          "label": "Gasoline price story",
+          "text": "Australia ULP rose from approximately 161 c/L (Feb 28 AIP baseline) to 240 c/L (Apr 7) — a +49% net increase. Pre-excise-cut peak in early April was approximately 253 c/L (+57%), the largest fuel price increase among tracked markets. Australia halved its fuel excise (26.3 c/L cut) effective April 1 for 90 days, which brought the current price back to A$2.40/L. Diesel still approaching A$3/L in some regional areas. Weekly trajectory: +9% → +24% → +36% → +47% → +57% → +49% now. Australia had the largest absolute percentage fuel hike of any market we track."
+        },
+        {
+          "label": "Browsing / search activity (top of funnel)",
+          "text": "carsales.com.au — EV searches reported +76.7% week-on-week (peak weekly velocity, week of Mar 9) and approximately 3x month-on-month (March 2026 vs February 2026). The largest platform-level search response in our dataset. MG (the OEM's own data) — EV enquiries +220% MoM (March vs February). For best-selling MG models, enquiries up +300% MoM."
+        },
+        {
+          "label": "EV loan approvals (hardest-conviction signal)",
+          "text": "CommBank (Commonwealth Bank of Australia) — EV-specific loan approvals +161% MoM (March 2026 vs February 2026). Both months are within or partially within the crisis period, so the February baseline already reflected some elevated interest. The fact that March doubled on top of an already-elevated February makes this an unusually strong post-crisis acceleration signal. NAB (National Australia Bank) — EV loans approximately +100% MoM over the same period. Loan approval data represents a higher-conviction signal than search or consideration metrics because it reflects completed credit applications for specific vehicles."
+        },
+        {
+          "label": "Showroom / physical demand",
+          "text": "Australian dealers reporting premiums of AU$8-10K above MSRP on available BEV stock — supply constraints emerging. This is the inverse of the typical dealer environment where BEVs sit in inventory and require discounts. NRMA (insurance) — EV insurance quote requests +56% YoY vs March 2025. EV public charger usage +19% week-on-week at peak (week of Mar 16-22). \"Electric utes\" searches +300% on carsales.com.au — note this is a niche segment so the percentage is on a small base."
+        },
+        {
+          "label": "Survey",
+          "text": "carsales.com.au consumer survey — EV consideration among non-EV owners jumped from 36% (November 2025 survey) to 55% in early April 2026 — a +19 percentage point absolute increase, or +53% in relative terms. The November baseline is well pre-crisis, so the gap captures both pre-crisis trend and crisis impact."
+        },
+        {
+          "label": "Google Trends weekly progression (% chg vs Feb 25-28 baseline)",
+          "text": "\"electric car\": +53% → +148% → +171% → +239% → +142% → +97% current. Peak in W4, currently moderating. The peak figure (+239% in the week of Mar 22-28) is the highest single-week Google Trends response in our entire dataset. \"EV\": +14% → +59% → +91% → +166% → +132% → +192% current. Different shape — still rising in the current week. Combined magnitudes are the highest globally."
+        },
+        {
+          "label": "Apps",
+          "text": "EV charging network app **Chargefox** (Australia's largest EV public charging network) — moved from #4 to #3 in Google Play Auto category. Electric scooter brand app **NIU** (Chinese e-scooter manufacturer) — from #25 to #16 (+9 positions)."
+        },
+        {
+          "label": "Conclusion",
+          "text": "Australia is the clearest crisis-driven EV demand story among tracked markets. The combination of (1) the highest fuel price increase (+49% net, +57% peak), (2) the largest Google Trends response (+192% on \"EV\"), (3) platform-level searches tripling on carsales, (4) BEV inventory shortages with dealer premiums above MSRP, (5) EV-specific loan approval volumes doubling at multiple banks (CommBank, NAB), (6) March BEV sales +94.7% YoY (15,839 units, 14.6% share — record), and (7) a +19pp jump in stated EV consideration from a Nov 2025 baseline — every signal type, from search to sentiment to lending to actual sales to supply, is responding in the same direction. There is no metric in Australia where the crisis effect is ambiguous or contradicted by another signal."
+        }
+      ]
+    },
+    {
+      "code": "UK",
+      "flag": "🇬🇧",
+      "name": "United Kingdom",
+      "sections": [
+        {
+          "label": "Gasoline price story",
+          "text": "UK unleaded petrol rose from approximately 132.1p/L (Feb 28 baseline, GOV.UK weekly road fuel prices) to ~156p/L (Apr 7) — a +18% increase. Weekly trajectory: 0% (Mar 7) → +3% (Mar 14) → +6% (Mar 21) → +9% (Mar 28) → +13% (Apr 4) → +18% now. The British Eye reported the steepest single-month petrol price rise ever recorded in the UK. Diesel surged approximately 30% over the same period, hitting 184p/L by April 1. The +18% fuel hike is moderate by global standards but the absolute price level is the highest in nearly two years."
+        },
+        {
+          "label": "Browsing / search activity (top of funnel)",
+          "text": "AutoTrader — new EV leads +28% since Feb 28 (i.e., comparing the 4-week period after Feb 28 to the 4-week period before). Used EV leads +15% since Feb 28. Used EVs now account for 19.5% of all 0-5 year used car leads on AutoTrader — an all-time high (prior record was approximately 16% in late 2025). Octopus EV — leasing enquiries reported +36% for Mar 1-22 vs Feb 8-28 (3-week post-war window vs 3-week pre-war window). This is the cleanest before/after comparison in our UK data."
+        },
+        {
+          "label": "Used EV demand",
+          "text": "Marketcheck UK (British automotive data firm) provided Reuters with daily used EV sales counts. Pre-war range (January through Feb 28): typical daily volumes of 561 to 965 units, with January 4 showing 123 (the lowest pre-war reading) and Feb 1 showing the pre-war high of 965. After the war began Feb 28, daily volumes climbed to peak above 1,100/day in mid-March — described as a \"clear and sustained escalation.\" Marketcheck VP Alastair Campbell: \"Considering the lead time of a vehicle purchase, we expect this momentum to continue as the market fully absorbs the impact of recent global events.\" Used EVs are up to 40% cheaper than new EVs and readily available, which is why the used segment reacts faster than new. Octopus Electric Vehicles — used EV unit sales approximately quadrupled (4x) in the six months to early April vs October 2025. The six-month baseline starts well before the crisis, so the 4x figure cannot be cleanly attributed to the energy crisis alone. CEO Gurjeet Grewal characterized it as \"real demand.\" AutoTrader UK used EV leads +15% since Feb 28; used EVs hit 19.5% of all 0-5yr used car leads (all-time record)."
+        },
+        {
+          "label": "Showroom / physical demand",
+          "text": "Polestar UK — test drive bookings tripled (3x) since Feb 28. Showroom traffic at \"sale event\" levels. Source: Mirage News quoting Polestar UK statements. Kia UK — test drive requests +84% YoY (vs March 2025, not vs Feb 28). The YoY framing is important: Kia's 2025 baseline includes the EV3 launch period."
+        },
+        {
+          "label": "Google Trends weekly progression (% chg vs Feb 25-28 baseline)",
+          "text": "\"electric car\": +11% → +35% → +34% → +27% → +26% → +19% current. Front-loaded — peaked in W2 and has gradually receded. \"EV\": +10% → +20% → +21% → +28% → +26% → +19% current. \"used EV\": +38% → +71% → +54% → +34% → +34% → +130% current. Recent spike to +130% — the highest \"used EV\" search response anywhere in our dataset, aligning closely with the AutoTrader and Octopus used EV signals."
+        },
+        {
+          "label": "Apps",
+          "text": "Petrol price comparison app **Fuel Finder UK** (helps drivers find the cheapest nearby petrol station) — new entry at #5 in Google Play Auto category (was not in top 25 pre-war). Fuel logging app **Fuelio** (tracks fuel consumption and costs) also new entry. Notable that fuel-finder apps are rising rather than EV charging apps — UK consumers in the short term are focused on managing fuel costs. This is a contrast with Germany where the EV charging app **ladeapp** is rising."
+        },
+        {
+          "label": "Conclusion",
+          "text": "UK shows a clear used-EV-led pattern. Despite a moderate +18% fuel hike — well below the Australian magnitude — the used EV signals are unusually strong. AutoTrader, Octopus, Marketcheck, and Google Trends \"used EV\" searches all confirm. Polestar UK test drives tripling and Kia UK test drive requests +84% YoY also indicate genuine showroom-level demand. The UK is one of the markets where the energy crisis appears to be accelerating the EV transition specifically along the used vehicle pathway — affordability-driven adoption."
+        }
+      ]
+    },
+    {
+      "code": "DE",
+      "flag": "🇩🇪",
+      "name": "Germany",
+      "sections": [
+        {
+          "label": "Gasoline price story",
+          "text": "Germany Super E10 rose from approximately €1.78/L (Feb 28 ADAC baseline) to €2.22/L (Apr 7) — a +25% increase. Weekly trajectory: +2% → +6% → +10% → +17% → +20% → +25% now. Diesel hit an all-time record at €2.327/L on April 2 (ADAC). Germany capped fuel price hikes to once daily (noon) effective April 1, with violations punishable by fines up to €100,000. Prices are 15-17% above pre-Hormuz blockade levels even after the price cap mechanism. The +25% increase is the second-largest among major European markets after Belgium."
+        },
+        {
+          "label": "Browsing / search activity (top of funnel)",
+          "text": "mobile.de — Germany's largest car marketplace. Pre-war EV search share: 12% of all platform search activity. Latest: 36%. That is a 3x increase (12% → 36%), or +24 percentage points absolute, measured \"since the start of March\" per mobile.de's own statement. mobile.de also reports dealer enquiries for used EVs +66% vs February. Direct quote from mobile.de to Reuters: \"Currently, high gasoline prices are leading to an increasing demand for electromobility.\" Carwow — share of car configurator builds that are EV (% of users in the Carwow configurator who select an electric powertrain). Pre-war level: 55%. Crisis peak: 63% on weekend traffic. Weekly average: ~59% per Carwow Germany CEO Philipp Sayler von Amende to Handelsblatt (March 12). Note: this is configurator builds, not a survey — it captures higher-intent users actively building a car spec. Over the same period, gasoline+diesel configurations dropped to ~23% of total Carwow builds, below late-Feb level. Hybrids stable at ~15%. MeinAuto — EV web traffic +40% vs pre-war baseline; spokesperson reports above-average traffic to alternative-fuel and fuel-saving content."
+        },
+        {
+          "label": "Used EV demand",
+          "text": "mobile.de used EV dealer enquiries +66% vs February (Feb 2026 baseline, weeks before the crisis began Feb 28). Per Reuters reporting, the share of enquiries on mobile.de directed at used (rather than new) EVs has expanded — the platform is reporting that the marginal increase in EV interest is concentrated in the used segment. Reuters notes that across European used-EV platforms, the segment is moving fastest because used EVs are up to 40% cheaper than new and readily available, while new car orders take months to deliver."
+        },
+        {
+          "label": "Google Trends weekly progression",
+          "text": "\"Elektroauto\": +35% → +54% → +52% → +56% → +62% → +134% current. Strong escalation in the most recent week — one of the largest current-week jumps in our dataset. \"EV\" (English term in German market): same trajectory as \"Elektroauto\" — Germans use the German term predominantly."
+        },
+        {
+          "label": "Apps",
+          "text": "EV charging app **ladeapp** (German native EV charging station finder and payment app) — new entry at #20 in Google Play Auto category. EV charging network app **EWE Go** (German utility EWE's public charging network) — moved from #8 to #7. Both are EV-charging apps, contrasting with the UK pattern where fuel-finder apps are rising."
+        },
+        {
+          "label": "Conclusion",
+          "text": "Germany shows the strongest combined platform and Google Trends response to a moderate fuel hike (+25%). However, the March BEV sales figure (+66.2% YoY to 70,663 units) needs significant caveat. March 2025 was a depressed base — first full month after the Umweltbonus subsidy expired in December 2024, causing a demand trough. The new income-tested EV subsidy announced January 2026 (€3B for ~800K vehicles through 2029) is also contributing to the YoY comparison. Difficult to fully isolate the energy crisis effect on March sales. That said, the platform signals (mobile.de tripling, Carwow configurator surge, MeinAuto +40%) are strong enough that crisis-driven demand is clearly part of the story."
+        }
+      ]
+    },
+    {
+      "code": "FR",
+      "flag": "🇫🇷",
+      "name": "France",
+      "sections": [
+        {
+          "label": "Gasoline price story",
+          "text": "France SP95-E10 rose from approximately €1.74/L (Feb 28 baseline) to €2.00/L (Apr 7) — a +15% increase. Weekly trajectory: +2% → +5% → +9% → +12% → +16% → +15% now. Diesel hit a 40-year high at €2.249/L on April 2. TotalEnergies extended a fuel price cap of €1.99/L petrol, €2.09/L diesel at 3,300 stations, dampening the consumer-level price signal at participating sites. The +15% net fuel increase is at the lower end of major European markets."
+        },
+        {
+          "label": "Browsing / search activity (top of funnel)",
+          "text": "OLX France — EV enquiries +50% in March vs February (i.e., March 2026 vs February 2026 baseline). The OLX figure is part of a Reuters/Times Live report covering multiple European used car platforms. Renault — EV model enquiries on Renault's own website +24% since Feb 28. Renault 5 E-Tech and Scenic E-Tech are the lead models driving the response."
+        },
+        {
+          "label": "Used EV demand",
+          "text": "Aramis Auto — France's largest online used car platform, majority-owned by Stellantis. Pre-war (week of Feb 16, the last full pre-war week) EV sales share: 6.5% of all sales on the platform. Latest (week of Mar 9): 12.7% of all sales. That is +6.2 percentage points absolute, or 1.95x the pre-war level — nearly doubled. Petrol model share over the same period fell from 34% to 28% (-6pp), and diesel from 14% to 10% (-4pp). The shift is direct substitution. CEO Romain Boscher told Reuters the company saw a similar shift in 2022 when Russia invaded Ukraine and energy prices jumped. \"As soon as you pass 2 euros (per litre of petrol), it makes a lasting impression on people's minds,\" Boscher said. \"We are seeing a significant rise in interest on the website, translating into orders for EVs and hybrids.\" This is the cleanest before/after platform comparison in our French data."
+        },
+        {
+          "label": "OEM marketing response",
+          "text": "MG (owned by China's SAIC, ticker 600104.SS) is running social media ads in France declaring \"it may be time to rethink the way you drive.\" This is a parallel to BYD's \"Money\" ad campaign across Europe — both Chinese OEMs explicitly using fuel anxiety in marketing. Reuters notes: \"EV makers are already highlighting the cost of petrol in their marketing.\" The MG and BYD campaigns are running simultaneously across multiple European markets, suggesting a coordinated industry response from the Chinese EV exporters specifically."
+        },
+        {
+          "label": "Google Trends weekly progression",
+          "text": "\"voiture électrique\": +20% → +57% → +56% → +75% → +111% → +151% current. Steep escalation through the period, particularly in the final two weeks. \"EV\" equivalent: same trajectory. \"voiture électrique d'occasion\" (used EV): +216% (single value, weekly progression not yet available). The largest used EV search response in our dataset."
+        },
+        {
+          "label": "Apps",
+          "text": "No notable EV app ranking changes recorded for France."
+        },
+        {
+          "label": "Conclusion",
+          "text": "France posted a record +69% YoY March BEV registrations (49,406 units, 28.5% share of all new registrations). However, this needs caveating: March is historically a strong month for fleet/company car ordering in France, and the +69% may partly reflect typical Q1 fleet ordering patterns rather than purely consumer crisis response. The Aramis Auto used EV doubling (a clean week-to-week comparison on a single platform) and Renault enquiries +24% since Feb 28 are cleaner crisis-attributed signals. The +15% fuel increase is moderate but the platform and Google Trends responses are strong — comparable to Germany."
+        }
+      ]
+    },
+    {
+      "code": "KR",
+      "flag": "🇰🇷",
+      "name": "South Korea",
+      "sections": [
+        {
+          "label": "Gasoline price story",
+          "text": "South Korea gasoline rose from approximately ₩1,778/L (Feb 28 OPINET baseline) to ₩1,967/L (Apr 7) — only an +11% increase. Weekly trajectory: +1% → +1% → +3% → +3% → +9% → +11% now. The Korean government raised the petrol cap to ₩1,934/L on March 27 (the second cap revision since the crisis began) and announced the first petrol/diesel price cap in 30 years plus a license-plate rotation system to restrict driving. The +11% fuel increase is the smallest among major tracked markets — a deliberate result of government cap policy. Korean consumers are seeing meaningfully less fuel pain than US, European, or Australian drivers."
+        },
+        {
+          "label": "Browsing / search activity",
+          "text": "Herald Economy (Korean financial daily) — Korean EV search volume across major platforms reported +28% in the first week of March vs the immediately prior week. We do not have weekly trajectory data for the Korean platform-level signal; this is the only published platform-level data point we have for Korea. Tesla Korea registrations +330% YoY in March (11,134 units in March 2026 vs March 2025). Helped by Tesla's price cuts on China-built Model Y and Model 3 imports during March. Imported BEV sales hit a record 16,249 in March (47.8% of all imported vehicle sales), +34.6% YoY."
+        },
+        {
+          "label": "Google Trends weekly progression",
+          "text": "\"전기차\" (electric car): -5% → +2% → 0% → -5% → -3% → +6% current. Essentially flat throughout — the smallest Google response among tracked markets, consistent with the smallest fuel price increase. \"EV\" equivalent: same."
+        },
+        {
+          "label": "Apps",
+          "text": "EV charging network app **SK Electlink** (operated by SK Group, one of Korea's largest public EV charging networks) — moved up 2 positions (specific ranking change not reported)."
+        },
+        {
+          "label": "Conclusion",
+          "text": "Korea is the most muted Tier 1 response. The +11% fuel increase is the smallest among tracked markets — possibly below the threshold needed to shift consumer search behaviour. Tesla import surges and the EV+hybrid registration doubling suggest some response is happening through the import channel specifically, where Tesla's price cuts on China-built models created a separate buying incentive that partly coincided with the crisis. Korea may simply not be feeling enough fuel pain yet for the crisis to shift broad purchase intent meaningfully — the government's price cap policy is working as intended to dampen the consumer signal, but that also means consumers are not getting the fuel-cost wake-up call that drives EV consideration in less-protected markets. Despite being one of the most Hormuz-vulnerable markets (61-70% of crude via Hormuz pre-war), Korea is showing the weakest behavioral response — a clear example of how policy can break the link between physical exposure and consumer demand response."
+        }
+      ]
+    },
+    {
+      "code": "NO",
+      "flag": "🇳🇴",
+      "name": "Nordics (Norway / Sweden / Denmark)",
+      "sections": [
+        {
+          "label": "Context",
+          "text": "Norway is already 98%+ BEV in new car sales, so the new-car market is saturated and there is no \"crisis-driven shift\" to detect there. The interesting Nordic signal is in the used market and the regional platform aggregator. All three largest Nordic used car websites (Finn.no Norway, Blocket Sweden, Bilbasen Denmark) are owned by Norway's Vend (VEND.OL), giving us a clean cross-Nordic comparison through one corporate dataset."
+        },
+        {
+          "label": "Norway — Finn.no",
+          "text": "Finn.no is Norway's largest used-car marketplace. Per analyst Terje Dahlgren to Reuters: \"There is currently an electric car bonanza in the used market.\" EVs have recently overtaken diesel models as Finn.no's best-selling fuel type. Norway's new car market is already approximately 98% BEV, so the used segment shift is the meaningful signal."
+        },
+        {
+          "label": "Sweden — Blocket",
+          "text": "Blocket is Sweden's largest used car platform. EV sales rose +11% in the first two weeks of March vs the previous two weeks (i.e., post-war first two weeks vs pre-war last two weeks). Views of EV models +17% over the same comparison. Per Blocket car expert Marcin Stepman: \"We see a clear shift where more people are actively looking for more fuel-efficient alternatives.\""
+        },
+        {
+          "label": "Denmark — Bilbasen",
+          "text": "Bilbasen is Denmark's local used car platform. Reports rising EV searches (no specific percentage published). Per Bilbasen analyst Jan Lang, higher petrol prices are cited as the main driver."
+        },
+        {
+          "label": "Sales",
+          "text": "Sweden March BEV sales: ~10,897 units, 41% share, +30% YoY — flagged as \"likely crisis-driven\" because 2025 was flat to slightly negative, making March a clear trend reversal. Denmark March BEV sales: 14,616 units, 77% share, +42.6% YoY — on \"watch\" status because registration tax restructuring in late 2025 may have altered purchase timing."
+        },
+        {
+          "label": "Conclusion",
+          "text": "The Nordic region shows a coordinated used-EV demand response across all three Vend-owned platforms. The pattern is consistent: rising used EV searches and sales, with petrol price increases cited as the explicit driver by local analysts. Sweden's +30% YoY March BEV sales appears to be the cleanest crisis signal, with Denmark on watch due to potential tax-timing effects. Norway's new car market is already saturated at 98% BEV, so the used segment shift is the only meaningful signal there."
+        }
+      ]
+    },
+    {
+      "code": "NZ",
+      "flag": "🇳🇿",
+      "name": "New Zealand",
+      "hidden": true,
+      "sections": [
+        {
+          "label": "Gasoline price story",
+          "text": "New Zealand petrol approached NZ$4/litre in parts of Auckland during the peak of the crisis in late March. Reserves dropped from 23.3 to 20.7 days of supply. Diesel surpassed petrol in some price categories — petrol +30%, diesel +74% per CleanTechnica reporting. The fuel supply crunch was severe enough that the government invoked emergency measures."
+        },
+        {
+          "label": "Browsing / search activity",
+          "text": "Trade Me — New Zealand's largest used car platform. EV searches +142% MoM (March 2026 vs February 2026). 125,000 EV searches in the first half of March alone. Top searched models: Nissan Leaf, Hyundai Kona. Average listing price NZ$39K."
+        },
+        {
+          "label": "Showroom / physical demand",
+          "text": "Per CleanTechnica reporting in early April, NZ car yards were being emptied of EVs as fuel crisis drove petrol/diesel flight to electric. Dealers reported they could not maintain inventory; pre-orders surging. Dealer-level EV sales reportedly +30-50% MoM in Auckland and Christchurch."
+        },
+        {
+          "label": "March 2026 sales",
+          "text": "March BEV registrations: ~2,422 units (+278% YoY) — the largest single-month YoY growth in our entire dataset. Total NZ new EV+PHEV registrations: 14,910 in March, +25.1% YoY. NZ cumulative EV fleet crossed 100,000 vehicles for the first time in March 2026 — a milestone driven by the post-war demand spike."
+        },
+        {
+          "label": "Conclusion",
+          "text": "New Zealand is, alongside Australia, one of the two clearest crisis-driven EV demand stories in our dataset. The combination of severe fuel price increases, near-universal EV inventory shortages at dealers, +278% YoY March BEV sales, and the cumulative fleet milestone all point in the same direction. NZ shares Australia's profile of high import dependence + strong response, but on a smaller absolute base."
+        }
+      ]
+    },
+    {
+      "code": "CN",
+      "flag": "🇨🇳",
+      "name": "China",
+      "hidden": true,
+      "sections": [
+        {
+          "label": "Gasoline price story",
+          "text": "China gasoline approached ¥9/L during late March, with NDRC (National Development and Reform Commission) reimposing retail price controls to limit pass-through. China's exposure to Hormuz is significant — China alone receives 37.7% of total Hormuz oil flows, more than any other country. However, China's strategic petroleum reserves and diverse pipeline import routes provide more buffer than Asian peers."
+        },
+        {
+          "label": "Sales and market share",
+          "text": "March 2026 NEV retail: 784,000 units (preliminary CPCA), 47.3% market penetration. YoY: -21% vs March 2025 (calendar effect — fewer working days, plus pre-NEV purchase tax pull-forward into early 2025). Wholesale volumes were approximately flat YoY. BYD March deliveries: 300,222 NEVs (+57.85% MoM, -20.45% YoY). Tesla China-built sales: 85,670 Model 3/Y units shipped from Shanghai Gigafactory in March."
+        },
+        {
+          "label": "Export momentum",
+          "text": "BYD March 2026 overseas exports: 120,083 units (+65% YoY). Q1 2026 overseas total: 321,165 units. BYD raised its 2026 overseas export target to 1.5 million units (+15% from prior 1.3M guidance). Wang Chuanfu (BYD chairman) called the oil crisis a \"golden window\" for global expansion. Per BYD's own reporting, the company is selling 2 weeks worth of cars in a day in Australia, NZ, and the Philippines. NIO March deliveries: 35,486 (+136% YoY); Q1 total 83,465 (+98.3% YoY); cumulative passed 1M units."
+        },
+        {
+          "label": "Conclusion",
+          "text": "China's domestic EV market shows mixed signals — the YoY decline is calendar/base-effect driven and wholesale volumes are flat, suggesting the underlying demand has not collapsed. The much more interesting story is on the export side: BYD's overseas momentum has accelerated dramatically, and the company is now positioning the energy crisis as a global opportunity rather than a domestic challenge. China is the supplier benefitting from the demand response in other crisis-affected markets."
+        }
+      ]
+    },
+    {
+      "code": "IN",
+      "flag": "🇮🇳",
+      "name": "India (control case)",
+      "hidden": true,
+      "sections": [
+        {
+          "label": "Gasoline price story (the control case)",
+          "text": "India is the natural control case for this analysis. Government held retail petrol/diesel prices completely flat at ₹94.77/L (Delhi) throughout the entire crisis period — 0% change from Feb 28 to Apr 7. The government slashed import duties on petrol from ₹13/L to ₹3/L on March 27 and eliminated the diesel duty entirely. OMCs (Oil Marketing Companies) are absorbing approximately ₹24/L in under-recovery on petrol and ₹104/L on diesel. Indian consumers are completely insulated from the global oil price signal."
+        },
+        {
+          "label": "Behavioral signal — diverging from price signal",
+          "text": "Despite flat fuel prices at the pump, India E2W (electric two-wheeler) sales spiked +59% MoM in March, reaching 1.78 lakh (178,000) units. The driver explicitly cited by sellers and analysts: the West Asia conflict and fear that prices might rise. Ola Electric hit 1M cumulative registrations with March sales +150% MoM. Revolt Motors reported 3x MoM sales growth in March. EV registrations in the first 3 weeks of March reached approximately 85% of full March 2025 totals (Vahan data)."
+        },
+        {
+          "label": "Google Trends",
+          "text": "Google Trends for 'electric car' DECLINED -22% vs Feb 25 — the largest decline among tracked markets. 'EV' searches +2% (essentially flat). 'used EV' -33%. The Google search signal is completely absent because consumers are not feeling the fuel pain at the pump."
+        },
+        {
+          "label": "Sales (FY26 record)",
+          "text": "FY2026 (April 2025-March 2026) total EV sales: 2.45 million units, +25% YoY — a record fiscal year for India. E4W (passenger EVs) +91.3% to 193,633 units. E2W: 1,401,663 units (+22% YoY) — record. E3W: 830,819 (+19% YoY)."
+        },
+        {
+          "label": "Conclusion",
+          "text": "India is the most interesting natural experiment in the dataset. Government held retail fuel prices completely flat. Google search interest declined. Yet actual E2W sales spiked 59% in March, showing that even the EXPECTATION of fuel disruption is enough to drive demand among price-sensitive two-wheeler buyers. The disconnect — flat fuel prices, declining Google searches, surging actual E2W purchases — is the most interesting pattern in the dataset. Suggests E2W buyers are responding to news of fuel supply risk rather than current pump prices."
+        }
+      ]
+    },
+    {
+      "code": "PK",
+      "flag": "🇵🇰",
+      "name": "Pakistan",
+      "hidden": true,
+      "sections": [
+        {
+          "label": "Gasoline price story",
+          "text": "Pakistan saw the largest fuel price hike in its history during the crisis — petrol reaching $1.15/L (PKR 321/L), a +20% increase in a single week. Pakistan imports 80% of its energy from the Gulf, making it among the most exposed economies. Government implemented digital fuel rationing app, 4-day workweek, and reduced vehicle fuel allocations by 60%. Government also discussed 2-day weekly 'smart lockdown' (Sat noon-Sun midnight) to conserve fuel."
+        },
+        {
+          "label": "Hard demand signal — PAVE programme",
+          "text": "Pakistan's Accelerated Vehicle Electrification (PAVE) programme was launched in February 2026, offering 20% price subsidy plus interest-free loans for E2W (electric two-wheelers) and E3W (electric three-wheelers). By early April, PAVE had received approximately 270,000 applications — 7x the first-phase target of ~38,000 ending June. EVs now exceed 10% of monthly two-wheeler sales for the first time in Pakistan's history."
+        },
+        {
+          "label": "Showroom signal",
+          "text": "Per Reuters and Express Tribune reporting, Pakistani electric motorbike outlets reported sales surging up to 70% in March vs February. 2025 had already seen Pakistan EV sales triple to ~90,000 units; the crisis is accelerating that trajectory."
+        },
+        {
+          "label": "Conclusion",
+          "text": "Pakistan is the most striking frontier market response. The combination of (1) the largest single-week fuel hike, (2) severe supply constraints requiring rationing, (3) a 7x oversubscribed government EV subsidy programme, and (4) actual sales surges at retail outlets all point in the same direction. Pakistan demonstrates how quickly EV demand can scale from a low base when fuel pain becomes acute and government incentives are aligned."
+        }
+      ]
+    },
+    {
+      "code": "KH",
+      "flag": "🇰🇭",
+      "name": "Cambodia",
+      "hidden": true,
+      "sections": [
+        {
+          "label": "Policy response",
+          "text": "Cambodia scrapped EV import duties effective April 1, 2026: BEV import duty reduced from 35% to 0%; PHEV from 35% to 7%. This was part of a broader strategy to accelerate Cambodia's National Policy on the Development of Electric Vehicles 2024-2030. The policy aims to reduce carbon emissions by 41.7% by 2030 and have EVs make up 40% of cars by 2050."
+        },
+        {
+          "label": "Market data",
+          "text": "Cambodia EV registrations are surging from a very small base. As of February 2026, only 14,534 of Cambodia's 8.3 million registered vehicles were electric (~0.17%). Monthly EV registrations doubled from 488 units (January) to 1,078 units (February 2026), a +121% MoM increase. With the April 1 import duty scrapping, March/April registrations are expected to accelerate further."
+        },
+        {
+          "label": "Conclusion",
+          "text": "Cambodia is the cleanest example of a frontier market policy response to the crisis. Pre-crisis EV market share was approximately 0.17%, and the government's response — completely scrapping import duties on April 1 — represents one of the most aggressive single policy actions taken by any country since the crisis began. This is government-led acceleration in a market where consumer-side EV demand was nearly nonexistent before the crisis."
+        }
+      ]
+    },
+    {
+      "code": "CA",
+      "flag": "🇨🇦",
+      "name": "Canada",
+      "hidden": true,
+      "sections": [
+        {
+          "label": "Gasoline price story",
+          "text": "Canada gasoline prices surged from approximately C$1.30/L late February to a peak of C$1.74/L in late March — wiping out years of carbon tax-related savings. BC and PEI were hardest hit. BC also tabled legislation to cut its 2035 ZEV sales mandate from 100% to 75%, indicating regulatory backlash even as fuel prices rose."
+        },
+        {
+          "label": "Policy response",
+          "text": "Canada launched the EVAP (Electric Vehicle Assistance Program) portal on March 31, 2026: $2.275B in EV rebates, up to $5,000/BEV, $2,500/PHEV. Portal went live the same week the crisis was peaking, suggesting alignment with the post-war demand response."
+        },
+        {
+          "label": "Conclusion",
+          "text": "Canada shows a mixed story. On one hand, federal government rolled out a major EV rebate programme during the crisis. On the other, BC moved to weaken its existing ZEV mandate. The combination suggests genuine consumer pushback against both fuel cost AND EV mandate timelines simultaneously — the federal rebate is essentially the government acknowledging that tighter mandates need stronger financial support to be politically sustainable in a high-fuel-price environment."
+        }
+      ]
+    },
+    {
+      "code": "VN",
+      "flag": "🇻🇳",
+      "name": "Vietnam",
+      "sections": [
+        {
+          "label": "Gasoline price story",
+          "text": "Vietnam RON95 rose from approximately ₫20,800/L (Feb 28 baseline) to a peak of ₫30,690/L on March 20 — that's a +47% increase at peak. The government cut petrol 19% on March 27 after removing several taxes, bringing the current price to ₫24,773/L (+19% net from Feb 28). Vietnam imports approximately 85% of its crude from the Middle East — virtually all of it from Kuwait, which ships through the Strait of Hormuz — making Vietnam one of the most exposed Asian economies to the Hormuz disruption. At the peak of the crisis, Vietnam Airlines was canceling domestic flights due to jet fuel shortages."
+        },
+        {
+          "label": "Browsing / search activity",
+          "text": "No major Vietnamese auto platform has published EV search data for the crisis period that we have located. The Vietnamese EV market is heavily concentrated around VinFast (the domestic OEM), so platform-level data is limited."
+        },
+        {
+          "label": "Showroom / physical demand",
+          "text": "VinFast showrooms — traffic reported as quadrupled (4x) in the first 3 weeks post-war (vs the normal weekly traffic average). VinFast sold approximately 250 EVs in those 3 weeks (2x the normal pace). VinFast offered 3-5% discounts to ICE switchers as a promotional response. VinFast set a single-day order record on March 28: 3,520 orders in one day (146/hr), matching the typical monthly volume of competing brands."
+        },
+        {
+          "label": "Google Trends weekly progression",
+          "text": "\"xe điện\" (electric car): +10% → +79% → +47% → +75% → +38% → +42% current. Multiple peaks throughout the period. \"used EV\" equivalent: -1% → +124% → +36% → +71% → +46% → +34% current."
+        },
+        {
+          "label": "Apps",
+          "text": "OEM companion app **VinFast** (the official VinFast EV owner/customer app for the Vietnamese domestic OEM) — moved from #6 to #2 in Google Play Auto category, a jump of 4 positions. **VinFast E-Scooter** companion app (for VinFast's electric scooters) — from #9 to #3 (+6 positions). **Dat Bike** (Vietnamese electric motorbike OEM app) — new entry at #24. EV-related apps dominated Vietnamese app movement."
+        },
+        {
+          "label": "Conclusion",
+          "text": "Vietnam shows strong showroom-level and OEM-app demand response despite the government quickly cutting fuel taxes to dampen consumer price pain. The VinFast app jumping from #6 to #2 in 5 weeks is one of the cleanest single-data-point signals across any market in our dataset — app store rankings reflect actual user installs, not just curiosity. VinFast is on track for 300,000 deliveries in 2026 (vs 196,919 in 2025, +52% YoY target). The narrative here is somewhat distinct from other markets: rather than a broad multi-platform shift, Vietnam shows a concentrated response benefiting one domestic OEM that was already in growth mode. The crisis appears to have accelerated VinFast's existing trajectory rather than triggered a new market-wide shift."
+        }
+      ]
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Convert ev-interest-tracker.xlsx into JSON files for the static site."""
+"""Convert evinterest.xlsx into JSON files for the static site."""
 
 import json
 import openpyxl
@@ -107,9 +107,14 @@ def parse_news_feed(wb):
 
     items = []
     for row in range(2, ws.max_row + 1):
-        date = ws.cell(row=row, column=1).value
-        if not date:
+        date_raw = ws.cell(row=row, column=1).value
+        if not date_raw:
             continue
+        # Normalize: datetime → date string YYYY-MM-DD
+        if hasattr(date_raw, 'strftime'):
+            date = date_raw.strftime('%Y-%m-%d')
+        else:
+            date = str(date_raw).split(' ')[0]
 
         # Get hyperlink from URL column (8)
         url_cell = ws.cell(row=row, column=8)
@@ -154,12 +159,14 @@ def main():
     print(f"news.json: {len(news)} articles")
 
     # 3. Meta
+    from datetime import date
+    today = date.today().isoformat()
     meta = {
         "edition": 1,
-        "date": "2026-03-30",
-        "brent": "$116/bbl",
-        "brent_change": "+60% since Feb 28",
-        "last_updated": "2026-03-30",
+        "date": today,
+        "brent": "$110/bbl",
+        "brent_change": "+52% since Feb 28",
+        "last_updated": today,
     }
     with open(os.path.join(OUT, "meta.json"), "w") as f:
         json.dump(meta, f, indent=2)

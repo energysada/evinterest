@@ -1,0 +1,13 @@
+[
+  {"market": "France", "bev": "49,406", "share": "28.0%", "yoy": "+69%", "yoyDir": "pos", "flag": "crisis", "note": "Jan-Feb trend was +20-28% YoY; March acceleration coincides with fuel >€2/L"},
+  {"market": "Sweden", "bev": "~10,897", "share": "41%", "yoy": "+30%", "yoyDir": "pos", "flag": "crisis", "note": "2025 was flat to slightly negative; March reversal"},
+  {"market": "Australia", "bev": "15,839", "share": "14.6%", "yoy": "+94.7%", "yoyDir": "pos", "flag": "crisis", "note": "Record share; dealer premiums AU$8-10K above MSRP"},
+  {"market": "New Zealand", "bev": "~2,422", "share": "~10.6%", "yoy": "+278%", "yoyDir": "pos", "flag": "crisis", "note": "Fleet crossed 100K cumulative milestone"},
+  {"market": "Germany", "bev": "70,663", "share": "24.0%", "yoy": "+66.2%", "yoyDir": "pos", "flag": "watch", "note": "Mar 2025 depressed (post-Umweltbonus expiry); new subsidy Jan 2026"},
+  {"market": "Denmark", "bev": "14,616", "share": "77%", "yoy": "+42.6%", "yoyDir": "pos", "flag": "watch", "note": "Registration tax restructuring in late 2025"},
+  {"market": "UK", "bev": "86,120", "share": "22.4%", "yoy": "+24.2%", "yoyDir": "pos", "flag": "", "note": "Best month ever; consistent with ZEV mandate trajectory"},
+  {"market": "Norway", "bev": "~17,400", "share": "98.4%", "yoy": "—", "yoyDir": "na", "flag": "", "note": "Already ~100% BEV; 22 petrol cars sold"},
+  {"market": "China", "bev": "784K NEV", "share": "47.3%", "yoy": "-21%", "yoyDir": "neg", "flag": "", "note": "Fewer working days vs Mar 2025; pre-NEV tax pull-forward"},
+  {"market": "India (FY26)", "bev": "2.45M total", "share": "9%", "yoy": "+25%", "yoyDir": "pos", "flag": "", "note": "Record fiscal year; E2W +59% in March"},
+  {"market": "US (Q1)", "bev": "~212,600", "share": "5.8%", "yoy": "-28%", "yoyDir": "neg", "flag": "", "note": "$7,500 tax credit expired Sep 2025; used EVs +12% YoY"}
+]
