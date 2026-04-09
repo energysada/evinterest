@@ -3342,5 +3342,49 @@
     "source_name": "Profit Pakistan Today / Inside Retail Asia",
     "source_url": "https://insideretail.asia/2026/04/08/pakistan-embraces-e-bikes-as-fuel-prices-continue-to-climb/",
     "key_country": false
+  },
+  {
+    "date": "2026-03-18",
+    "region": "Europe",
+    "country": "Germany",
+    "category": "Consumer Sentiment",
+    "headline": "Reuters: Carwow Germany survey (n=1,164, Mar 12) — 48% say spiking fuel prices would influence EV/hybrid purchase decision",
+    "data_point": "Survey of 1,164 German consumers conducted Mar 12 by Carwow. 48% say fuel price spikes 'would influence their decision to consider an EV or hybrid.' Carwow also reports up to 66% of shoppers looking at EVs Mar 2-12 vs 55% end of Feb. MeinAuto EV-related traffic +40% since war began. First quantified survey-stated EV shift in EU since crisis began.",
+    "source_name": "Reuters",
+    "source_url": "https://www.reuters.com/business/autos-transportation/gasoline-price-hike-iran-war-could-push-consumers-toward-evs-hybrids-2026-03-18/",
+    "key_country": true
+  },
+  {
+    "date": "2026-03-18",
+    "region": "North America",
+    "country": "US",
+    "category": "Consumer Sentiment",
+    "headline": "Reuters: Cox Automotive — most US consumers would consider EV/hybrid switch only if gas hits $6/gal; CarGurus flags $4 as 2026 watch threshold",
+    "data_point": "CarGurus director Kevin Roberts: '$4 (per gallon) threshold may be the one to watch' — 2022 Russia-Ukraine oil shock precedent. Cox Automotive research: most US consumers would consider switching to EV/hybrid IF gas hits $6/gal. US EV share was 7.7% in 2025 (post Trump $7,500 federal credit removal). Edmunds week-1 post-war: electrified shopper share 22.4% vs 20.7% prior week (small uptick).",
+    "source_name": "Reuters",
+    "source_url": "https://www.reuters.com/business/autos-transportation/gasoline-price-hike-iran-war-could-push-consumers-toward-evs-hybrids-2026-03-18/",
+    "key_country": true
+  },
+  {
+    "date": "2026-03-18",
+    "region": "Europe",
+    "country": "UK",
+    "category": "Showroom Demand",
+    "headline": "Reuters: UK used-EV dealer (EV Experts, near London) logs busiest Saturday ever one week post-war; staff buying EVs at auctions 'like mad'",
+    "data_point": "Martin Miller, owner of EV Experts used-EV dealership southwest of London. Busiest Saturday on record one week after war began. 'We're turning cars very, very quickly.' Customers concerned petrol prices will climb higher. Staff buying more EVs at auctions 'like mad — because we're confident this will continue.' Anecdotal but high-quality dealer-level signal.",
+    "source_name": "Reuters",
+    "source_url": "https://www.reuters.com/business/autos-transportation/gasoline-price-hike-iran-war-could-push-consumers-toward-evs-hybrids-2026-03-18/",
+    "key_country": true
+  },
+  {
+    "date": "2026-03-13",
+    "region": "North America",
+    "country": "US",
+    "category": "Showroom Demand",
+    "headline": "Reuters: Recharged used EV dealership (Richmond VA) — customer trades ICE SUV for EV plus a second smaller EV: 'trying to get in before everybody freaks out'",
+    "data_point": "Customer Zach Xavier visited Recharged dealership in Richmond, Virginia with wife on Friday Mar 13 to trade in combustion-engine SUV for electric one and purchased a second smaller EV. Quote: 'I'm trying to get in before everybody freaks out.' Anecdotal but illustrative of pre-emptive switching behavior in US heartland markets.",
+    "source_name": "Reuters",
+    "source_url": "https://www.reuters.com/business/autos-transportation/gasoline-price-hike-iran-war-could-push-consumers-toward-evs-hybrids-2026-03-18/",
+    "key_country": true
   }
 ]
