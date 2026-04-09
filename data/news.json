@@ -3356,17 +3356,6 @@
   },
   {
     "date": "2026-03-18",
-    "region": "North America",
-    "country": "US",
-    "category": "Consumer Sentiment",
-    "headline": "Reuters: Cox Automotive — most US consumers would consider EV/hybrid switch only if gas hits $6/gal; CarGurus flags $4 as 2026 watch threshold",
-    "data_point": "CarGurus director Kevin Roberts: '$4 (per gallon) threshold may be the one to watch' — 2022 Russia-Ukraine oil shock precedent. Cox Automotive research: most US consumers would consider switching to EV/hybrid IF gas hits $6/gal. US EV share was 7.7% in 2025 (post Trump $7,500 federal credit removal). Edmunds week-1 post-war: electrified shopper share 22.4% vs 20.7% prior week (small uptick).",
-    "source_name": "Reuters",
-    "source_url": "https://www.reuters.com/business/autos-transportation/gasoline-price-hike-iran-war-could-push-consumers-toward-evs-hybrids-2026-03-18/",
-    "key_country": true
-  },
-  {
-    "date": "2026-03-18",
     "region": "Europe",
     "country": "UK",
     "category": "Showroom Demand",

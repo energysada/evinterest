@@ -739,8 +739,8 @@
           "values": [
             {
               "country": "US",
-              "value": "Cox Automotive: most US consumers would consider EV/hybrid switch IF gas hits $6/gal; CarGurus flags $4/gal as the watch threshold (2022 oil-shock precedent)",
-              "link": "https://www.reuters.com/business/autos-transportation/gasoline-price-hike-iran-war-could-push-consumers-toward-evs-hybrids-2026-03-18/"
+              "value": "",
+              "link": null
             },
             {
               "country": "Australia",
