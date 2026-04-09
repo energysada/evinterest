@@ -3375,5 +3375,16 @@
     "source_name": "Reuters",
     "source_url": "https://www.reuters.com/business/autos-transportation/gasoline-price-hike-iran-war-could-push-consumers-toward-evs-hybrids-2026-03-18/",
     "key_country": true
+  },
+  {
+    "date": "2026-04-03",
+    "region": "North America",
+    "country": "US",
+    "category": "Consumer Sentiment",
+    "headline": "Pew Research (Mar 16-22, n=3,524): 32% of Americans would seriously consider EV — flat YoY despite gas crisis; hybrids 44%",
+    "data_point": "32% would seriously consider an EV as next vehicle (vs 33% March 2025 = -1pp); 44% would consider a hybrid. Partisan: Democrats 47% (down from 58% in 2022, -11pp over 3 years), Republicans 17%. 60% of Democrats vs 21% of Republicans say govt should encourage EV use. Survey conducted Mar 16-22, 2026 — fully overlapping the post-war fuel price spike. STRONG counter-narrative: US showed zero crisis lift in stated EV consideration despite gasoline +27-39% in March.",
+    "source_name": "Pew Research Center",
+    "source_url": "https://www.pewresearch.org/science/2026/04/03/how-appealing-are-electric-vehicles-and-hybrids-to-americans/",
+    "key_country": true
   }
 ]
