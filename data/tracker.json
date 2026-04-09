@@ -14,7 +14,13 @@
     "India",
     "Pakistan",
     "Cambodia",
-    "Canada"
+    "Canada",
+    "Nepal",
+    "Singapore",
+    "Thailand",
+    "Philippines",
+    "Japan",
+    "Malaysia"
   ],
   "sections": [
     {
@@ -88,6 +94,36 @@
               "country": "Canada",
               "value": "+10% +18% +25% +30% +33% --> +34% (~C$1.74/L) | Peak +34%",
               "link": null
+            },
+            {
+              "country": "Nepal",
+              "value": "+10% +10% +20% --> +24% (Rs 202/L) | Peak +24%",
+              "link": "https://kathmandupost.com/money/2026/04/03/nepal-hikes-fuel-prices-for-third-time-in-a-month"
+            },
+            {
+              "country": "Singapore",
+              "value": "+5% +10% +15% +18% +20% --> +20% (S$3.47/L Oct 95) | Peak +20%",
+              "link": "https://mothership.sg/2026/03/petrol-prices-singapore-iran-conflict/"
+            },
+            {
+              "country": "Thailand",
+              "value": "+0% +0% +0% +18% +18% --> +18% (52.17 THB/L) | Peak +22%",
+              "link": "https://www.bloomberg.com/news/articles/2026-03-26/fuel-shock-in-thailand-sends-prices-surging-up-to-22-overnight"
+            },
+            {
+              "country": "Philippines",
+              "value": "+8% +20% +35% +45% +52% --> +52% (PHP 95.90/L) | Peak +52%",
+              "link": "https://www.pna.gov.ph/articles/1271157"
+            },
+            {
+              "country": "Japan",
+              "value": "+5% +10% +12% +8% +4% --> +4% (¥177.70/L, subsidy absorbs) | Peak +12%",
+              "link": "https://www.japantimes.co.jp/business/2026/04/07/japan-gas-price-gouge/"
+            },
+            {
+              "country": "Malaysia",
+              "value": "BUDI95 held RM1.99 (0%); RON97 +40%; diesel +51% (two-tier)",
+              "link": "https://paultan.org/2026/03/18/malaysian-fuel-prices-march-19-25-2026-ron97-up-70-sen-to-rm4-55-per-litre-diesel-up-80-sen-rm4-72-litre/"
             }
           ]
         },
@@ -158,6 +194,36 @@
             {
               "country": "Canada",
               "value": "—",
+              "link": null
+            },
+            {
+              "country": "Nepal",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Singapore",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Thailand",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Philippines",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Japan",
+              "value": "BI Japan: EV listing page views +10%, used EV interest +15% (sales still -45% YoY)",
+              "link": "https://www.businessinsider.jp/article/2603-higher-gasoline-prices-lift-interest-in-electric-cars/"
+            },
+            {
+              "country": "Malaysia",
+              "value": "",
               "link": null
             }
           ]
@@ -230,6 +296,36 @@
               "country": "Canada",
               "value": "—",
               "link": null
+            },
+            {
+              "country": "Nepal",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Singapore",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Thailand",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Philippines",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Japan",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Malaysia",
+              "value": "",
+              "link": null
             }
           ]
         },
@@ -301,6 +397,36 @@
               "country": "Canada",
               "value": "EVAP $2.275B portal launched Mar 31",
               "link": "https://www.canada.ca"
+            },
+            {
+              "country": "Nepal",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Singapore",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Thailand",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Philippines",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Japan",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Malaysia",
+              "value": "",
+              "link": null
             }
           ]
         },
@@ -370,6 +496,36 @@
             },
             {
               "country": "Canada",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Nepal",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Singapore",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Thailand",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Philippines",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Japan",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Malaysia",
               "value": "",
               "link": null
             }
@@ -443,6 +599,137 @@
               "country": "Canada",
               "value": "",
               "link": null
+            },
+            {
+              "country": "Nepal",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Singapore",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Thailand",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Philippines",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Japan",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Malaysia",
+              "value": "",
+              "link": null
+            }
+          ]
+        },
+        {
+          "label": "Charging utilization / infrastructure",
+          "source": "",
+          "values": [
+            {
+              "country": "US",
+              "value": "Tesla Supercharger Q1 global: 53M sessions (+26% YoY), 1.8 TWh (+22% YoY); Q1 matched record Q3 2025",
+              "link": "https://evchargingstations.com/chargingnews/tesla-supercharging-q1-2026/"
+            },
+            {
+              "country": "Australia",
+              "value": "NRMA network +19% WoW (wk Mar 22); Mondays +30%; Easter +100% YoY energy delivered. RAA Adelaide session times 2x over Easter",
+              "link": "https://www.mynrma.com.au/open-road/news/2026/ev-charger-use-jumps"
+            },
+            {
+              "country": "UK",
+              "value": "Octopus: EV charger sales +20% in March; EV enquiries +36% since conflict; home EV tariff cut 7p→5.5p/kWh from Apr 1 (deliberate counterweight to pump spike)",
+              "link": "https://electrek.co/2026/03/27/iran-war-spikes-energy-prices-uk-homes-ditch-fossil-fuels-fast/"
+            },
+            {
+              "country": "Germany",
+              "value": "EWE Go #8→#7, ladeapp new #20 in app rankings (Sensor Tower)",
+              "link": null
+            },
+            {
+              "country": "France",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "South Korea",
+              "value": "SK Electlink charging app +2 positions (Sensor Tower)",
+              "link": null
+            },
+            {
+              "country": "Vietnam",
+              "value": "V-Green (VinFast CPO) VND10T ($380M) for 99 fast-charging sites across 34 provinces; VinFast 'Trade Gas for Electric' in VN/IN/ID/PH",
+              "link": "https://www.electrive.com/2026/03/20/v-green-to-build-99-fast-charging-stations-in-vietnam/"
+            },
+            {
+              "country": "New Zealand",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "China",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "India",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Pakistan",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Cambodia",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Canada",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Nepal",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Singapore",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Thailand",
+              "value": "PTT Oil & Retail (OR) to >2x EV charger network by 2030; fuel-crunch-cited (Bloomberg 3/31)",
+              "link": "https://www.bloomberg.com/news/articles/2026-03-31/largest-thai-oil-retailer-to-double-ev-chargers-as-fuel-crunch-bites"
+            },
+            {
+              "country": "Philippines",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Japan",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Malaysia",
+              "value": "",
+              "link": null
             }
           ]
         },
@@ -512,6 +799,36 @@
             },
             {
               "country": "Canada",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Nepal",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Singapore",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Thailand",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Philippines",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Japan",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Malaysia",
               "value": "",
               "link": null
             }
@@ -585,6 +902,36 @@
               "country": "Canada",
               "value": "-10% +8% +19% +15% +14% --> +6%",
               "link": null
+            },
+            {
+              "country": "Nepal",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Singapore",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Thailand",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Philippines",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Japan",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Malaysia",
+              "value": "",
+              "link": null
             }
           ]
         },
@@ -654,6 +1001,36 @@
             },
             {
               "country": "Canada",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Nepal",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Singapore",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Thailand",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Philippines",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Japan",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Malaysia",
               "value": "",
               "link": null
             }
@@ -727,6 +1104,36 @@
               "country": "Canada",
               "value": "",
               "link": null
+            },
+            {
+              "country": "Nepal",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Singapore",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Thailand",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Philippines",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Japan",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Malaysia",
+              "value": "",
+              "link": null
             }
           ]
         },
@@ -797,6 +1204,36 @@
             {
               "country": "Canada",
               "value": "—",
+              "link": null
+            },
+            {
+              "country": "Nepal",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Singapore",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Thailand",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Philippines",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Japan",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Malaysia",
+              "value": "",
               "link": null
             }
           ]
@@ -874,6 +1311,36 @@
               "country": "Canada",
               "value": "Net oil exporter (Western Canada); BC/Atlantic provinces import refined",
               "link": null
+            },
+            {
+              "country": "Nepal",
+              "value": "~100% imported (all via India; IOC sole supplier)",
+              "link": null
+            },
+            {
+              "country": "Singapore",
+              "value": "100% imported; regional refining hub",
+              "link": null
+            },
+            {
+              "country": "Thailand",
+              "value": "~62% crude imported; ~57% of crude from Middle East via Hormuz",
+              "link": null
+            },
+            {
+              "country": "Philippines",
+              "value": "~100% refined/crude imported; significant Hormuz exposure",
+              "link": null
+            },
+            {
+              "country": "Japan",
+              "value": "~95% crude from Middle East (mostly Saudi/UAE via Hormuz)",
+              "link": null
+            },
+            {
+              "country": "Malaysia",
+              "value": "Net oil exporter (Petronas); subsidizes domestic retail",
+              "link": null
             }
           ]
         },
@@ -943,6 +1410,36 @@
             },
             {
               "country": "Canada",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Nepal",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Singapore",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Thailand",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Philippines",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Japan",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Malaysia",
               "value": "",
               "link": null
             }
@@ -1015,6 +1512,36 @@
             {
               "country": "Canada",
               "value": "—",
+              "link": null
+            },
+            {
+              "country": "Nepal",
+              "value": "EVs 73% of 4W imports (FY24/25); 7,434 EVs vs 3,251 ICE Jul 25-Mar 26",
+              "link": null
+            },
+            {
+              "country": "Singapore",
+              "value": ">50% EV share of new car regs (Oct 25: 53%); policy-driven",
+              "link": null
+            },
+            {
+              "country": "Thailand",
+              "value": "Data pending; pre-crisis EV ~25% share",
+              "link": null
+            },
+            {
+              "country": "Philippines",
+              "value": "Small (<2% share); DTI pivoting to EVIS",
+              "link": null
+            },
+            {
+              "country": "Japan",
+              "value": "Feb -45% YoY (pre-crisis weakness); interest uptick reported",
+              "link": null
+            },
+            {
+              "country": "Malaysia",
+              "value": "Data pending; EV ~20% share 2025",
               "link": null
             }
           ]

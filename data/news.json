@@ -2858,5 +2858,49 @@
     "source_name": "Bloomberg",
     "source_url": "https://www.bloomberg.com/news/articles/2026-03-31/largest-thai-oil-retailer-to-double-ev-chargers-as-fuel-crunch-bites",
     "key_country": false
+  },
+  {
+    "date": "2026-03-22",
+    "region": "Asia-Pacific",
+    "country": "Australia",
+    "category": "Showroom Demand",
+    "headline": "NRMA EV charger network utilization +19% WoW; Mondays +30%; Easter weekend +100% YoY energy delivered",
+    "data_point": "Network-wide +19% vs same Feb week; Mondays (historically slowest day) +30%; Adelaide RAA Charge session times doubled over Easter YoY. Ian Cosgrove (NRMA Head of Capital Works) cites 'clear uplift in utilisation' directly tied to fuel price surge.",
+    "source_name": "NRMA",
+    "source_url": "https://www.mynrma.com.au/open-road/news/2026/ev-charger-use-jumps",
+    "key_country": true
+  },
+  {
+    "date": "2026-04-01",
+    "region": "North America",
+    "country": "US",
+    "category": "Market Data",
+    "headline": "Tesla Q1 2026 Supercharger stats: 53M sessions (+26% YoY), 1.8 TWh delivered (+22% YoY)",
+    "data_point": "Q1 2026 matched record Q3 2025 despite Q1 being historically the quietest quarter. Session count 53M, energy 1.8 TWh, average session 34.0 kWh (up from 33.3). Iran shock Feb 28 coincides with Q1 inflection.",
+    "source_name": "Not A Tesla App",
+    "source_url": "https://www.notateslaapp.com/news/3902/tesla-q1-supercharger-stats-53m-sessions-2500-new-stalls-and-more",
+    "key_country": true
+  },
+  {
+    "date": "2026-03-27",
+    "region": "Europe",
+    "country": "UK",
+    "category": "Lending",
+    "headline": "Electrek: Iran war spikes UK energy prices; Octopus EV enquiries +36% since conflict, EV charger sales +20%",
+    "data_point": "Octopus EV reports enquiries +36% since Middle East conflict began; March EV charger sales +20%. Octopus cut Intelligent Go EV tariff from 7p→5.5p/kWh effective Apr 1 as deliberate counterweight. Petrol 152.83p/L, diesel 182.77p/L — largest monthly increase on record.",
+    "source_name": "Electrek",
+    "source_url": "https://electrek.co/2026/03/27/iran-war-spikes-energy-prices-uk-homes-ditch-fossil-fuels-fast/",
+    "key_country": true
+  },
+  {
+    "date": "2026-03-20",
+    "region": "Asia-Pacific",
+    "country": "Vietnam",
+    "category": "Showroom Demand",
+    "headline": "V-Green (VinFast CPO) VND10 trillion ($380M) for 99 fast-charging stations across 34 provinces",
+    "data_point": "V-Green announced 99 fast-charging sites nationwide, up to 100×150kW chargers per site. Context: VinFast processed 3,520 EV orders in a single day on Mar 28 (~2.4 vehicles/min). VinFast also launched 'Trade Gas for Electric' in VN, IN, ID, PH.",
+    "source_name": "Electrive.com",
+    "source_url": "https://www.electrive.com/2026/03/20/v-green-to-build-99-fast-charging-stations-in-vietnam/",
+    "key_country": true
   }
 ]

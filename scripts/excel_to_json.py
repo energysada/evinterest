@@ -19,7 +19,7 @@ def parse_draft_table(wb):
 
     # Find country headers (row 4, cols 3+)
     countries = []
-    for col in range(3, 20):
+    for col in range(3, 30):
         v = ws.cell(row=4, column=col).value
         if v:
             countries.append({"col": col, "name": v})
