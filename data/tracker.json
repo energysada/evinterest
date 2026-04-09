@@ -1,6 +1,6 @@
 {
-  "title": "Fuel Prices & EV Interest Tracker — Week of April 07, 2026",
-  "subtitle": "Brent: $106/bbl (+47% since Feb 28)  |  Edition #2",
+  "title": "Fuel Prices & EV Interest Tracker — Week of April 08, 2026",
+  "subtitle": "Brent: $97/bbl (+34% since Feb 28)  |  Edition #2",
   "countries": [
     "US",
     "Australia",
@@ -1138,27 +1138,27 @@
           ]
         },
         {
-          "label": "EV app rankings",
-          "source": "Sensor Tower, Google Play, Android only",
+          "label": "EV vehicle brand apps (top-25 entries / moves)",
+          "source": "Sensor Tower (Google Play, top-25 movers)",
           "values": [
             {
               "country": "US",
-              "value": "EV charging app EVgo: new entry at #21 (fallback — no vehicle-brand app moves)",
+              "value": "—",
               "link": null
             },
             {
               "country": "Australia",
-              "value": "Vehicle: NIU (Chinese e-scooter brand): #25 → #16 (+9 positions)",
+              "value": "NIU (Chinese e-scooter): #25 → #16 (+9)",
               "link": null
             },
             {
               "country": "UK",
-              "value": "— (no vehicle-brand or EV-charging app moves; only fuel-price apps Fuel Finder UK and Fuelio entered top 25)",
+              "value": "—",
               "link": null
             },
             {
               "country": "Germany",
-              "value": "EV charging app ladeapp: new entry at #20\n\nEV charging network app EWE Go: #8 → #7\n\n(both charging — fallback as no vehicle-brand app moves)",
+              "value": "—",
               "link": null
             },
             {
@@ -1168,12 +1168,12 @@
             },
             {
               "country": "South Korea",
-              "value": "EV charging network app SK Electlink: ↑2 positions (fallback — no vehicle-brand app moves)",
+              "value": "—",
               "link": null
             },
             {
               "country": "Vietnam",
-              "value": "Vehicle: VinFast (OEM companion app): #6 → #2 (+4 positions)\n\nVehicle: VinFast E-Scooter: #9 → #3 (+6 positions)\n\nVehicle: Dat Bike (electric motorbike OEM): new entry at #24",
+              "value": "VinFast (OEM): #6 → #2 (+4); VinFast E-Scooter: #9 → #3 (+6); Dat Bike: new #24",
               "link": null
             },
             {
@@ -1188,7 +1188,7 @@
             },
             {
               "country": "India",
-              "value": "No EV apps in top 25",
+              "value": "—",
               "link": null
             },
             {
@@ -1208,32 +1208,32 @@
             },
             {
               "country": "Nepal",
-              "value": "",
+              "value": "—",
               "link": null
             },
             {
               "country": "Singapore",
-              "value": "",
+              "value": "—",
               "link": null
             },
             {
               "country": "Thailand",
-              "value": "",
+              "value": "—",
               "link": null
             },
             {
               "country": "Philippines",
-              "value": "",
+              "value": "—",
               "link": null
             },
             {
               "country": "Japan",
-              "value": "",
+              "value": "—",
               "link": null
             },
             {
               "country": "Malaysia",
-              "value": "",
+              "value": "—",
               "link": null
             }
           ]
