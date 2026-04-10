@@ -3507,5 +3507,137 @@
     "source_name": "Kathmandu Post",
     "source_url": "https://kathmandupost.com/money/2026/04/06/ev-demand-in-nepal-is-growing-but-so-is-cost",
     "key_country": false
+  },
+  {
+    "date": "2026-04-08",
+    "region": "North America",
+    "country": "US",
+    "category": "Fuel Price",
+    "headline": "AAA: US national average gasoline hits $4.16/gal on Apr 8, up $1.08 from one month ago",
+    "data_point": "$4.164/gal national average regular gasoline Apr 8; West Coast at $5.40/gal",
+    "source_name": "AAA / Rigzone",
+    "source_url": "https://www.rigzone.com/news/eia_fuel_update_shows_rising_price_trend-08-apr-2026-183407-article/",
+    "key_country": true
+  },
+  {
+    "date": "2026-04-08",
+    "region": "Global",
+    "country": "Global",
+    "category": "Macro",
+    "headline": "Fortune: Brent crude crashes 17% to $93.76/bbl on Apr 8 after US-Iran ceasefire — rebounds to $100.99 on Apr 9",
+    "data_point": "Brent $93.76 Apr 8 (−$19.64 intraday); bounces $100.99 Apr 9; US-Iran ceasefire announced Apr 8",
+    "source_name": "Fortune",
+    "source_url": "https://fortune.com/article/price-of-oil-04-08-2026/",
+    "key_country": false
+  },
+  {
+    "date": "2026-04-07",
+    "region": "North America",
+    "country": "US",
+    "category": "Platform Signal",
+    "headline": "CarGurus Q1 2026: new EV listing views +31% MoM; used EV views +40% MoM on platform",
+    "data_point": "New EV listing views +31% vs Q4 2025; used EV views +40% vs Q4 2025; from CarGurus Q1 report",
+    "source_name": "CarGurus / GlobeNewswire",
+    "source_url": "https://www.globenewswire.com/news-release/2026/04/07/3269242/0/en/Car-Buyers-are-Changing-Lanes-CarGurus-Reveals-Where-Consumers-are-Finding-Value.html",
+    "key_country": true
+  },
+  {
+    "date": "2026-04-08",
+    "region": "North America",
+    "country": "US",
+    "category": "Consumer Sentiment",
+    "headline": "CDK Global: Only 11% of ICE vehicle drivers plan to buy an EV — down 20pp from 31% in 2024",
+    "data_point": "CDK Global survey: 11% of gas vehicle drivers intend to buy EV (vs 31% in 2024, −20pp); 10% more say EVs 'don't suit my lifestyle'",
+    "source_name": "CDK Global / Autoblog",
+    "source_url": "https://www.autoblog.com/news/study-shows-massive-shift-in-ev-sentiment-may-affect-2026-sales-in-a-big-way",
+    "key_country": true
+  },
+  {
+    "date": "2026-04-08",
+    "region": "Global",
+    "country": "Global",
+    "category": "Narrative",
+    "headline": "Time: 'The Iran War Is Driving a Global Surge of Interest in Electric Vehicles' — aggregates mobile.de, Octopus EV, CommBank AU, Westpac NZ data",
+    "data_point": "mobile.de EV search share 3x (12%→36%); Octopus EV UK +36%; CommBank AU +161%; Westpac NZ doubled",
+    "source_name": "Time",
+    "source_url": "https://time.com/article/2026/04/08/how-the-iran-war-is-pushing-more-people-to-buy-evs/",
+    "key_country": false
+  },
+  {
+    "date": "2026-04-09",
+    "region": "Asia-Pacific",
+    "country": "India",
+    "category": "Narrative",
+    "headline": "BusinessToday: Reliance/Jio-BP caps individual fuel purchases at ₹1,000 at 2,000+ pumps — first Indian fuel rationing",
+    "data_point": "Reliance caps per-visit fuel purchase at ₹1,000 (~$11) at 2,000+ Jio-BP pumps; first major Indian operator to ration supply",
+    "source_name": "BusinessToday / Bloomberg",
+    "source_url": "https://www.businesstoday.in/india/story/reliance-caps-fuel-purchases-at-rs1000-in-some-pumps-amid-supply-disruptions-report-524964-2026-04-09",
+    "key_country": true
+  },
+  {
+    "date": "2026-04-09",
+    "region": "Asia",
+    "country": "China",
+    "category": "Narrative",
+    "headline": "Bloomberg: China EV and hybrid exports hit record 349,000 in March, +140% YoY — attributed to Iran oil shock driving global buyer interest",
+    "data_point": "China EV+hybrid exports 349,000 units March 2026 (+140% YoY, record); BYD ~1/3 of total; driven by global fuel-crisis demand pull",
+    "source_name": "Bloomberg",
+    "source_url": "https://www.bloomberg.com/news/articles/2026-04-09/china-ev-exports-jump-to-record-as-iran-oil-shock-entices-buyers",
+    "key_country": true
+  },
+  {
+    "date": "2026-04-08",
+    "region": "Asia-Pacific",
+    "country": "New Zealand",
+    "category": "Macro",
+    "headline": "Bloomberg: RBNZ holds rate at 2.25% — fuel-price surge fanning inflation toward 4.2% in Q2 2026",
+    "data_point": "RBNZ holds OCR at 2.25%; inflation forecast 4.2% in Q2 driven by fuel shock; NZ petrol up ~35%, diesel up ~87%",
+    "source_name": "Bloomberg",
+    "source_url": "https://www.bloomberg.com/news/articles/2026-04-08/new-zealand-holds-key-rate-as-fuel-price-surge-fans-inflation",
+    "key_country": true
+  },
+  {
+    "date": "2026-04-08",
+    "region": "Central Asia",
+    "country": "Pakistan",
+    "category": "Consumer Sentiment",
+    "headline": "Inside Retail Asia: Pakistan PAVE e-bike program gets 270,000 applications — 7x oversubscribed; EVs cross 10% of monthly 2W sales",
+    "data_point": "PAVE subsidy program: 270,000 applications vs ~40,000 target (7x oversubscribed); EVs >10% of monthly 2-wheeler sales first time; March 2W EV sales +70% at Rawalpindi dealer",
+    "source_name": "Inside Retail Asia",
+    "source_url": "https://insideretail.asia/2026/04/08/pakistan-embraces-e-bikes-as-fuel-prices-continue-to-climb/",
+    "key_country": false
+  },
+  {
+    "date": "2026-04-08",
+    "region": "Asia-Pacific",
+    "country": "Nepal",
+    "category": "Policy",
+    "headline": "Spotlight Nepal: Nepal government announces subsidy for petrol-to-EV vehicle conversions; EV dealer bookings up 50-60% in March",
+    "data_point": "Nepal gov announces retrofit/conversion subsidy for petrol vehicles to EV; dealer bookings +50-60% in March; ~75% of new 4W sold are electric",
+    "source_name": "New Spotlight Magazine",
+    "source_url": "https://www.spotlightnepal.com/2026/04/08/nepal-government-will-provide-subsidy-convert-petrol-vehicles-electric/",
+    "key_country": false
+  },
+  {
+    "date": "2026-04-07",
+    "region": "Southeast Asia",
+    "country": "Philippines",
+    "category": "Fuel Price",
+    "headline": "Rappler: Philippine pump prices surge for 13th consecutive week — diesel up ₱18.80-19.80/L, gasoline up ₱4.90-5.90/L (week of Apr 7)",
+    "data_point": "13th consecutive week of gasoline hikes; 15th consecutive week for diesel/kerosene; diesel up to ₱170/L cumulative",
+    "source_name": "Rappler",
+    "source_url": "https://www.rappler.com/business/pump-prices-surge-april-7-2026/",
+    "key_country": false
+  },
+  {
+    "date": "2026-04-09",
+    "region": "Asia-Pacific",
+    "country": "Australia",
+    "category": "EV Lending",
+    "headline": "CommBank: EV business loans +268% YoY in March; page visits for EV loans +75% vs Feb — fuel crisis driving record EV sales",
+    "data_point": "CommBank business loan applications for EVs (Tesla et al.) +268% YoY in March; EV loan page visits +75% vs Feb; Tesla Model Y now AU's 3rd best-selling vehicle",
+    "source_name": "Commonwealth Bank of Australia",
+    "source_url": "https://www.commbank.com.au/articles/newsroom/2026/04/fuel-crisis-drives-record-aussie-electric-car-sales.html",
+    "key_country": true
   }
 ]
