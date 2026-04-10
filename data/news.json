@@ -3371,9 +3371,141 @@
     "country": "US",
     "category": "Consumer Sentiment",
     "headline": "Pew Research (Mar 16-22, n=3,524): 32% of Americans would seriously consider EV — flat YoY despite gas crisis; hybrids 44%",
-    "data_point": "32% would seriously consider an EV as next vehicle (vs 33% March 2025 = -1pp); 44% would consider a hybrid. Partisan: Democrats 47% (down from 58% in 2022, -11pp over 3 years), Republicans 17%. 60% of Democrats vs 21% of Republicans say govt should encourage EV use. Survey conducted Mar 16-22, 2026 — fully overlapping the post-war fuel price spike. STRONG counter-narrative: US showed zero crisis lift in stated EV consideration despite gasoline +27-39% in March.",
+    "data_point": "32% would seriously consider an EV as next vehicle (vs 33% March 2025 = -1pp); 44% would consider a hybrid (also flat YoY, about the same as 2024). Partisan: Democrats 47% (down from 58% in 2022, -11pp over 3 years), Republicans 17%. 60% of Democrats vs 21% of Republicans say govt should encourage EV use. Survey conducted Mar 16-22, 2026 — fully overlapping the post-war fuel price spike. STRONG counter-narrative: US showed zero crisis lift in stated consideration for EITHER EVs or hybrids despite gasoline +27-39% in March.",
     "source_name": "Pew Research Center",
     "source_url": "https://www.reuters.com/business/autos-transportation/gasoline-price-hike-iran-war-could-push-consumers-toward-evs-hybrids-2026-03-18/",
     "key_country": true
+  },
+  {
+    "date": "2026-03-15",
+    "region": "North America",
+    "country": "US",
+    "category": "Platform Signal",
+    "headline": "Edmunds: EV consideration hits 23.8% week of Mar 9-15 — highest in 2026; BEV seeing largest gain as gas tops $3.63/gal",
+    "data_point": "Electrified vehicle consideration 23.8% (wk Mar 9-15) vs 22.4% prior wk vs 20.7% wk before; BEV largest gainer; national avg gas $3.63/gal Mar 13 (+31c from prior wk); affordability/infrastructure cited as top barriers",
+    "source_name": "Edmunds",
+    "source_url": "https://www.edmunds.com/car-news/electrified-vehicle-research-gas-prices-data.html",
+    "key_country": true
+  },
+  {
+    "date": "2026-03-27",
+    "region": "Europe",
+    "country": "UK",
+    "category": "Platform Signal",
+    "headline": "AutoTrader Insight: EV leads +28% new cars, +15% used (0-5yr) since Feb 28; used EVs 19.5% of all enquiries — record high",
+    "data_point": "New EV leads +28%, used EV leads +15% since Feb 28 war start; used EVs 19.5% of all enquiries (record, new daily records being set); Browns of Richmond enquiries doubled, sales +60%; home charger enquiries +59%",
+    "source_name": "AutoTrader Insight",
+    "source_url": "https://www.autotraderinsight-blog.co.uk/auto-trader-insight-blog/are-fuel-fears-driving-ev-adoption-in-the-uk",
+    "key_country": true
+  },
+  {
+    "date": "2026-04-08",
+    "region": "Europe",
+    "country": "Germany",
+    "category": "Platform Signal",
+    "headline": "Reuters via Time: mobile.de EV search share tripled from 12% to 36% since start of March; dealers receive 66% more used EV enquiries",
+    "data_point": "mobile.de EV share of all car searches: 12% (start of March) → 36% (early April); car dealers receiving 66% more used EV enquiries since war began; fuel at record €2.33/L diesel",
+    "source_name": "Time / Reuters",
+    "source_url": "https://time.com/article/2026/04/08/how-the-iran-war-is-pushing-more-people-to-buy-evs/",
+    "key_country": true
+  },
+  {
+    "date": "2026-04-07",
+    "region": "Asia-Pacific",
+    "country": "Australia",
+    "category": "Platform Signal",
+    "headline": "carsales: Australians searching for EVs at nearly triple the rate of February; EV consideration rises 19pp to 55% of non-EV owners",
+    "data_point": "EV searches on carsales ~3x February rate; EV consideration by non-EV owners: 55% (up 19pp from Nov 2025 survey); top brands searched: BYD, Tesla, Polestar, Zeekr, Geely; purchase price now #1 barrier (overtook resale value)",
+    "source_name": "carsales",
+    "source_url": "https://www.carsales.com.au/editorial/details/ev-consideration-skyrockets-in-australia-151687/",
+    "key_country": true
+  },
+  {
+    "date": "2026-04-07",
+    "region": "Asia-Pacific",
+    "country": "Australia",
+    "category": "Platform Signal",
+    "headline": "Pickles auction: used EV searches +163% Feb→Mar; 100% clearance rate; time to sell halved to under 10 days; sales +60% MoM",
+    "data_point": "EV searches on Pickles: +163% Feb→Mar (updated from earlier +111% in 3wks); clearance rate 100%; avg time to sell: <10 days (halved); MoM sales +60%; $4+ fuel driving pre-owned EV demand surge",
+    "source_name": "Zecar / Pickles",
+    "source_url": "https://zecar.com/reviews/ev-interest-surges-australia-fuel-crisis",
+    "key_country": true
+  },
+  {
+    "date": "2026-03-11",
+    "region": "Asia",
+    "country": "South Korea",
+    "category": "Platform Signal",
+    "headline": "Seoul Economic Daily/CarLab: eco-vehicle quote requests surge 85% as Seoul gas tops ₩1,450/L; eco quotes surpass ICE for first time",
+    "data_point": "6,470 eco-vehicle (EV/hybrid/hydrogen) quote requests vs 3,504 YoY (+85%); eco quotes (56.2%) first time exceeding ICE quotes in observed period; gas ₩1,450+/L; CarLab + Dongseunambuk 'Trend Compass' report",
+    "source_name": "Seoul Economic Daily",
+    "source_url": "https://en.sedaily.com/society/2026/03/11/gas-prices-top-145-eco-friendly-vehicle-quotes-surge-85",
+    "key_country": true
+  },
+  {
+    "date": "2026-03-29",
+    "region": "Asia",
+    "country": "Vietnam",
+    "category": "Platform Signal",
+    "headline": "The Investor: VinFast processes 3,520 EV orders in one day (Mar 28) — no campaign; avg 146 vehicles/hr; 'Trade Gas for Electric' 3% discount launched",
+    "data_point": "3,520 orders processed on single Saturday Mar 28 without dedicated promotional campaign; ~146 vehicles/hr / 2.4/min; Vingroup 'Trade Gas for Electric' program: 3% discount for ICE trade-in; VinFast ramping charging network amid fuel price volatility",
+    "source_name": "The Investor (theinvestor.vn)",
+    "source_url": "https://theinvestor.vn/vinfast-sees-ev-demand-tailwinds-from-fuel-prices-ramps-up-charging-network-d18634.html",
+    "key_country": true
+  },
+  {
+    "date": "2026-04-07",
+    "region": "North America",
+    "country": "US",
+    "category": "Used EVs",
+    "headline": "Electrek: Used EVs hit sales record in Q1 2026; 100K+ retail; 42-day supply (near parity with ICE at 38 days); bigger IRA lease-return wave incoming",
+    "data_point": "100K+ used EVs sold at retail in Q1 (2nd-strongest quarter on record); 37K through Manheim auction lanes (record); avg price $34,821 (within $1,300 of avg ICE used car); 42-day supply vs 38 days ICE; Experian: EVs 15% of off-lease by end-2026 (from 7.7% in Q1)",
+    "source_name": "Electrek",
+    "source_url": "https://electrek.co/2026/04/07/used-evs-just-hit-a-sales-record-a-much-bigger-wave-is-coming/",
+    "key_country": true
+  },
+  {
+    "date": "2026-04-08",
+    "region": "Global",
+    "country": "Global",
+    "category": "Narrative",
+    "headline": "Time: Iran War driving global surge in EV interest — UK, NZ, Germany, US, Australia all show platform and dealer signals",
+    "data_point": "Roundup: UK Octopus leasing +36%, NZ 1K+ weekly registrations (near-double prev wk), Germany mobile.de share 12%→36%, US used EV demand +35% YoY, Australia 'triple rate' searches; common thread: fuel price shock → pre-emptive EV switching",
+    "source_name": "Time",
+    "source_url": "https://time.com/article/2026/04/08/how-the-iran-war-is-pushing-more-people-to-buy-evs/",
+    "key_country": false
+  },
+  {
+    "date": "2026-04-02",
+    "region": "Asia-Pacific",
+    "country": "New Zealand",
+    "category": "Showroom Demand",
+    "headline": "NZ Herald: fuel price spike sees EV sales jump up to 50% in Auckland and Christchurch; supply constraints emerging",
+    "data_point": "March EV registrations 2,370 (from 642 in Feb); +50% in Auckland/Christchurch; 91 octane near $4.00/L in main centers; demand outpacing supply pipeline (long lead-time market); combined BEV+PHEV+hybrid ~1-in-10 NZ roads",
+    "source_name": "NZ Herald",
+    "source_url": "https://www.nzherald.co.nz/nz/fuel-price-spike-sees-ev-sales-jump-up-to-50-in-auckland-christchurch/Y2HR5STM6NHQZEMBUS7HIRVLSY/",
+    "key_country": true
+  },
+  {
+    "date": "2026-04-03",
+    "region": "Asia-Pacific",
+    "country": "New Zealand",
+    "category": "Consumer Sentiment",
+    "headline": "MotorIngNZ: EV demand will outpace supply — pipeline set against suppressed demand; available stock drawn down quickly",
+    "data_point": "NZ is a long lead-time import market; supply pipelines were calibrated for subdued pre-crisis demand; available EV stock depleted rapidly as demand accelerated; dealers expect multi-month wait times for new orders",
+    "source_name": "motoringnz.com",
+    "source_url": "https://www.motoringnz.com/news/2026/4/3/ev-demand-will-outpace-supply",
+    "key_country": true
+  },
+  {
+    "date": "2026-04-06",
+    "region": "Asia-Pacific",
+    "country": "Nepal",
+    "category": "Market Data",
+    "headline": "Kathmandu Post: Nepal EV imports surge on Middle East fuel crisis — 16,701 EVs vs 22,907 ICE vehicles Jul 2025–Mar 2026; Nepal #2 globally in EV sales share",
+    "data_point": "Jul 2025–Mar 2026 vehicle imports: 16,701 EVs (Rs 41.23B) vs 22,907 ICE (Rs 50.88B); Nepal claimed #2 globally in new EV car sales share; only 14,534 total EVs pre-2025 in 8.3M fleet; Middle East crisis cited as reshaping the market",
+    "source_name": "Kathmandu Post",
+    "source_url": "https://kathmandupost.com/money/2026/04/06/ev-demand-in-nepal-is-growing-but-so-is-cost",
+    "key_country": false
   }
 ]

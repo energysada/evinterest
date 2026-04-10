@@ -204,8 +204,102 @@ function renderTracker(tracker, indicatorLinks) {
                     const td = document.createElement('td');
                     if (isExtra(countryName)) td.classList.add('extra-country-col');
 
-                    if ((isGasRow || isGoogleRow) && partText && /[+-]?\d+%/.test(partText)) {
-                        // Structured rendering for gas / GT rows: history → current → (price) [Peak]
+                    if (isGasRow && partText) {
+                        // Gas rows: 3-line format
+                        // Line 1 (bold): price + current % colored
+                        // Line 2 (bold): Peak % colored, Avg % colored
+                        // Line 3 (grey): weekly % history
+                        const gasColorCls = (pStr) => {
+                            if (!pStr) return '';
+                            const n = parseInt(pStr, 10);
+                            if (n >= 40) return 'heat-red-3';
+                            if (n >= 25) return 'heat-red-2';
+                            if (n >= 10) return 'heat-red-1';
+                            return 'heat-neutral';
+                        };
+                        let weeklyPcts = [];
+                        let currentPct = '';
+                        let priceStr = '';
+                        let peakPct = '';
+                        const peakMatchG = partText.match(/\|\s*Peak\s*([+-]?\d+%)/i);
+                        if (peakMatchG) peakPct = peakMatchG[1];
+                        let mainText = partText.replace(/\s*\|\s*Peak\s*[+-]?\d+%\s*$/i, '');
+                        if (mainText.includes('-->')) {
+                            const [histPart, curPart] = mainText.split('-->');
+                            weeklyPcts = histPart.trim().split(/\s+/).filter(s => /[+-]?\d+%/.test(s));
+                            const curMatch = curPart.trim().match(/^([+-]?\d+%)\s*(.*)$/);
+                            if (curMatch) { currentPct = curMatch[1]; priceStr = curMatch[2].replace(/[()]/g, '').trim(); }
+                        } else {
+                            const curMatch = mainText.trim().match(/^([+-]?\d+%)\s*(.*)$/);
+                            if (curMatch) { currentPct = curMatch[1]; priceStr = curMatch[2].replace(/[()]/g, '').trim(); }
+                        }
+                        // Avg from weekly pcts
+                        let avgPct = '';
+                        const weekNums = weeklyPcts.map(p => parseInt(p, 10)).filter(n => !isNaN(n));
+                        if (weekNums.length > 0) {
+                            const avg = Math.round(weekNums.reduce((a, b) => a + b, 0) / weekNums.length);
+                            avgPct = (avg >= 0 ? '+' : '') + avg + '%';
+                        }
+                        // Line 1: price + current %
+                        const line1 = document.createElement('div');
+                        line1.className = 'gas-line-current';
+                        if (priceStr) {
+                            const ps = document.createElement('strong');
+                            ps.textContent = priceStr + ' ';
+                            line1.appendChild(ps);
+                        }
+                        if (currentPct) {
+                            const cs = document.createElement('strong');
+                            cs.className = gasColorCls(currentPct);
+                            cs.textContent = currentPct;
+                            line1.appendChild(cs);
+                        }
+                        if (!priceStr && !currentPct) line1.textContent = partText;
+                        td.appendChild(line1);
+                        // Line 2: Peak, Avg
+                        if (peakPct || avgPct) {
+                            const line2 = document.createElement('div');
+                            line2.className = 'gas-line-summary';
+                            if (peakPct) {
+                                const pl = document.createElement('strong');
+                                pl.textContent = 'Peak ';
+                                line2.appendChild(pl);
+                                const ps2 = document.createElement('strong');
+                                ps2.className = gasColorCls(peakPct);
+                                ps2.textContent = peakPct;
+                                line2.appendChild(ps2);
+                            }
+                            if (peakPct && avgPct) line2.appendChild(document.createTextNode(', '));
+                            if (avgPct) {
+                                const al = document.createElement('strong');
+                                al.textContent = 'Avg ';
+                                line2.appendChild(al);
+                                const as2 = document.createElement('strong');
+                                as2.className = gasColorCls(avgPct);
+                                as2.textContent = avgPct;
+                                line2.appendChild(as2);
+                            }
+                            td.appendChild(line2);
+                        }
+                        // Line 3: weekly history (grey)
+                        if (weeklyPcts.length > 0) {
+                            const line3 = document.createElement('div');
+                            line3.className = 'gas-line-history';
+                            line3.textContent = weeklyPcts.join(' ');
+                            td.appendChild(line3);
+                        }
+                        if (partLink) {
+                            const wrap = document.createElement('a');
+                            wrap.href = partLink;
+                            wrap.target = '_blank';
+                            wrap.rel = 'noopener';
+                            wrap.style.textDecoration = 'none';
+                            wrap.style.color = 'inherit';
+                            while (td.firstChild) wrap.appendChild(td.firstChild);
+                            td.appendChild(wrap);
+                        }
+                    } else if (isGoogleRow && partText && /[+-]?\d+%/.test(partText)) {
+                        // Google Trends rows: existing progression rendering
                         let beforeText = '';
                         let afterText = partText.trim();
                         let peakText = null;
@@ -225,18 +319,11 @@ function renderTracker(tracker, indicatorLinks) {
                         const pctNum = pctMatch ? parseInt(pctMatch[1], 10) : null;
                         let cls = '';
                         if (pctNum !== null) {
-                            if (isGasRow) {
-                                if (pctNum >= 40) cls = 'heat-red-3';
-                                else if (pctNum >= 25) cls = 'heat-red-2';
-                                else if (pctNum >= 10) cls = 'heat-red-1';
-                                else cls = 'heat-neutral';
-                            } else {
-                                if (pctNum >= 100) cls = 'heat-green-3';
-                                else if (pctNum >= 50) cls = 'heat-green-2';
-                                else if (pctNum >= 15) cls = 'heat-green-1';
-                                else if (pctNum < 0) cls = 'heat-red-2';
-                                else cls = 'heat-neutral';
-                            }
+                            if (pctNum >= 100) cls = 'heat-green-3';
+                            else if (pctNum >= 50) cls = 'heat-green-2';
+                            else if (pctNum >= 15) cls = 'heat-green-1';
+                            else if (pctNum < 0) cls = 'heat-red-2';
+                            else cls = 'heat-neutral';
                         }
                         const beforeSpan = document.createElement('span');
                         beforeSpan.className = 'progression-history';
@@ -264,15 +351,9 @@ function renderTracker(tracker, indicatorLinks) {
                         }
                         if (peakText && peakNum !== null) {
                             let peakCls = 'heat-neutral';
-                            if (isGasRow) {
-                                if (peakNum >= 40) peakCls = 'heat-red-3';
-                                else if (peakNum >= 25) peakCls = 'heat-red-2';
-                                else if (peakNum >= 10) peakCls = 'heat-red-1';
-                            } else {
-                                if (peakNum >= 100) peakCls = 'heat-green-3';
-                                else if (peakNum >= 50) peakCls = 'heat-green-2';
-                                else if (peakNum >= 15) peakCls = 'heat-green-1';
-                            }
+                            if (peakNum >= 100) peakCls = 'heat-green-3';
+                            else if (peakNum >= 50) peakCls = 'heat-green-2';
+                            else if (peakNum >= 15) peakCls = 'heat-green-1';
                             const peakLabel = document.createElement('span');
                             peakLabel.className = 'peak-label';
                             peakLabel.textContent = ' Peak ';
@@ -282,7 +363,6 @@ function renderTracker(tracker, indicatorLinks) {
                             peakSpan.textContent = peakText;
                             td.appendChild(peakSpan);
                         }
-                        // If gas/google cell also has a link, wrap the whole cell content in a link
                         if (partLink) {
                             const wrap = document.createElement('a');
                             wrap.href = partLink;
@@ -512,18 +592,23 @@ function renderSummary(summary) {
 
 function renderSales(sales) {
     const table = document.getElementById('sales-table');
-    var h = '<thead><tr><th>Market</th><th>March BEV</th><th>Share</th><th>YoY</th><th>Crisis Flag</th><th>Note</th></tr></thead><tbody>';
+    const swingMeta = {
+        'up':    { label: 'Crisis-confirmed',   cls: 'flag-up',    rowCls: 'sales-up' },
+        'up2':   { label: 'Likely crisis-driven', cls: 'flag-up2', rowCls: 'sales-up2' },
+        'watch': { label: 'Watch',               cls: 'flag-watch', rowCls: 'sales-watch' },
+        'decel': { label: 'Decelerating',        cls: 'flag-decel', rowCls: 'sales-decel' },
+        'down':  { label: 'Declining',           cls: 'flag-down',  rowCls: 'sales-down' },
+    };
+    var h = '<thead><tr><th>Market</th><th>March BEV</th><th>Share</th><th>YoY</th><th>Swing Signal</th><th>Note</th></tr></thead><tbody>';
     sales.forEach(function(row) {
-        var rowClass = row.flag === 'crisis' ? 'sales-crisis' : row.flag === 'watch' ? 'sales-watch' : '';
+        var sm = swingMeta[row.swing] || { label: '\u2014', cls: '', rowCls: '' };
         var yoyClass = row.yoyDir === 'pos' ? 'yoy-pos' : row.yoyDir === 'neg' ? 'yoy-neg' : '';
-        var flagText = row.flag === 'crisis' ? 'Likely crisis-driven' : row.flag === 'watch' ? 'Watch' : '\u2014';
-        var flagClass = row.flag === 'crisis' ? 'flag-crisis' : row.flag === 'watch' ? 'flag-watch' : '';
-        h += '<tr class="' + rowClass + '">';
+        h += '<tr class="' + sm.rowCls + '">';
         h += '<td style="font-weight:500">' + row.market + '</td>';
         h += '<td style="text-align:center">' + row.bev + '</td>';
         h += '<td style="text-align:center">' + row.share + '</td>';
         h += '<td style="text-align:center" class="' + yoyClass + '">' + row.yoy + '</td>';
-        h += '<td><span class="flag-badge ' + flagClass + '">' + flagText + '</span></td>';
+        h += '<td><span class="flag-badge ' + sm.cls + '">' + sm.label + '</span></td>';
         h += '<td style="color:#666;font-size:11.5px">' + row.note + '</td>';
         h += '</tr>';
     });

@@ -242,6 +242,20 @@ h2 {
     font-size: 11px;
 }
 
+/* Gas price 3-line format */
+.gas-line-current {
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+.gas-line-summary {
+    font-size: 11.5px;
+    margin-bottom: 2px;
+}
+.gas-line-history {
+    color: #999;
+    font-size: 10.5px;
+}
+
 .progression-current {
     font-weight: 700;
     padding: 1px 6px;
@@ -443,10 +457,16 @@ body.show-extra-countries .extra-country-col {
 
 #sales-table tr:hover { background: #fafafa; }
 
-tr.sales-crisis { background: #f0faf0; }
-tr.sales-crisis:hover { background: #e5f5e5; }
+tr.sales-up    { background: #e8f5e9; }
+tr.sales-up:hover  { background: #d7eed8; }
+tr.sales-up2   { background: #f1f8e9; }
+tr.sales-up2:hover { background: #e6f4d7; }
 tr.sales-watch { background: #fffde7; }
 tr.sales-watch:hover { background: #fff9c4; }
+tr.sales-decel { background: #fff3e0; }
+tr.sales-decel:hover { background: #ffe5b4; }
+tr.sales-down  { background: #ffeae8; }
+tr.sales-down:hover  { background: #ffd6d2; }
 
 .yoy-pos { color: #2e7d32; font-weight: 600; }
 .yoy-neg { color: #c00; font-weight: 600; }
@@ -460,8 +480,11 @@ tr.sales-watch:hover { background: #fff9c4; }
     white-space: nowrap;
 }
 
-.flag-crisis { background: #e8f5e9; color: #2e7d32; }
-.flag-watch { background: #fff3e0; color: #e65100; }
+.flag-up    { background: #1b5e20; color: #fff; }
+.flag-up2   { background: #4caf50; color: #fff; }
+.flag-watch { background: #f9a825; color: #333; }
+.flag-decel { background: #e65100; color: #fff; }
+.flag-down  { background: #b71c1c; color: #fff; }
 
 /* ============ POLICY TABLE ============ */
 #policy-table {

@@ -1,13 +1,15 @@
 [
-  {"market": "France", "bev": "49,406", "share": "28.0%", "yoy": "+69%", "yoyDir": "pos", "flag": "crisis", "note": "Jan-Feb trend was +20-28% YoY; March acceleration coincides with fuel >€2/L"},
-  {"market": "Sweden", "bev": "~10,897", "share": "41%", "yoy": "+30%", "yoyDir": "pos", "flag": "crisis", "note": "2025 was flat to slightly negative; March reversal"},
-  {"market": "Australia", "bev": "15,839", "share": "14.6%", "yoy": "+94.7%", "yoyDir": "pos", "flag": "crisis", "note": "Record share; dealer premiums AU$8-10K above MSRP"},
-  {"market": "New Zealand", "bev": "~2,422", "share": "~10.6%", "yoy": "+278%", "yoyDir": "pos", "flag": "crisis", "note": "Fleet crossed 100K cumulative milestone"},
-  {"market": "Germany", "bev": "70,663", "share": "24.0%", "yoy": "+66.2%", "yoyDir": "pos", "flag": "watch", "note": "Mar 2025 depressed (post-Umweltbonus expiry); new subsidy Jan 2026"},
-  {"market": "Denmark", "bev": "14,616", "share": "77%", "yoy": "+42.6%", "yoyDir": "pos", "flag": "watch", "note": "Registration tax restructuring in late 2025"},
-  {"market": "UK", "bev": "86,120", "share": "22.4%", "yoy": "+24.2%", "yoyDir": "pos", "flag": "", "note": "Best month ever; consistent with ZEV mandate trajectory"},
-  {"market": "Norway", "bev": "~17,400", "share": "98.4%", "yoy": "—", "yoyDir": "na", "flag": "", "note": "Already ~100% BEV; 22 petrol cars sold"},
-  {"market": "China", "bev": "784K NEV", "share": "47.3%", "yoy": "-21%", "yoyDir": "neg", "flag": "", "note": "Fewer working days vs Mar 2025; pre-NEV tax pull-forward"},
-  {"market": "India (FY26)", "bev": "2.45M total", "share": "9%", "yoy": "+25%", "yoyDir": "pos", "flag": "", "note": "Record fiscal year; E2W +59% in March"},
-  {"market": "US (Q1)", "bev": "~212,600", "share": "5.8%", "yoy": "-28%", "yoyDir": "neg", "flag": "", "note": "$7,500 tax credit expired Sep 2025; used EVs +12% YoY"}
+  {"market": "Australia", "bev": "15,839", "share": "15.1%", "yoy": "+115.4%", "yoyDir": "pos", "swing": "up", "note": "Record share; dealer premiums AU$8-10K above MSRP; FCAI VFACTS"},
+  {"market": "New Zealand", "bev": "3,410 (BEV+PHEV)", "share": "33.9%", "yoy": "+281%", "yoyDir": "pos", "swing": "up", "note": "Fleet crossed 100K cumulative; MIA"},
+  {"market": "Sweden", "bev": "~10,897", "share": "41%", "yoy": "+26.7%", "yoyDir": "pos", "swing": "up2", "note": "2025 was flat-to-negative; March reversal aligns with fuel shock; Mobility Sweden"},
+  {"market": "Germany", "bev": "70,663", "share": "24.0%", "yoy": "+63.2%", "yoyDir": "pos", "swing": "watch", "note": "Above trailing trend but CO2 fleet targets confound fuel-shock attribution; KBA"},
+  {"market": "UK", "bev": "86,120", "share": "22.6%", "yoy": "+23.2%", "yoyDir": "pos", "swing": "watch", "note": "All-time monthly record; Mar 26-plate seasonal spike amplifies; SMMT"},
+  {"market": "France", "bev": "49,406", "share": "28.5%", "yoy": "+65.4%", "yoyDir": "pos", "swing": "watch", "note": "Fleet leasing reform + company car tax driving much of surge; AVEM / Min. Écologie"},
+  {"market": "Norway", "bev": "~17,400", "share": "98.4%", "yoy": "+55.7%", "yoyDir": "pos", "swing": "watch", "note": "Tesla recovery driving most of growth; already ~100% BEV; OFV"},
+  {"market": "Denmark", "bev": "14,616", "share": "77%", "yoy": "+57.3%", "yoyDir": "pos", "swing": "watch", "note": "Registration tax restructuring + fuel crisis; Mobility Denmark"},
+  {"market": "Italy", "bev": "16,137", "share": "8.7%", "yoy": "+68.4%", "yoyDir": "pos", "swing": "watch", "note": "Compact affordable model availability; UNRAE"},
+  {"market": "China", "bev": "784K NEV", "share": "47.3%", "yoy": "-21%*", "yoyDir": "neg", "swing": "decel", "note": "Calendar artifact (fewer working days vs Mar 2025) + sustained slowdown; CPCA prelim."},
+  {"market": "India (FY26)", "bev": "22,315 (e4W)", "share": "5.1%", "yoy": "+43.6%", "yoyDir": "pos", "swing": "decel", "note": "Decelerating from 2025's +84% pace; excise cuts absorbing fuel price impact; Vahan/FADA"},
+  {"market": "Malaysia", "bev": "4,717", "share": "6.95%", "yoy": "+58.5%", "yoyDir": "pos", "swing": "decel", "note": "Q1 2026 total +113% YoY but deceleration in Q1 pace; JPJ / MAA"},
+  {"market": "US (Q1 implied)", "bev": "~212,600", "share": "~6%", "yoy": "-27%", "yoyDir": "neg", "swing": "decel", "note": "$7,500 tax credit expired Sep 2025; derived from Cox Automotive Q1 total"}
 ]

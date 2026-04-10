@@ -64,8 +64,9 @@ Two sheets:
 ## Country tiers
 - **Tier 1 (always scan, Key=Y):** US, UK, Germany, France, Australia, New Zealand, South Korea, Vietnam, China, India
 - **Tier 2 (scan if major developments, Key=N):** Canada, Brazil, Japan, Thailand, Philippines, New Zealand, South Africa, Norway, Malaysia, Indonesia, Nigeria, Kenya, Ireland, Netherlands, Spain, Italy, Poland, Portugal, Romania, Denmark, Sweden
-- **Tier 3 (always scan — frontier EV policy, Key=N):** Cambodia, Uzbekistan, Pakistan, Laos
+- **Tier 3 (always scan — frontier EV policy, Key=N):** Cambodia, Uzbekistan, Pakistan, Laos, Nepal, Singapore, Thailand, Philippines
 - **Cross-cutting:** India-China EV trade/cooperation
+- **Indicator panel countries (19):** US, Australia, UK, Germany, France, South Korea, Vietnam, New Zealand, China, India, Pakistan, Cambodia, Canada, Nepal, Singapore, Thailand, Philippines, Japan, Malaysia
 
 ## Indicators table (Draft Table) structure
 Row 6: Avg gasoline price (auto-dated)
@@ -77,7 +78,7 @@ Rows 8-12: EV interest signals (split by signal type):
   - 11: Showroom / physical demand signal
   - 12: EV consideration rate
 Rows 13-15: Google Trends (auto-updated by update_indicators.py)
-Row 16: EV app rankings
+Row 16: (removed — app rankings row deleted; EV vehicle brand app finds go into Browsing row with "Sensor Tower (Google Play):" prefix)
 
 ## Daily refresh pipeline
 
@@ -109,7 +110,7 @@ PATH="/opt/homebrew/bin:$PATH" npx wrangler pages deploy . --project-name evinte
 - **Framing:** Use "global energy crisis" not "Iran/Hormuz crisis" or "oil shock." Use "short term" not "cyclical" — this crisis is unprecedented, not a recurring pattern. Frame structural shifts neutrally — "showing multiple signs of long term and structural shifts with implications for EV demand" not "this isn't just search curiosity."
 - **No journalistic color language** in the BNEF short. No "selling off the boat", "golden window", "tipping point" etc. Use the number instead. If AU dealers are charging over list, say "AU dealer premiums of AU$8-10K above MSRP reported". If NZ EV sales surged, say "+286% YoY". Always prefer the quantitative expression over the qualitative metaphor.
 - **Specify the noun.** Not "supply constraints appearing" — say "EV supply constraints" or "new BEV inventory shortages". The reader should never have to infer what category of thing is being discussed.
-- **Cross-reference evsales tracker daily.** Read `/Users/energysada/ev/evsales-site/index.html` STATUS array for the `swing` field. Markets flagged `swing:"up"` are where March EV sales growth likely breaks pre-existing trends (energy crisis impact). Currently: France, Sweden, Australia. Markets flagged `swing:"watch"` need more evidence (Germany, Denmark, China). Include crisis-flagged markets in the BNEF short executive summary and indicators table.
+- **Cross-reference evsales tracker daily.** Read `/Users/energysada/ev/evsales-site/index.html` STATUS array for the `swing` field. Swing values: "up" = crisis-confirmed (dark green), "up2" = likely crisis-driven with confounders (light green), "watch" = yellow, "decel" = orange, "down" = red. Currently: Australia swing:up, New Zealand swing:up, Sweden swing:up2; Germany/UK/France/Norway/Denmark/Italy swing:watch; US/China/Japan/Spain/Malaysia swing:decel. Update sales.json in evinterest whenever evsales STATUS changes.
 - **Distinguish government policy from consumer demand.** Frontier markets enacting EV-supportive policy (Cambodia, Uzbekistan, Pakistan, Laos) is a sign of governments responding to the oil crisis by accelerating EV frameworks — not necessarily evidence of organic consumer demand. Caveat accordingly. A policy timeline is worth maintaining as a recurring feature in the BNEF short.
 - Dedup is headline-based — compare first 80 chars lowercase of column E.
 - npx/node require PATH prefix — always use `PATH="/opt/homebrew/bin:$PATH"` before npx commands.
@@ -119,3 +120,7 @@ PATH="/opt/homebrew/bin:$PATH" npx wrangler pages deploy . --project-name evinte
 - Gas price % change in indicators always anchors to pre-war baseline (Feb 28).
 - Google Trends % change anchors to Feb 25 baseline.
 - yoy.xlsx is proprietary — never expose benchmark numbers on the public site.
+- **Gas price cell format:** `+W1% +W2% +W3% +W4% +W5% --> +Current% (Price) | Peak +X%` — script.js renders this as 3 lines: (1) bold price+current%, (2) bold Peak+Avg%, (3) grey weekly history.
+- **Browsing metric baseline rule:** Always state the baseline for platform traffic numbers. Never say "23.8% Edmunds research share" without specifying baseline (e.g., "vs 20.7% last week of Feb" = "+2.1pp").
+- **App rankings:** EV vehicle brand apps only (Tesla, BYD, VinFast, NIO, XPeng, etc.). No charging apps, no fuel price apps. If found in top-25, append to Browsing row with "Sensor Tower (Google Play):" prefix. No dedicated app row.
+- **sales.json flag system:** Uses swing values from evsales project: "up" (dark green, crisis-confirmed), "up2" (light green, likely-crisis), "watch" (yellow), "decel" (orange), "down" (red). Match renderSales CSS in script.js.

@@ -1,6 +1,6 @@
 {
-  "title": "Fuel Prices & EV Interest Tracker — Week of April 08, 2026",
-  "subtitle": "Brent: $97/bbl (+34% since Feb 28)  |  Edition #2",
+  "title": "Fuel Prices & EV Interest Tracker — Week of April 09, 2026",
+  "subtitle": "Brent: $96/bbl (+34% since Feb 28)  |  Edition #2",
   "countries": [
     "US",
     "Australia",
@@ -133,7 +133,7 @@
           "values": [
             {
               "country": "US",
-              "value": "23.8% Edmunds research share\n\nCarGurus new listing views +31%, used +40% (Q1 vs Q4)",
+              "value": "+2.1pp in EV research share on Edmunds (23.8% in 3rd week of Mar vs 20.7% baseline last week of Feb)\n\nCarGurus new listing views +31%, used +40% (Q1 vs Q4)",
               "link": "https://www.globenewswire.com/news-release/2026/04/07/3269242/0/en/Car-Buyers-are-Changing-Lanes-CarGurus-Reveals-Where-Consumers-are-Finding-Value.html"
             },
             {
@@ -163,7 +163,7 @@
             },
             {
               "country": "Vietnam",
-              "value": "—",
+              "value": "Sensor Tower (Google Play): VinFast (OEM): #6 → #2 (+4); VinFast E-Scooter: #9 → #3 (+6); Dat Bike: new #24",
               "link": null
             },
             {
@@ -734,42 +734,42 @@
           ]
         },
         {
-          "label": "Survey-stated EV consideration",
+          "label": "Google: \"electric car\" (weekly % chg since Feb 28)",
           "source": "carsales, Cox, JD Power",
           "values": [
             {
               "country": "US",
-              "value": "Pew Mar 16-22 (n=3,524): 32% would seriously consider EV — flat YoY (-1pp); Democrats 47% (-11pp vs 2022), Republicans 17%; hybrids 44%. No crisis lift.",
+              "value": "+4% +24% +32% +57% +86% --> +61%",
               "link": "https://www.pewresearch.org/science/2026/04/03/how-appealing-are-electric-vehicles-and-hybrids-to-americans/"
             },
             {
               "country": "Australia",
-              "value": "55% (+19pp vs Nov 2025, carsales)",
+              "value": "+55% +154% +179% +257% +149% --> +84%",
               "link": "https://www.carsales.com.au/editorial/details/ev-consideration-skyrockets-in-australia-151687/"
             },
             {
               "country": "UK",
-              "value": "—",
+              "value": "+9% +32% +31% +32% +27% --> +24%",
               "link": null
             },
             {
               "country": "Germany",
-              "value": "Carwow Mar 12 (n=1,164): 48% say spiking fuel prices would influence EV/hybrid decision",
+              "value": "+31% +53% +49% +60% +61% --> +130%",
               "link": "https://www.reuters.com/business/autos-transportation/gasoline-price-hike-iran-war-could-push-consumers-toward-evs-hybrids-2026-03-18/"
             },
             {
               "country": "France",
-              "value": "—",
+              "value": "+22% +59% +58% +80% +112% --> +146%",
               "link": null
             },
             {
               "country": "South Korea",
-              "value": "—",
+              "value": "-2% +2% +2% -3% -5% --> -5%",
               "link": null
             },
             {
               "country": "Vietnam",
-              "value": "—",
+              "value": "+11% +79% +49% +72% +38% --> +32%",
               "link": null
             },
             {
@@ -835,42 +835,42 @@
           ]
         },
         {
-          "label": "Google: \"electric car\" (weekly % chg since Feb 28)",
+          "label": "Google: \"EV\" (weekly % chg since Feb 28)",
           "source": "Google Trends",
           "values": [
             {
               "country": "US",
-              "value": "+2% +23% +31% +41% +85% --> +52%",
+              "value": "+12% +6% +21% +15% +0% --> +4%",
               "link": null
             },
             {
               "country": "Australia",
-              "value": "+53% +148% +171% +239% +142% --> +97%",
+              "value": "+15% +60% +93% +172% +135% --> +181%",
               "link": null
             },
             {
               "country": "UK",
-              "value": "+11% +35% +34% +27% +26% --> +19%",
+              "value": "+9% +19% +20% +32% +24% --> +18%",
               "link": null
             },
             {
               "country": "Germany",
-              "value": "+35% +54% +52% +56% +62% --> +134%",
+              "value": "+31% +53% +49% +60% +61% --> +130%",
               "link": null
             },
             {
               "country": "France",
-              "value": "+20% +57% +56% +75% +111% --> +151%",
+              "value": "+22% +59% +58% +80% +112% --> +146%",
               "link": null
             },
             {
               "country": "South Korea",
-              "value": "-5% +2% +0% -5% -3% --> +6%",
+              "value": "-2% +2% +2% -3% -5% --> -5%",
               "link": null
             },
             {
               "country": "Vietnam",
-              "value": "+10% +79% +47% +75% +38% --> +42%",
+              "value": "+11% +79% +49% +72% +38% --> +32%",
               "link": null
             },
             {
@@ -936,12 +936,12 @@
           ]
         },
         {
-          "label": "Google: \"EV\" (weekly % chg since Feb 28)",
+          "label": "Google: \"used EV\" (weekly % chg since Feb 28)",
           "source": "",
           "values": [
             {
               "country": "US",
-              "value": "+13% +7% +19% +9% -0% --> +2%",
+              "value": "+29% +50% +37% +35% +5% --> +2%",
               "link": null
             },
             {
@@ -951,7 +951,7 @@
             },
             {
               "country": "UK",
-              "value": "+10% +20% +21% +28% +26% --> +19%",
+              "value": "+33% +83% +62% +51% +41% --> +65%",
               "link": null
             },
             {
@@ -1133,107 +1133,6 @@
             {
               "country": "Malaysia",
               "value": "",
-              "link": null
-            }
-          ]
-        },
-        {
-          "label": "EV vehicle brand apps (top-25 entries / moves)",
-          "source": "Sensor Tower (Google Play, top-25 movers)",
-          "values": [
-            {
-              "country": "US",
-              "value": "—",
-              "link": null
-            },
-            {
-              "country": "Australia",
-              "value": "NIU (Chinese e-scooter): #25 → #16 (+9)",
-              "link": null
-            },
-            {
-              "country": "UK",
-              "value": "—",
-              "link": null
-            },
-            {
-              "country": "Germany",
-              "value": "—",
-              "link": null
-            },
-            {
-              "country": "France",
-              "value": "—",
-              "link": null
-            },
-            {
-              "country": "South Korea",
-              "value": "—",
-              "link": null
-            },
-            {
-              "country": "Vietnam",
-              "value": "VinFast (OEM): #6 → #2 (+4); VinFast E-Scooter: #9 → #3 (+6); Dat Bike: new #24",
-              "link": null
-            },
-            {
-              "country": "New Zealand",
-              "value": "—",
-              "link": null
-            },
-            {
-              "country": "China",
-              "value": "—",
-              "link": null
-            },
-            {
-              "country": "India",
-              "value": "—",
-              "link": null
-            },
-            {
-              "country": "Pakistan",
-              "value": "—",
-              "link": null
-            },
-            {
-              "country": "Cambodia",
-              "value": "—",
-              "link": null
-            },
-            {
-              "country": "Canada",
-              "value": "—",
-              "link": null
-            },
-            {
-              "country": "Nepal",
-              "value": "—",
-              "link": null
-            },
-            {
-              "country": "Singapore",
-              "value": "—",
-              "link": null
-            },
-            {
-              "country": "Thailand",
-              "value": "—",
-              "link": null
-            },
-            {
-              "country": "Philippines",
-              "value": "—",
-              "link": null
-            },
-            {
-              "country": "Japan",
-              "value": "—",
-              "link": null
-            },
-            {
-              "country": "Malaysia",
-              "value": "—",
               "link": null
             }
           ]

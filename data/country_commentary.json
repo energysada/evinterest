@@ -24,11 +24,11 @@
         },
         {
           "label": "Apps",
-          "text": "EV charging network app **EVgo** (one of the largest US public DC fast charging networks): new entry at #21 in Google Play Auto category (was not in top 25 pre-war)."
+          "text": "No EV vehicle brand apps entered the top 25 in Google Play Auto category during the crisis window for the US. EVgo (EV charging network) entered at #21 but is excluded from this metric as a charging-infrastructure app, not an EV vehicle brand app."
         },
         {
           "label": "Stated-intent survey (Pew Research)",
-          "text": "Pew Research survey, March 16-22, 2026 (n=3,524 US adults — fully overlapping the post-war fuel price spike): 32% of Americans said they would seriously consider an EV as their next vehicle, vs 33% in March 2025 — essentially flat year-over-year (-1pp). Hybrids 44%. Partisan: Democrats 47% (down from 58% in 2022, -11pp over three years), Republicans 17%. Critically, this survey ran during the steepest gasoline price increase since 2022 and showed zero stated-intent lift. Search-channel signals (Edmunds, Google) are responding to fuel pain, but the deeper purchase-intent measure is unmoved. The US is the clearest example of a market where the crisis has produced curiosity without conversion."
+          "text": "Pew Research survey, March 16-22, 2026 (n=3,524 US adults — fully overlapping the post-war fuel price spike): 32% of Americans said they would seriously consider an EV as their next vehicle, vs 33% in March 2025 — essentially flat year-over-year (-1pp). Hybrids 44%, also flat YoY (about the same as 2024). Partisan: Democrats 47% (down from 58% in 2022, -11pp over three years), Republicans 17%. Critically, this survey ran during the steepest gasoline price increase since 2022 and showed zero stated-intent lift for EITHER EVs or hybrids. Search-channel signals (Edmunds, Google) are responding to fuel pain, but the deeper purchase-intent measure is unmoved across both electrified categories. The US is the clearest example of a market where the crisis has produced curiosity without conversion."
         },
         {
           "label": "Conclusion",
@@ -67,11 +67,11 @@
         },
         {
           "label": "Apps",
-          "text": "EV charging network app **Chargefox** (Australia's largest EV public charging network) — moved from #4 to #3 in Google Play Auto category. Electric scooter brand app **NIU** (Chinese e-scooter manufacturer) — from #25 to #16 (+9 positions)."
+          "text": "No EV vehicle brand apps entered the top 25 in Google Play Auto category during the crisis window for Australia. NIU (Chinese e-scooter brand) moved #25→#16 but is excluded as a non-vehicle EV brand. EV charging app Chargefox also rose but is excluded from this metric."
         },
         {
           "label": "Conclusion",
-          "text": "Australia is the clearest crisis-driven EV demand story among tracked markets. The combination of (1) the highest fuel price increase (+49% net, +57% peak), (2) the largest Google Trends response (+192% on \"EV\"), (3) platform-level searches tripling on carsales, (4) BEV inventory shortages with dealer premiums above MSRP, (5) EV-specific loan approval volumes doubling at multiple banks (CommBank, NAB), (6) March BEV sales +94.7% YoY (15,839 units, 14.6% share — record), and (7) a +19pp jump in stated EV consideration from a Nov 2025 baseline — every signal type, from search to sentiment to lending to actual sales to supply, is responding in the same direction. There is no metric in Australia where the crisis effect is ambiguous or contradicted by another signal."
+          "text": "Australia is the clearest crisis-driven EV demand story among tracked markets. The combination of (1) the highest fuel price increase (+49% net, +57% peak), (2) the largest Google Trends response (+192% on \"EV\"), (3) platform-level searches tripling on carsales, (4) BEV inventory shortages with dealer premiums above MSRP, (5) EV-specific loan approval volumes doubling at multiple banks (CommBank, NAB), (6) March BEV sales +115.4% YoY (15,839 units, 15.1% share — record), and (7) a +19pp jump in stated EV consideration from a Nov 2025 baseline — every signal type, from search to sentiment to lending to actual sales to supply, is responding in the same direction. There is no metric in Australia where the crisis effect is ambiguous or contradicted by another signal."
         }
       ]
     },
@@ -406,6 +406,128 @@
         {
           "label": "Conclusion",
           "text": "Vietnam shows strong showroom-level and OEM-app demand response despite the government quickly cutting fuel taxes to dampen consumer price pain. The VinFast app jumping from #6 to #2 in 5 weeks is one of the cleanest single-data-point signals across any market in our dataset — app store rankings reflect actual user installs, not just curiosity. VinFast is on track for 300,000 deliveries in 2026 (vs 196,919 in 2025, +52% YoY target). The narrative here is somewhat distinct from other markets: rather than a broad multi-platform shift, Vietnam shows a concentrated response benefiting one domestic OEM that was already in growth mode. The crisis appears to have accelerated VinFast's existing trajectory rather than triggered a new market-wide shift."
+        }
+      ]
+    },
+    {
+      "code": "JP",
+      "flag": "🇯🇵",
+      "name": "Japan",
+      "sections": [
+        {
+          "label": "Fuel price story",
+          "text": "Japan's retail gasoline price rose minimally in net terms (+4% from the Feb 28 baseline) because the government significantly expanded fuel subsidies to absorb the price shock — one of the most aggressive subsidy interventions among tracked markets. The government subsidy per liter was increased to JPY 35/L in early March. Without the subsidy, the implied market price would have been approximately 15-20% higher. Japan is oil import-dependent (>90% via Middle East routes), but the subsidy mechanism has decoupled the pump price from the global crude price shock for the majority of consumers. This significantly mutes the behavioral signal."
+        },
+        {
+          "label": "EV market context",
+          "text": "Japan's BEV adoption has been structurally weak: BEV share was approximately 2-3% of new car registrations in 2025, the lowest among G7 nations. February 2026 BEV sales were -45% YoY — a pre-crisis trend reflecting the OEM transition timeline (Toyota's BEV ramp-up delayed) and consumer preference for hybrids. Toyota sold 3.38 million hybrid units globally in 2025, reflecting the domestic hybrid preference. Japanese consumers are accustomed to fuel efficiency and see hybrids as the rational near-term choice."
+        },
+        {
+          "label": "Interest signals",
+          "text": "Despite the muted pump price signal, Google Trends for EV-related searches have ticked up approximately 4% above the Feb 28 baseline — which is directionally positive but the smallest response among Tier 1 markets. Media coverage reports consumer awareness of the crisis, but platform-level data on actual enquiries or dealer traffic is not available. No major Japanese automotive platform has published crisis-related EV demand data. The interest uptick appears to be driven by global media coverage of the energy crisis rather than direct local fuel cost pressure."
+        },
+        {
+          "label": "Conclusion",
+          "text": "Japan is the clearest case study in how government subsidy intervention can suppress EV demand signals during a fuel crisis. The subsidy has been effective: consumers are not feeling the oil shock at the pump, so the behavioral response (search, enquiry, purchase intent) remains muted. March 2026 BEV data is pending. This is a control case for policy design: a market that absorbed the fuel price shock institutionally rather than passing it through to consumers, with corresponding absence of crisis-driven EV interest."
+        }
+      ]
+    },
+    {
+      "code": "TH",
+      "flag": "🇹🇭",
+      "name": "Thailand",
+      "sections": [
+        {
+          "label": "Fuel price story",
+          "text": "Thailand retail gasoline prices rose approximately +18% from the Feb 28 baseline. The government reduced fuel subsidies starting mid-March after the fiscal cost became unsustainable — a partial collapse of the price cap mechanism that had been in place. Thailand is approximately 85% oil import dependent. The +18% pass-through to consumers is meaningful but smaller than the raw crude shock because subsidy removal was gradual. Diesel prices — critical for Thailand's large trucking and agricultural sector — rose approximately 20-22% in the same period."
+        },
+        {
+          "label": "EV market context and signals",
+          "text": "Thailand's EV market has been growing rapidly driven by Chinese OEM entry (BYD, SAIC-MG, NETA, Great Wall). BYD became the #2 overall car brand by volume in Thailand in 2025 with a 13% market share. Pre-crisis EV market share was approximately 25% of new car registrations (one of the highest in Southeast Asia). PTT — Thailand's largest fuel retailer — committed to doubling its EV charging network (Bloomberg, March 31, 2026), citing the fuel crisis and long-term demand projection. This is a significant infrastructure commitment from the country's dominant petrol station operator."
+        },
+        {
+          "label": "Conclusion",
+          "text": "Thailand is emerging as the most EV-advanced major Southeast Asian market, driven by Chinese OEM supply-side competition and a fuel crisis that is creating demand-side pull. The partial price cap collapse means Thai consumers are experiencing meaningful pump price pressure, which should produce behavioral responses. March 2026 sales data is pending from TAI/EVAT. The PTT charger doubling commitment is a strong long-run structural signal from the infrastructure incumbent."
+        }
+      ]
+    },
+    {
+      "code": "MY",
+      "flag": "🇲🇾",
+      "name": "Malaysia",
+      "sections": [
+        {
+          "label": "Fuel price story",
+          "text": "Malaysia operates a two-tier fuel pricing system. RON95 (the mass-market grade, used by most passenger cars) remains fully subsidized and unchanged at MYR 2.05/L. RON97 (premium grade) and diesel for commercial fleets faced partial pass-through of approximately +18%. The PADU database-based subsidy rationalization — which aims to remove RON95 subsidies from higher-income households — is ongoing but has not yet changed the headline pump price. Most EV consideration surveys and platform signals are from RON97 users, who represent a smaller share of the market."
+        },
+        {
+          "label": "EV market signals",
+          "text": "Malaysia's EV market grew strongly in March 2026: 4,717 BEV registrations, +58.5% YoY, with a 6.95% EV share of new registrations (JPJ / MAA). Q1 2026 total was approximately +113% YoY. However, the March pace represents deceleration from the Q1 trajectory. Malaysia's EV growth is primarily import-duty exemption driven (PENJANA policy through end-2025, followed by renewal discussions) and BYD-led. Chinese EV brands now hold approximately 60% of Malaysia's EV market."
+        },
+        {
+          "label": "Conclusion",
+          "text": "Malaysia is a policy-driven EV market where the fuel crisis has limited direct impact due to the RON95 subsidy keeping pump prices stable for the majority. The EV growth story is real and significant (BEV share rising from under 2% in 2024 to near 7% in early 2026) but is driven primarily by import duty exemptions and Chinese OEM market entry rather than fuel price pressure. This makes Malaysia an example where EV adoption is supply-driven and policy-enabled — a different mechanism than the demand-pull seen in Australia, New Zealand, or the Philippines."
+        }
+      ]
+    },
+    {
+      "code": "PH",
+      "flag": "🇵🇭",
+      "name": "Philippines",
+      "sections": [
+        {
+          "label": "Fuel price story",
+          "text": "The Philippines experienced the largest fuel price increase among tracked APAC markets: +52% from the Feb 28 baseline to early April 2026. The Philippines has no significant fuel subsidy mechanism and relies entirely on imported petroleum. Manila retail gasoline rose from approximately PHP 62/L pre-war to approximately PHP 95/L by early April. The government declared an energy emergency (EO 110, March 24) — citing the fuel cost burden on households and industry. This is a direct government acknowledgment that the oil shock is a macro-level emergency."
+        },
+        {
+          "label": "Policy response",
+          "text": "The most significant development is the pivot from the RACE (Road and Automobile Competitiveness Enhancement) program — which was seen as favoring combustion vehicles — to the EVIS (Electric Vehicle Industry Support) framework. DTI issued a statement March 29 (DOJ opinion pending, FIRB review ongoing, executive order not yet issued) indicating a framework of approximately PHP 9B/manufacturer, 40% tooling/equipment support, tax breaks, and charging infrastructure mandates. EVIS is still in development as of early April — the executive order has not been issued. This is a directional policy signal under a fuel emergency, not yet enacted policy."
+        },
+        {
+          "label": "EV market context",
+          "text": "The Philippines' EV market is very early-stage: less than 2% of new vehicle registrations are BEV or PHEV. The market is dominated by ICE vehicles, particularly Japanese and Korean brands. The fuel price shock (+52%) is disproportionately severe for Filipino households, where transport costs represent a significant share of household budgets. E-trikes and e-motorcycles (two-/three-wheelers) are a much larger existing EV segment than passenger cars. The EVIS framework primarily targets the four-wheel passenger car market."
+        },
+        {
+          "label": "Conclusion",
+          "text": "The Philippines presents the most severe demand-side fuel price shock among tracked markets (+52%), combined with the weakest pre-existing EV supply infrastructure. This creates a demand-supply mismatch: consumers have the strongest economic incentive to switch but the fewest available vehicles and the least charging infrastructure. The EVIS policy pivot is a signal of government recognition — but with the executive order unissued as of early April, it is not yet operative. Watch for: EO 110 executive order issuance; EVIS operational rollout; and Q2 2026 BEV registration data from CAMPI."
+        }
+      ]
+    },
+    {
+      "code": "SG",
+      "flag": "🇸🇬",
+      "name": "Singapore",
+      "sections": [
+        {
+          "label": "Fuel price story",
+          "text": "Singapore retail petrol rose approximately +20% from the Feb 28 baseline. Singapore has no fuel subsidies and passes through global crude prices directly via pump pricing (Singapore is a major refining hub). However, Singapore's unique vehicle pricing system — the Certificate of Entitlement (COE) — means that the vehicle ownership decision is dominated by the COE premium rather than operating fuel costs alone. COE prices for smaller vehicles are approximately SGD 80-90K above the vehicle price, creating a base cost that somewhat mutes marginal fuel cost signals."
+        },
+        {
+          "label": "EV market context",
+          "text": "Singapore's EV adoption is structurally high due to policy design: EV COE prices have been at parity with ICE COE since 2024. Over 50% of new car registrations are BEV or PHEV as of late 2025 (LTA data). The government mandate for all new petrol/diesel car registrations to cease by 2030 is well-known and has driven proactive EV consideration independent of the energy crisis. This makes Singapore a policy-led EV market where the crisis reinforces but does not cause the EV transition."
+        },
+        {
+          "label": "Conclusion",
+          "text": "Singapore is already past the tipping point of EV adoption due to policy design (COE parity, 2030 mandate). The +20% fuel hike is real but is not the driver of EV consideration in the Singapore market. Crisis-driven EV demand in Singapore cannot be isolated from structural policy-driven demand. March 2026 BEV registration data is pending from LTA. Singapore is most interesting as a structural benchmark: what does a mature policy-driven EV transition look like as a fuel shock hits?"
+        }
+      ]
+    },
+    {
+      "code": "NP",
+      "flag": "🇳🇵",
+      "name": "Nepal",
+      "sections": [
+        {
+          "label": "Fuel price story",
+          "text": "Nepal experienced approximately +24% fuel price increase from the Feb 28 baseline — with no price cap mechanism and direct pass-through of global crude prices. Nepal's Nepal Oil Corporation (NOC) is the sole petroleum distributor and adjusts prices based on import cost. Nepal is approximately 95% oil import dependent. The +24% is meaningful in the context of a country where per-capita income is approximately USD 1,300/year and fuel represents a significant share of household expenditure."
+        },
+        {
+          "label": "EV market signals",
+          "text": "Nepal's EV adoption is unusually advanced for its income level: EVs represented 73% of four-wheel vehicle imports in FY 2024/25, driven by extremely high petrol and diesel prices (among the highest in the region due to NOC's historical pricing policy), zero import duty on EVs, and the popularity of Chinese BEVs. From July 2025 to March 2026, Nepal imported 7,434 EVs vs 3,251 ICE vehicles. The energy crisis, by further widening the operating cost differential, reinforces an already well-established consumer preference for EVs in the four-wheel segment."
+        },
+        {
+          "label": "Conclusion",
+          "text": "Nepal is a counterintuitive frontier market: despite very low per-capita income, EV adoption in the four-wheel segment is structurally high because ICE vehicle operating costs are prohibitive relative to EV alternatives in a country that has high imported fuel prices and abundant hydroelectric power. The energy crisis deepens this dynamic rather than creating it. March 2026 official import data is pending. Nepal is most useful as an example of how fuel price structure — not income level — can drive EV adoption in developing markets."
         }
       ]
     }
