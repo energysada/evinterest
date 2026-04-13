@@ -25,10 +25,11 @@ evinterest/
 ```
 
 ## Source of truth
-The Excel file on Google Drive is the single source of truth:
+The Excel file is the single source of truth, kept locally in the project:
 ```
-/Users/energysada/Library/CloudStorage/GoogleDrive-energysada@gmail.com/.shortcut-targets-by-id/1VsHTFQVv_fCHp83Cf4psemLKtzjGH2k3/Shared from work pc/fuel-prices-ev-interest/ev interest tracker.xlsx
+/Users/energysada/ev/evinterest/fuel-prices-ev-interest/ev interest tracker.xlsx
 ```
+The `fuel-prices-ev-interest/` subfolder also holds daily-scan markdown files, the BNEF short draft, methodology notes, and other source materials.
 
 Two sheets:
 - **Draft Table** — Indicators section: gas prices, EV interest signals, Google Trends, market characteristics
@@ -61,24 +62,77 @@ Two sheets:
 | H | Source URL | Hyperlinked URL |
 | I | Key | "Y" for Tier 1 countries, "N" for others |
 
-## Country tiers
-- **Tier 1 (always scan, Key=Y):** US, UK, Germany, France, Australia, New Zealand, South Korea, Vietnam, China, India
-- **Tier 2 (scan if major developments, Key=N):** Canada, Brazil, Japan, Thailand, Philippines, New Zealand, South Africa, Norway, Malaysia, Indonesia, Nigeria, Kenya, Ireland, Netherlands, Spain, Italy, Poland, Portugal, Romania, Denmark, Sweden
-- **Tier 3 (always scan — frontier EV policy, Key=N):** Cambodia, Uzbekistan, Pakistan, Laos, Nepal, Singapore, Thailand, Philippines
+## Country categories (3-bucket exposure framework)
+Countries are grouped by how the oil shock reaches the consumer, not by region or market size. This is the canonical ordering for the indicator table and slide view.
+
+- **Direct Hit:** Cambodia, Philippines, New Zealand, Australia, Nepal, Pakistan
+  - No active price cap and meaningful Hormuz/import exposure. Consumers see full Brent pass-through at the pump, often amplified by currency weakness and refined-product import dependence. The shock arrives unfiltered.
+- **Sleeping Volcano:** India, China, Japan, Malaysia, South Korea, Thailand, Vietnam
+  - Heavy structural Hormuz exposure, but active intervention (subsidies, state-set pricing, excise cuts, stabilization funds) is absorbing the shock. Snaps into Direct Hit if any cushion runs out.
+- **Indirect Hit:** US, Canada, Germany, Singapore, UK, Denmark, France, Italy, Spain, Sweden, Norway
+  - Limited direct Hormuz exposure; Brent rises feed through more slowly via refined-product markets, fuel taxes, and diverse supply. Pump moves are real but smaller and lagged.
+
 - **Cross-cutting:** India-China EV trade/cooperation
-- **Indicator panel countries (19):** US, Australia, UK, Germany, France, South Korea, Vietnam, New Zealand, China, India, Pakistan, Cambodia, Canada, Nepal, Singapore, Thailand, Philippines, Japan, Malaysia
+- **Indicator panel countries (24):** the union of all three buckets above
 
 ## Indicators table (Draft Table) structure
-Row 6: Avg gasoline price (auto-dated)
-Row 7: Gas price % change (since Feb 28 baseline)
-Rows 8-12: EV interest signals (split by signal type):
-  - 8: Dealer/marketplace EV search share
-  - 9: Dealer EV leads / enquiries change
-  - 10: EV leasing / lending surge
-  - 11: Showroom / physical demand signal
-  - 12: EV consideration rate
-Rows 13-15: Google Trends (auto-updated by update_indicators.py)
-Row 16: (removed — app rankings row deleted; EV vehicle brand app finds go into Browsing row with "Sensor Tower (Google Play):" prefix)
+Row 6: Fuel price trajectory (% chg vs Feb 28, weekly)
+Row 7: Browsing / search activity on platforms
+Row 8: Dealer enquiries / leads
+Row 9: Used EV demand
+Row 10: Showroom demand
+Row 11: Charging utilization / infrastructure
+Row 12: Google "electric car" (weekly % chg, auto-updated by update_indicators.py)
+Row 13: Google "EV" (weekly % chg, auto-updated)
+Row 14: Google "used EV" (weekly % chg, auto-updated)
+
+**Row-layout discipline:** If you renumber rows in Draft Table, also update `ROW_MAP` in `scripts/update_indicators.py` and `EC_ROW` in `scripts/fill_ec_trends.py` in the same change — those scripts hardcode row numbers and will write to the wrong rows if the xlsx drifts.
+Row 15: MARKET CHARACTERISTICS section header
+Row 16: Oil import dependence (% imported, % via Hormuz)
+Row 17: Feb '26 EV sales
+Row 18: Mar '26 EV sales
+
+**Removed rows — do not re-add:**
+- App rankings row (Sensor Tower data goes into Browsing row with "Sensor Tower (Google Play):" prefix)
+- EV loan approvals row (deleted 2026-04-12; AU CommBank +161% data lives in Browsing row, single-country signal didn't justify a dedicated row)
+
+## UI / layout invariants — do not revert
+These decisions get clobbered repeatedly. Read this list before making layout-affecting edits to `index.html`, `script.js`, `style.css`, or `slide.html`. If a change here is necessary, update this section in the same commit so the new state becomes the new invariant.
+
+**index.html section order (top to bottom):**
+1. Key Highlights This Week
+2. Indicators
+3. Policy Timeline
+4. March 2026 BEV Sales
+5. Country-by-Country Commentary
+6. Newsfeed
+7. Executive Summary
+8. Key Takeaways
+
+Rationale: data tables come first, narrative summary lives at the bottom so readers reach their own read before seeing the analyst framing.
+
+**script.js indicator table row order (renderTracker `orderedItems`):**
+1. Fuel price trajectory
+2. Oil import dependence (Hormuz)
+3. *grey country bar*
+4. Google "electric car"
+5. Google "EV" *(hidden behind "Show more countries" toggle)*
+6. *grey country bar*
+7. Browsing / search activity on platforms
+8. Dealer enquiries / leads
+9. Showroom demand
+10. Charging utilization / infrastructure *(hidden behind "Show more countries" toggle)*
+11. *grey country bar*
+12. Used EV demand
+13. Google "used EV"
+
+Section name headers ("WEEKLY VARIABLES", "MARKET CHARACTERISTICS") are **not** rendered — flat list with grey country-name bars at the three positions above. Feb/Mar EV sales rows are **not** rendered in the indicator table (they live in the dedicated BEV Sales section).
+
+**Hidden-by-default rows** (revealed by `body.show-extra-countries` toggle): Google "EV", Charging utilization. Class: `extra-metric-row`.
+
+**slide.html demand-signal rows:** Browsing, Dealer/enquiries, Used EV. EV lending row was removed 2026-04-12 (lendingSig function and row both deleted). Signal extractor functions (browsingSig, dealerSig, usedSig) should return only numeric % deltas or `—`, not qualitative descriptors like "ATH", "surge", "apps", "policy".
+
+**Country categorization (3 buckets):** Direct Hit / Sleeping Volcano / Indirect Hit — see "Country categories" section above. This is the canonical ordering for both the indicator table and slide view. Do not re-introduce Tier 1/2/3 ordering.
 
 ## Daily refresh pipeline
 
@@ -91,7 +145,11 @@ Steps:
 4. **Update Indicators** — `python3 scripts/update_indicators.py` (Google Trends, Brent, date labels)
 5. **Regenerate JSON** — `python3 scripts/excel_to_json.py`
 6. **Deploy** — `PATH="/opt/homebrew/bin:$PATH" npx wrangler pages deploy . --project-name evinterest`
-7. **Save summary** — Write `daily-scan-YYYY-MM-DD.md` to the Google Drive `data/` folder
+7. **Save summary** — Write `daily-scan-YYYY-MM-DD.md` to `fuel-prices-ev-interest/data/`
+
+## Pending tasks
+- **Expand gas price country coverage.** Currently row 6 (Avg gasoline price) is populated for ~15 countries. Need to broaden coverage and run a separate weekly fuel-price refresh job (independent of the daily news scan), pulling from EU Weekly Oil Bulletin (fuel-prices.eu) for EU markets and country-specific sources elsewhere (SSB Norway, AAA US, RAC UK, globalpetrolprices, etc.). Format must match: `+W1% +W2% +W3% +W4% +W5% +W6% --> +Current% (Price) | Peak +X%` with Feb 23 EU bulletin reading as baseline (≈ Feb 28 pre-war proxy).
+- **Reorder indicator table by 3-category framework.** The indicator table column order should group countries by exposure category: Direct Hit (KH, PH, NZ, AU, NP, PK) → Sleeping Volcano (IN, CN, JP, MY, KR, TH, VN) → Indirect Hit (US, CA, DE, SG, UK, DK, FR, IT, ES, SE, NO). Add visual dividers between the three blocks. This replaces the current display order and should be driven from a single source (excel_to_json.py COUNTRY_ORDER + script.js rendering).
 
 ## Rebuild and deploy
 ```bash

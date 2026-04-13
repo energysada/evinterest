@@ -6,8 +6,16 @@ import openpyxl
 import sys
 import os
 
-XLSX = "/Users/energysada/Library/CloudStorage/GoogleDrive-energysada@gmail.com/.shortcut-targets-by-id/1VsHTFQVv_fCHp83Cf4psemLKtzjGH2k3/Shared from work pc/fuel-prices-ev-interest/ev interest tracker.xlsx"
-OUT = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
+PROJECT_ROOT = os.path.dirname(os.path.dirname(__file__))
+XLSX = os.path.join(PROJECT_ROOT, "fuel-prices-ev-interest", "ev interest tracker.xlsx")
+OUT = os.path.join(PROJECT_ROOT, "data")
+
+# Display order for indicators table (slide uses the same)
+COUNTRY_ORDER = [
+    "Australia", "New Zealand", "UK", "Germany", "Sweden", "France",
+    "Italy", "Spain", "Denmark", "Norway",
+    "US", "Vietnam", "Nepal", "Pakistan",
+]
 
 
 def parse_draft_table(wb):
@@ -102,10 +110,21 @@ def parse_draft_table(wb):
             "values": values,
         })
 
+    # Apply display order: pinned countries first, then remaining in Excel order
+    excel_order = [c["name"] for c in countries]
+    pinned = [c for c in COUNTRY_ORDER if c in excel_order]
+    remaining = [c for c in excel_order if c not in pinned]
+    display_order = pinned + remaining
+    idx_by_name = {name: i for i, name in enumerate(display_order)}
+
+    for section in sections:
+        for metric in section["metrics"]:
+            metric["values"].sort(key=lambda v: idx_by_name.get(v["country"], 999))
+
     return {
         "title": str(title),
         "subtitle": str(meta_text),
-        "countries": [c["name"] for c in countries],
+        "countries": display_order,
         "sections": sections,
         "notes": notes,
     }

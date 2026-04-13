@@ -90,9 +90,9 @@ function renderTracker(tracker, indicatorLinks) {
     const countries = tracker.countries;
     indicatorLinks = indicatorLinks || {};
 
-    // Default-visible Tier 1 markets (US-led, then Europe, then APAC core)
-    const DEFAULT_VISIBLE = new Set(['US', 'Australia', 'UK', 'Germany', 'France', 'South Korea', 'Vietnam']);
-    const isExtra = (c) => !DEFAULT_VISIBLE.has(c);
+    // Default-visible markets (hide: India, S Korea, China, Cambodia, Canada, Singapore, Malaysia)
+    const HIDDEN = new Set(['India', 'South Korea', 'China', 'Cambodia', 'Canada', 'Singapore', 'Malaysia']);
+    const isExtra = (c) => HIDDEN.has(c);
 
     // Header row — Source moved to last column
     const thead = document.createElement('thead');
@@ -121,38 +121,63 @@ function renderTracker(tracker, indicatorLinks) {
     // Body
     const tbody = document.createElement('tbody');
 
-    tracker.sections.forEach(section => {
-        // Section header row
-        const sectionRow = document.createElement('tr');
-        sectionRow.className = 'section-header';
-        const sectionTd = document.createElement('td');
-        sectionTd.colSpan = countries.length + 2;
-        sectionTd.textContent = section.name;
-        sectionRow.appendChild(sectionTd);
-        tbody.appendChild(sectionRow);
+    // Flatten metrics across sections into a label→metric map
+    const metricByLabel = {};
+    tracker.sections.forEach(s => s.metrics.forEach(m => { metricByLabel[m.label] = m; }));
 
-        // Reorder metrics: move GT rows after apps row
-        const gtMetrics = section.metrics.filter(m => m.label.startsWith(GT_PREFIX));
-        const nonGtMetrics = section.metrics.filter(m => !m.label.startsWith(GT_PREFIX));
-        const orderedMetrics = [...nonGtMetrics, ...gtMetrics];
+    // Desired flat order with grey country bars between groups.
+    // Section headers ("WEEKLY VARIABLES", "MARKET CHARACTERISTICS") and the
+    // "Google Searches" subgroup header are intentionally dropped.
+    // Feb/Mar EV sales rows are dropped too.
+    const FUEL    = 'Fuel price trajectory (% chg vs Feb 28, weekly)';
+    const HORMUZ  = 'Oil import dependence (% imported, % via Hormuz)';
+    const GT_EC   = 'Google: "electric car" (weekly % chg since Feb 28)';
+    const GT_EVL  = 'Google: "EV" (weekly % chg since Feb 28)';
+    const GT_USED = 'Google: "used EV" (weekly % chg since Feb 28)';
+    const BROWSE  = 'Browsing / search activity on platforms';
+    const DEALER  = 'Dealer enquiries / leads';
+    const USED    = 'Used EV demand';
+    const SHOWROOM= 'Showroom demand';
+    const CHARGE  = 'Charging utilization / infrastructure';
 
-        // Insert GT sub-header just before first GT row
-        let gtGroupInserted = false;
+    const orderedItems = [
+        {kind:'metric', label: FUEL},
+        {kind:'metric', label: HORMUZ},
+        {kind:'bar'},
+        {kind:'metric', label: GT_EC},
+        {kind:'metric', label: GT_EVL},
+        {kind:'bar'},
+        {kind:'metric', label: BROWSE},
+        {kind:'metric', label: DEALER},
+        {kind:'metric', label: SHOWROOM},
+        {kind:'metric', label: CHARGE},
+        {kind:'bar'},
+        {kind:'metric', label: USED},
+        {kind:'metric', label: GT_USED},
+    ];
 
-        orderedMetrics.forEach(metric => {
-            const isGT = metric.label.startsWith(GT_PREFIX);
+    const renderCountryBar = () => {
+        const r = document.createElement('tr');
+        r.className = 'country-bar';
+        r.appendChild(document.createElement('td'));
+        countries.forEach(c => {
+            const td = document.createElement('td');
+            td.textContent = c;
+            if (isExtra(c)) td.classList.add('extra-country-col');
+            r.appendChild(td);
+        });
+        r.appendChild(document.createElement('td'));
+        tbody.appendChild(r);
+    };
 
-            if (isGT && !gtGroupInserted) {
-                gtGroupInserted = true;
-                const subRow = document.createElement('tr');
-                subRow.className = 'subgroup-header';
-                const subTd = document.createElement('td');
-                subTd.colSpan = countries.length + 2;
-                subTd.textContent = 'Google Searches (% chg, Feb 25 → Mar 29)';
-                subRow.appendChild(subTd);
-                tbody.appendChild(subRow);
-            }
+    orderedItems.forEach(item => {
+        if (item.kind === 'bar') { renderCountryBar(); return; }
+        const metric = metricByLabel[item.label];
+        if (!metric) return;
+        const isGT = metric.label.startsWith(GT_PREFIX);
+        const isExtraRow = item.label === GT_EVL || item.label === CHARGE;
 
+        {
             // Determine how many rows this metric needs (split by \n\n in any cell)
             const isGasRow = metric.label.toLowerCase().includes('fuel price') || metric.label.toLowerCase().includes('gasoline');
             const isGoogleRow = metric.label.toLowerCase().startsWith('google:');
@@ -169,6 +194,7 @@ function renderTracker(tracker, indicatorLinks) {
             for (let rowIdx = 0; rowIdx < maxParts; rowIdx++) {
                 const row = document.createElement('tr');
                 if (rowIdx > 0) row.className = 'metric-continuation';
+                if (isExtraRow) row.classList.add('extra-metric-row');
 
                 // Metric label (only on first row; continuation rows get empty cell)
                 const labelTd = document.createElement('td');
@@ -197,7 +223,7 @@ function renderTracker(tracker, indicatorLinks) {
                     let partLink = null;
                     if (overrides && overrides[rowIdx]) {
                         partLink = overrides[rowIdx].url;
-                    } else if (rowIdx === 0 && (parts.length <= 1)) {
+                    } else if (rowIdx === 0) {
                         partLink = v.link;
                     }
 
@@ -394,13 +420,13 @@ function renderTracker(tracker, indicatorLinks) {
 
                 tbody.appendChild(row);
             }
-        });
+        }
     });
 
     table.appendChild(tbody);
 
     // Toggle button for extra countries — small, top-right, no country list
-    const extraCount = countries.filter(c => !DEFAULT_VISIBLE.has(c)).length;
+    const extraCount = countries.filter(c => HIDDEN.has(c)).length;
     if (extraCount > 0) {
         const trackerSection = document.getElementById('tracker-section');
         const existing = document.getElementById('toggle-extra-countries');
@@ -650,37 +676,15 @@ function buildSideNav() {
     const nav = document.createElement('nav');
     nav.id = 'side-nav';
     nav.innerHTML =
-        '<button id="side-nav-close" title="Hide navigation" aria-label="Hide navigation">\u00D7</button>' +
-        '<div class="side-nav-title">On this page</div>' +
         '<ul>' + items.map(it =>
             '<li><a href="#' + it.id + '" data-target="' + it.id + '">' + it.label + '</a></li>'
-        ).join('') + '</ul>';
-    document.body.appendChild(nav);
+        ).join('') +
+        '<li><a href="slide.html" style="color:#166534;font-weight:600">Slide</a></li>' +
+        '</ul>';
+    document.body.insertBefore(nav, document.body.firstChild);
 
-    // Toggle button (shown when nav is hidden)
-    const showBtn = document.createElement('button');
-    showBtn.id = 'side-nav-show';
-    showBtn.title = 'Show navigation';
-    showBtn.setAttribute('aria-label', 'Show navigation');
-    showBtn.innerHTML = '&#9776;'; // hamburger
-    document.body.appendChild(showBtn);
-
-    // Restore prior state
-    if (localStorage.getItem('sideNavHidden') === '1') {
-        document.body.classList.add('side-nav-hidden');
-    }
-
-    document.getElementById('side-nav-close').addEventListener('click', function() {
-        document.body.classList.add('side-nav-hidden');
-        localStorage.setItem('sideNavHidden', '1');
-    });
-    showBtn.addEventListener('click', function() {
-        document.body.classList.remove('side-nav-hidden');
-        localStorage.setItem('sideNavHidden', '0');
-    });
-
-    // Smooth scroll on click
-    nav.querySelectorAll('a').forEach(a => {
+    // Smooth scroll on click (only for in-page hash links)
+    nav.querySelectorAll('a[data-target]').forEach(a => {
         a.addEventListener('click', function(e) {
             e.preventDefault();
             const t = document.getElementById(this.dataset.target);
@@ -692,7 +696,7 @@ function buildSideNav() {
     const links = Array.from(nav.querySelectorAll('a'));
     function onScroll() {
         let current = items[0].id;
-        const y = window.scrollY + 120;
+        const y = window.scrollY + 60;
         for (const it of items) {
             const el = document.getElementById(it.id);
             if (el && el.offsetTop <= y) current = it.id;

@@ -2,50 +2,112 @@
   "_comment": "Per-source link overrides for indicator table cells. When this file has an entry for a (metric_label, country) combo, the JS renders each source as a separate clickable item within the cell instead of the single text+link from tracker.json.",
   "Browsing / search activity on platforms": {
     "US": [
-      {"text": "23.8% Edmunds research share (+3.1pp from 20.7% Feb 24, week of Mar 9-15)", "url": "https://www.edmunds.com/car-news/electrified-vehicle-research-gas-prices-data.html"},
-      {"text": "CarGurus new EV listing views +31%, used +40% (Q1 vs Q4 2025)", "url": "https://www.globenewswire.com/news-release/2026/04/07/3269242/0/en/Car-Buyers-are-Changing-Lanes-CarGurus-Reveals-Where-Consumers-are-Finding-Value.html"}
+      {
+        "text": "23.8% Edmunds research share (+3.1pp from 20.7% Feb 24, week of Mar 9-15)",
+        "url": "https://www.edmunds.com/car-news/electrified-vehicle-research-gas-prices-data.html"
+      },
+      {
+        "text": "CarGurus new EV listing views +31%, used +40% (Q1 vs Q4 2025)",
+        "url": "https://www.globenewswire.com/news-release/2026/04/07/3269242/0/en/Car-Buyers-are-Changing-Lanes-CarGurus-Reveals-Where-Consumers-are-Finding-Value.html"
+      }
     ],
     "Germany": [
-      {"text": "mobile.de: +24pp in EV search share (12% Feb 28 → 36% as of Mar 26)", "url": "https://www.timeslive.co.za/motoring/2026-03-26-used-ev-sales-jump-in-europe-as-iran-war-drives-up-petrol-prices/"},
-      {"text": "Carwow: +8pp in EV configurator builds (55% Feb 28 → 63% as of Mar 12)", "url": "https://www.handelsblatt.com/mobilitaet/elektromobilitaet/elektromobilitaet-hohe-spritpreise-lassen-interesse-an-e-autos-steigen-01/100207380.html"},
-      {"text": "MeinAuto: +40% EV web traffic since Feb 28 (as of Mar 12)", "url": "https://www.handelsblatt.com/mobilitaet/elektromobilitaet/elektromobilitaet-hohe-spritpreise-lassen-interesse-an-e-autos-steigen-01/100207380.html"}
+      {
+        "text": "mobile.de: +24pp in EV search share (12% Feb 28 \u2192 36% as of Mar 26)",
+        "url": "https://www.timeslive.co.za/motoring/2026-03-26-used-ev-sales-jump-in-europe-as-iran-war-drives-up-petrol-prices/"
+      },
+      {
+        "text": "Carwow: +8pp in EV configurator builds (55% Feb 28 \u2192 63% as of Mar 12)",
+        "url": "https://www.handelsblatt.com/mobilitaet/elektromobilitaet/elektromobilitaet-hohe-spritpreise-lassen-interesse-an-e-autos-steigen-01/100207380.html"
+      },
+      {
+        "text": "MeinAuto: +40% EV web traffic since Feb 28 (as of Mar 12)",
+        "url": "https://www.handelsblatt.com/mobilitaet/elektromobilitaet/elektromobilitaet-hohe-spritpreise-lassen-interesse-an-e-autos-steigen-01/100207380.html"
+      }
     ],
     "UK": [
-      {"text": "Octopus EV leasing enquiries +36% (Mar 1-22 vs Feb 8-28)", "url": "https://transportandenergy.com/2026/03/25/rising-fuel-costs-drive-36-spike-in-ev-leasing-enquiries/"}
+      {
+        "text": "AutoTrader: new EV leads +28%, used +15% (Motor Trader)",
+        "url": "https://www.motortrader.com/motor-trader-news/automotive-news/middle-east-fuel-crisis-sparks-sharp-rise-in-ev-interest-online-27-03-2026"
+      },
+      {
+        "text": "Octopus EV leasing enquiries +36% (Mar 1-22 vs Feb 8-28)",
+        "url": "https://transportandenergy.com/2026/03/25/rising-fuel-costs-drive-36-spike-in-ev-leasing-enquiries/"
+      }
     ],
     "Australia": [
-      {"text": "carsales EV searches ~3x MoM; +76.7% WoW peak (week of Mar 9)", "url": "https://www.carsales.com.au/editorial/details/ev-consideration-skyrockets-in-australia-151687/"}
+      {
+        "text": "carsales EV searches ~3x MoM; +76.7% WoW peak (week of Mar 9)",
+        "url": "https://www.carsales.com.au/editorial/details/ev-consideration-skyrockets-in-australia-151687/"
+      },
+      {
+        "text": "CommBank: EV loan approvals +161% MoM",
+        "url": "https://www.commbank.com.au/articles/newsroom/2026/04/fuel-crisis-drives-record-aussie-electric-car-sales.html"
+      }
     ],
     "South Korea": [
-      {"text": "Herald Economy: EV search volume +28% first week of March", "url": "https://biz.heraldcorp.com/article/10688761"}
+      {
+        "text": "Herald Economy: EV search volume +28% first week of March",
+        "url": "https://biz.heraldcorp.com/article/10688761"
+      }
     ]
   },
   "Used EV demand": {
     "US": [
-      {"text": "Cox: Q1 2026 used EV sales +12% YoY; avg transaction price $34,600 (within $1,300 of comparable ICE)", "url": "https://www.recurrentauto.com/research/used-electric-vehicle-buying-report"}
+      {
+        "text": "Cox: Q1 2026 used EV sales +12% YoY; avg transaction price $34,600 (within $1,300 of comparable ICE)",
+        "url": "https://www.recurrentauto.com/research/used-electric-vehicle-buying-report"
+      }
     ],
     "UK": [
-      {"text": "AutoTrader: Used EVs at 19.5% of all 0-5yr used car leads (all-time record)", "url": "https://www.motortrader.com/motor-trader-news/automotive-news/middle-east-fuel-crisis-sparks-sharp-rise-in-ev-interest-online-27-03-2026"},
-      {"text": "Octopus EV: used EV sales ~4x in 6 months (Oct 2025 to Apr 2026)", "url": "https://transportandenergy.com/2026/03/25/rising-fuel-costs-drive-36-spike-in-ev-leasing-enquiries/"},
-      {"text": "Marketcheck: daily used EV sales 1,100+/day post-war vs 561-965 pre-war range", "url": "https://www.timeslive.co.za/motoring/2026-03-26-used-ev-sales-jump-in-europe-as-iran-war-drives-up-petrol-prices/"}
+      {
+        "text": "AutoTrader: Used EVs at 19.5% of all 0-5yr used car leads (all-time record)",
+        "url": "https://www.motortrader.com/motor-trader-news/automotive-news/middle-east-fuel-crisis-sparks-sharp-rise-in-ev-interest-online-27-03-2026"
+      },
+      {
+        "text": "Octopus EV: used EV sales ~4x in 6 months (Oct 2025 to Apr 2026)",
+        "url": "https://transportandenergy.com/2026/03/25/rising-fuel-costs-drive-36-spike-in-ev-leasing-enquiries/"
+      },
+      {
+        "text": "Marketcheck: daily used EV sales 1,100+/day post-war vs 561-965 pre-war range",
+        "url": "https://www.timeslive.co.za/motoring/2026-03-26-used-ev-sales-jump-in-europe-as-iran-war-drives-up-petrol-prices/"
+      }
     ],
     "Germany": [
-      {"text": "mobile.de used EV dealer enquiries +66% vs February", "url": "https://www.timeslive.co.za/motoring/2026-03-26-used-ev-sales-jump-in-europe-as-iran-war-drives-up-petrol-prices/"}
+      {
+        "text": "mobile.de used EV dealer enquiries +66% vs February",
+        "url": "https://www.timeslive.co.za/motoring/2026-03-26-used-ev-sales-jump-in-europe-as-iran-war-drives-up-petrol-prices/"
+      }
     ],
     "France": [
-      {"text": "Aramis Auto: used EV sales share 6.5% → 12.7% (week of Feb 16 → week of Mar 9, ~doubled)", "url": "https://www.timeslive.co.za/motoring/2026-03-26-used-ev-sales-jump-in-europe-as-iran-war-drives-up-petrol-prices/"}
+      {
+        "text": "Aramis Auto: used EV sales share 6.5% \u2192 12.7% (week of Feb 16 \u2192 week of Mar 9, ~doubled)",
+        "url": "https://www.timeslive.co.za/motoring/2026-03-26-used-ev-sales-jump-in-europe-as-iran-war-drives-up-petrol-prices/"
+      }
     ]
   },
   "Showroom demand": {
     "UK": [
-      {"text": "Polestar UK: test drive bookings tripled since Feb 28", "url": "https://www.miragenews.com/tesla-polestar-sales-surge-amid-global-fuel-1649512/"},
-      {"text": "Kia UK: test drive requests +84% YoY", "url": "https://www.miragenews.com/tesla-polestar-sales-surge-amid-global-fuel-1649512/"}
+      {
+        "text": "Polestar UK: test drive bookings tripled since Feb 28",
+        "url": "https://www.miragenews.com/tesla-polestar-sales-surge-amid-global-fuel-1649512/"
+      },
+      {
+        "text": "Kia UK: test drive requests +84% YoY",
+        "url": "https://www.miragenews.com/tesla-polestar-sales-surge-amid-global-fuel-1649512/"
+      }
     ],
     "Australia": [
-      {"text": "BEV inventory shortages; dealers reporting AU$8-10K premiums above MSRP", "url": "https://cleantechnica.com/2026/04/04/car-yards-empty-as-ev-sales-surge-in-australia/"}
+      {
+        "text": "BEV inventory shortages; dealers reporting AU$8-10K premiums above MSRP",
+        "url": "https://cleantechnica.com/2026/04/04/car-yards-empty-as-ev-sales-surge-in-australia/"
+      }
     ],
     "Vietnam": [
-      {"text": "VinFast showroom traffic 4x; 250 EVs sold in 3 weeks post-war", "url": "https://vietnamnet.vn/en/affordable-electric-cars-reshape-vietnam-s-auto-market-in-2026-2503290.html"}
+      {
+        "text": "VinFast showroom traffic 4x; 250 EVs sold in 3 weeks post-war",
+        "url": "https://vietnamnet.vn/en/affordable-electric-cars-reshape-vietnam-s-auto-market-in-2026-2503290.html"
+      }
     ]
   }
 }

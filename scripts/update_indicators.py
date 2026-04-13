@@ -9,11 +9,15 @@ Google Trends rows (13, 14, 15) get the full weekly progression format:
 where each W is a 7-day average % change vs Feb 25-28 baseline.
 """
 
+import os
 import openpyxl
 import requests
 from datetime import date, datetime, timedelta
 
-XLSX = "/Users/energysada/Library/CloudStorage/GoogleDrive-energysada@gmail.com/.shortcut-targets-by-id/1VsHTFQVv_fCHp83Cf4psemLKtzjGH2k3/Shared from work pc/fuel-prices-ev-interest/ev interest tracker.xlsx"
+XLSX = os.path.join(
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+    "fuel-prices-ev-interest", "ev interest tracker.xlsx",
+)
 
 # Pre-war baseline (matches gas price baseline)
 BASELINE_START = "2026-02-25"
@@ -25,25 +29,34 @@ CRISIS_START = date(2026, 2, 28)
 GEOS = {
     "US": "US", "UK": "GB", "Germany": "DE", "France": "FR",
     "Australia": "AU", "South Korea": "KR", "Vietnam": "VN", "India": "IN",
+    "New Zealand": "NZ", "Sweden": "SE", "Italy": "IT", "Spain": "ES",
+    "Denmark": "DK", "Norway": "NO",
+    "Canada": "CA", "Singapore": "SG", "Thailand": "TH", "Philippines": "PH",
+    "Japan": "JP", "Malaysia": "MY",
 }
 
 # Local-language equivalents
 LOCAL_TERMS = {
     "electric car": {
         "DE": "Elektroauto", "FR": "voiture électrique",
-        "KR": "전기차", "VN": "xe điện",
+        "KR": "전기차", "VN": "xe điện", "SE": "elbil",
+        "IT": "auto elettrica", "ES": "coche eléctrico",
+        "DK": "elbil", "NO": "elbil",
+        "JP": "電気自動車", "TH": "รถยนต์ไฟฟ้า", "MY": "kereta elektrik",
     },
     "EV": {
-        "DE": "Elektroauto", "FR": "voiture électrique",
-        "KR": "전기차", "VN": "xe điện",
+        "DE": "E-Auto", "FR": "véhicule électrique",
+        "KR": "EV", "VN": "ô tô điện", "SE": "EV",
+        "IT": "EV", "ES": "EV", "DK": "EV", "NO": "EV",
+        "JP": "EV", "TH": "EV", "MY": "EV",
     },
 }
 
 # Row mapping in Draft Table (after splitting Browsing → 3 rows, Used EVs → 3 rows, Showroom → 2 rows)
 ROW_MAP = {
-    "electric car": 13,
-    "EV": 14,
-    "used EV": 15,
+    "electric car": 12,
+    "EV": 13,
+    "used EV": 14,
 }
 
 USED_EV_COUNTRIES = {"US", "UK"}
@@ -51,7 +64,7 @@ USED_EV_COUNTRIES = {"US", "UK"}
 
 def get_country_col(ws):
     countries = {}
-    for c in range(3, 12):
+    for c in range(3, 30):
         v = ws.cell(4, c).value
         if v:
             countries[v] = c

@@ -1,21 +1,26 @@
 {
-  "title": "Fuel Prices & EV Interest Tracker — Week of April 10, 2026",
-  "subtitle": "Brent: $94/bbl (+31% since Feb 28)  |  Edition #2",
+  "title": "Fuel Prices & EV Interest Tracker — Week of April 12, 2026",
+  "subtitle": "Brent: $104/bbl (+44% since Feb 28)  |  Edition #2",
   "countries": [
-    "US",
     "Australia",
+    "New Zealand",
     "UK",
     "Germany",
+    "Sweden",
     "France",
-    "South Korea",
+    "Italy",
+    "Spain",
+    "Denmark",
+    "Norway",
+    "US",
     "Vietnam",
-    "New Zealand",
+    "Nepal",
+    "Pakistan",
+    "South Korea",
     "China",
     "India",
-    "Pakistan",
     "Cambodia",
     "Canada",
-    "Nepal",
     "Singapore",
     "Thailand",
     "Philippines",
@@ -31,99 +36,124 @@
           "source": "EIA, GOV.UK, ADAC, AIP, OPINET, IOCL",
           "values": [
             {
-              "country": "US",
-              "value": "+1% +17% +25% +33% +34% --> +39% ($4.14/gal) | Peak +39%",
-              "link": null
-            },
-            {
               "country": "Australia",
-              "value": "+9% +24% +36% +47% +57% --> +49% (A$2.40/L) | Peak +57%",
-              "link": null
-            },
-            {
-              "country": "UK",
-              "value": "0% +3% +6% +9% +13% --> +19% (157p/L) | Peak +19%",
-              "link": null
-            },
-            {
-              "country": "Germany",
-              "value": "+2% +6% +10% +17% +20% --> +25% (€2.22/L) | Peak +25%",
-              "link": null
-            },
-            {
-              "country": "France",
-              "value": "+2% +5% +9% +12% +16% --> +15% (€2.03/L) | Peak +17%",
-              "link": null
-            },
-            {
-              "country": "South Korea",
-              "value": "+1% +1% +3% +3% +9% --> +11% (₩1,967/L) | Peak +11%",
-              "link": null
-            },
-            {
-              "country": "Vietnam",
-              "value": "+8% +30% +40% +48% +19% --> +19% (₫24,773/L) | Peak +47%",
+              "value": "+9% +24% +36% +47% +57% +49% --> +49% (A$2.40/L) | Peak +57%",
               "link": null
             },
             {
               "country": "New Zealand",
-              "value": "+5% +18% +33% +52% +60% --> +50% (~NZ$3.20/L) | Peak +60%",
-              "link": null
-            },
-            {
-              "country": "China",
-              "value": "+2% +5% +8% +10% +12% --> +12% (¥9.0/L) | Peak +12%",
+              "value": "+5% +18% +33% +52% +60% +50% --> +50% (~NZ$3.20/L) | Peak +60%",
               "link": "https://carnewschina.com/2026/04/01/china-fuel-prices-near-9-yuan-per-liter/"
             },
             {
-              "country": "India",
-              "value": "0% 0% 0% 0% 0% --> 0% (₹94.77/L (govt held)) | Peak 0%",
-              "link": "https://www.aljazeera.com/news/2026/3/27/india-slashes-petrol-diesel-import-taxes-as-fuel-prices-remain-high"
-            },
-            {
-              "country": "Pakistan",
-              "value": "+15% +20% +18% +15% +18% --> +18% (PKR 321/L) | Peak +20%",
-              "link": "https://tribune.com.pk/story/2601483/soaring-costs-fuel-shortage-fears-drive-pakistan-to-electric-motorbikes"
-            },
-            {
-              "country": "Cambodia",
-              "value": "+15% +30% +50% +68% +60% --> +55% (~$1.32/L) | Peak +68%",
+              "country": "UK",
+              "value": "0% +3% +6% +9% +13% +19% --> +19% (157p/L) | Peak +19%",
               "link": null
             },
             {
-              "country": "Canada",
-              "value": "+10% +18% +25% +30% +33% --> +34% (~C$1.74/L) | Peak +34%",
+              "country": "Germany",
+              "value": "+2% +6% +10% +17% +20% +25% --> +25% (€2.22/L) | Peak +25%",
+              "link": null
+            },
+            {
+              "country": "Sweden",
+              "value": "+2% +4% +6% +8% +10% +8% --> +8% (18.39 SEK/L) | Peak +15%",
+              "link": null
+            },
+            {
+              "country": "France",
+              "value": "+2% +5% +9% +12% +16% +15% --> +15% (€2.03/L) | Peak +17%",
+              "link": null
+            },
+            {
+              "country": "Italy",
+              "value": "+1% +5% +10% +7% +5% +6% --> +6% (€1.76/L) | Peak +10%",
+              "link": null
+            },
+            {
+              "country": "Spain",
+              "value": "+1% +9% +16% +18% +6% +6% --> +6% (€1.55/L) | Peak +18%",
+              "link": null
+            },
+            {
+              "country": "Denmark",
+              "value": "+1% +6% +12% +16% +15% +20% --> +20% (DKK 17.33/L) | Peak +20%",
+              "link": null
+            },
+            {
+              "country": "Norway",
+              "value": "+12% +18% +19% +19% +19% +19% --> +11% (~NOK 24/L) | Peak +19%",
+              "link": null
+            },
+            {
+              "country": "US",
+              "value": "+1% +17% +25% +33% +34% +39% --> +39% ($4.14/gal) | Peak +39%",
+              "link": null
+            },
+            {
+              "country": "Vietnam",
+              "value": "+8% +30% +40% +48% +19% +19% --> +19% (₫24,773/L) | Peak +47%",
               "link": null
             },
             {
               "country": "Nepal",
               "value": "+10% +10% +20% --> +24% (Rs 202/L) | Peak +24%",
+              "link": "https://mothership.sg/2026/03/petrol-prices-singapore-iran-conflict/"
+            },
+            {
+              "country": "Pakistan",
+              "value": "+15% +20% +18% +15% +18% +18% --> +18% (PKR 321/L) | Peak +20%",
+              "link": null
+            },
+            {
+              "country": "South Korea",
+              "value": "+1% +1% +3% +3% +9% +11% --> +11% (₩1,967/L) | Peak +11%",
+              "link": null
+            },
+            {
+              "country": "China",
+              "value": "+2% +5% +8% +10% +12% +12% --> +12% (¥9.0/L) | Peak +12%",
+              "link": "https://www.aljazeera.com/news/2026/3/27/india-slashes-petrol-diesel-import-taxes-as-fuel-prices-remain-high"
+            },
+            {
+              "country": "India",
+              "value": "0% 0% 0% 0% 0% 0% --> 0% (₹94.77/L (govt held)) | Peak 0%",
+              "link": "https://tribune.com.pk/story/2601483/soaring-costs-fuel-shortage-fears-drive-pakistan-to-electric-motorbikes"
+            },
+            {
+              "country": "Cambodia",
+              "value": "+15% +30% +50% +68% +60% +55% --> +55% (~$1.32/L) | Peak +68%",
+              "link": null
+            },
+            {
+              "country": "Canada",
+              "value": "+10% +18% +25% +30% +33% +34% --> +34% (~C$1.74/L) | Peak +34%",
               "link": "https://kathmandupost.com/money/2026/04/03/nepal-hikes-fuel-prices-for-third-time-in-a-month"
             },
             {
               "country": "Singapore",
-              "value": "+5% +10% +15% +18% +20% --> +20% (S$3.47/L Oct 95) | Peak +20%",
-              "link": "https://mothership.sg/2026/03/petrol-prices-singapore-iran-conflict/"
-            },
-            {
-              "country": "Thailand",
-              "value": "+0% +0% +0% +18% +18% --> +18% (52.17 THB/L) | Peak +22%",
+              "value": "+5% +10% +15% +18% +20% +20% --> +20% (S$3.47/L Oct 95) | Peak +20%",
               "link": "https://www.bloomberg.com/news/articles/2026-03-26/fuel-shock-in-thailand-sends-prices-surging-up-to-22-overnight"
             },
             {
-              "country": "Philippines",
-              "value": "+8% +20% +35% +45% +52% --> +52% (PHP 95.90/L) | Peak +52%",
+              "country": "Thailand",
+              "value": "+0% +0% +0% +18% +18% +18% --> +18% (52.17 THB/L) | Peak +22%",
               "link": "https://www.pna.gov.ph/articles/1271157"
             },
             {
-              "country": "Japan",
-              "value": "+5% +10% +12% +8% +4% --> +4% (¥177.70/L, subsidy absorbs) | Peak +12%",
+              "country": "Philippines",
+              "value": "+8% +20% +35% +45% +52% +52% --> +52% (PHP 95.90/L) | Peak +52%",
               "link": "https://www.japantimes.co.jp/business/2026/04/07/japan-gas-price-gouge/"
+            },
+            {
+              "country": "Japan",
+              "value": "+5% +10% +12% +8% +4% +4% --> +4% (¥177.70/L, subsidy absorbs) | Peak +12%",
+              "link": "https://paultan.org/2026/03/18/malaysian-fuel-prices-march-19-25-2026-ron97-up-70-sen-to-rm4-55-per-litre-diesel-up-80-sen-rm4-72-litre/"
             },
             {
               "country": "Malaysia",
               "value": "BUDI95 held RM1.99 (0%); RON97 +40%; diesel +51% (two-tier)",
-              "link": "https://paultan.org/2026/03/18/malaysian-fuel-prices-march-19-25-2026-ron97-up-70-sen-to-rm4-55-per-litre-diesel-up-80-sen-rm4-72-litre/"
+              "link": null
             }
           ]
         },
@@ -132,19 +162,19 @@
           "source": "Edmunds, mobile.de, Encar, carsales",
           "values": [
             {
-              "country": "US",
-              "value": "+2.1pp in EV research share on Edmunds (23.8% in 3rd week of Mar vs 20.7% baseline last week of Feb)\n\nCarGurus new listing views +31%, used +40% (Q1 vs Q4)",
-              "link": "https://www.globenewswire.com/news-release/2026/04/07/3269242/0/en/Car-Buyers-are-Changing-Lanes-CarGurus-Reveals-Where-Consumers-are-Finding-Value.html"
-            },
-            {
               "country": "Australia",
-              "value": "Searches ~3x (carsales)",
+              "value": "carsales EV searches ~3x MoM; +76.7% WoW peak (week of Mar 9)\n\nLoans +161% MoM (CommBank)",
               "link": "https://www.carsales.com.au/editorial/details/ev-consideration-skyrockets-in-australia-151687/"
             },
             {
+              "country": "New Zealand",
+              "value": "Trade Me EV searches +142% MoM (50K → 125K in first half Mar)",
+              "link": null
+            },
+            {
               "country": "UK",
-              "value": "Octopus EV leasing enquiries +36% (Mar 1-22 vs Feb 8-28)",
-              "link": "https://transportandenergy.com/2026/03/25/rising-fuel-costs-drive-36-spike-in-ev-leasing-enquiries/"
+              "value": "AutoTrader: new EV leads +28%, used +15% (Motor Trader)\n\nOctopus EV leasing enquiries +36% (Mar 1-22 vs Feb 8-28)",
+              "link": "https://www.motortrader.com/motor-trader-news/automotive-news/middle-east-fuel-crisis-sparks-sharp-rise-in-ev-interest-online-27-03-2026"
             },
             {
               "country": "Germany",
@@ -152,38 +182,68 @@
               "link": "https://www.handelsblatt.com/mobilitaet/elektromobilitaet/elektromobilitaet-hohe-spritpreise-lassen-interesse-an-e-autos-steigen-01/100207380.html"
             },
             {
+              "country": "Sweden",
+              "value": "Used EVs outsold diesel cars for first time ever (Dagens PS); used EV sales +40% in first 3 weeks of Mar",
+              "link": "https://www.dagensps.se/motor/begagnatpriserna-pa-elbilar-sjunker-trots-rekordintresse/"
+            },
+            {
               "country": "France",
               "value": "",
               "link": null
             },
             {
-              "country": "South Korea",
-              "value": "EV search volume +28% first week of March (Herald Economy)",
-              "link": "https://biz.heraldcorp.com/article/10688761"
+              "country": "Italy",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Spain",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Denmark",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Norway",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "US",
+              "value": "+2.1pp in EV research share on Edmunds (23.8% in 3rd week of Mar vs 20.7% baseline last week of Feb)\n\nCarGurus new listing views +31%, used +40% (Q1 vs Q4)",
+              "link": "https://www.globenewswire.com/news-release/2026/04/07/3269242/0/en/Car-Buyers-are-Changing-Lanes-CarGurus-Reveals-Where-Consumers-are-Finding-Value.html"
             },
             {
               "country": "Vietnam",
               "value": "Sensor Tower (Google Play): VinFast (OEM): #6 → #2 (+4); VinFast E-Scooter: #9 → #3 (+6); Dat Bike: new #24",
-              "link": null
+              "link": "https://www.rnz.co.nz/news/national/589843/rising-petrol-prices-sees-spike-in-trade-me-searches-for-electric-vehicles"
             },
             {
-              "country": "New Zealand",
-              "value": "Trade Me EV searches +142% MoM\n\n125K searches in first half Mar (Trade Me)",
-              "link": "https://www.1news.co.nz"
-            },
-            {
-              "country": "China",
-              "value": "Limited platform-level data; primary EV signals via wholesale/registration data",
-              "link": null
-            },
-            {
-              "country": "India",
-              "value": "—",
+              "country": "Nepal",
+              "value": "",
               "link": null
             },
             {
               "country": "Pakistan",
               "value": "E-motorbike outlets overwhelmed with enquiries\n\nsales +70% MoM",
+              "link": null
+            },
+            {
+              "country": "South Korea",
+              "value": "EV search volume +28% first week of March (Herald Economy)",
+              "link": null
+            },
+            {
+              "country": "China",
+              "value": "—",
+              "link": null
+            },
+            {
+              "country": "India",
+              "value": "—",
               "link": "https://tribune.com.pk/story/2601483/soaring-costs-fuel-shortage-fears-drive-pakistan-to-electric-motorbikes"
             },
             {
@@ -194,11 +254,6 @@
             {
               "country": "Canada",
               "value": "—",
-              "link": null
-            },
-            {
-              "country": "Nepal",
-              "value": "",
               "link": null
             },
             {
@@ -213,13 +268,13 @@
             },
             {
               "country": "Philippines",
-              "value": "",
-              "link": null
+              "value": "https://www.businessinsider.jp/article/2603-higher-gas-prices-lift-interest-in-electric-cars/",
+              "link": "https://www.businessinsider.jp/article/2603-higher-gas-prices-lift-interest-in-electric-cars/"
             },
             {
               "country": "Japan",
               "value": "BI Japan: EV listing page views +10%, used EV interest +15% (sales still -45% YoY)",
-              "link": "https://www.businessinsider.jp/article/2603-higher-gasoline-prices-lift-interest-in-electric-cars/"
+              "link": null
             },
             {
               "country": "Malaysia",
@@ -233,19 +288,19 @@
           "source": "",
           "values": [
             {
-              "country": "US",
-              "value": "",
-              "link": null
-            },
-            {
               "country": "Australia",
               "value": "",
               "link": null
             },
             {
+              "country": "New Zealand",
+              "value": "—",
+              "link": null
+            },
+            {
               "country": "UK",
-              "value": "AutoTrader: new EV leads +28%, used +15% (Motor Trader)",
-              "link": "https://www.motortrader.com/motor-trader-news/automotive-news/middle-east-fuel-crisis-sparks-sharp-rise-in-ev-interest-online-27-03-2026"
+              "value": "",
+              "link": null
             },
             {
               "country": "Germany",
@@ -253,108 +308,52 @@
               "link": "https://www.timeslive.co.za/motoring/2026-03-26-used-ev-sales-jump-in-europe-as-iran-war-drives-up-petrol-prices/"
             },
             {
+              "country": "Sweden",
+              "value": "",
+              "link": null
+            },
+            {
               "country": "France",
-              "value": "+50% (OLX France)",
+              "value": "+50% in EV listing views on OLX/Leboncoin France (Mar vs Feb baseline)",
               "link": "https://www.timeslive.co.za/motoring/2026-03-26-used-ev-sales-jump-in-europe-as-iran-war-drives-up-petrol-prices/"
             },
             {
-              "country": "South Korea",
-              "value": "—",
-              "link": null
-            },
-            {
-              "country": "Vietnam",
-              "value": "—",
-              "link": null
-            },
-            {
-              "country": "New Zealand",
-              "value": "—",
-              "link": null
-            },
-            {
-              "country": "China",
-              "value": "—",
-              "link": null
-            },
-            {
-              "country": "India",
-              "value": "—",
-              "link": null
-            },
-            {
-              "country": "Pakistan",
-              "value": "—",
-              "link": null
-            },
-            {
-              "country": "Cambodia",
-              "value": "—",
-              "link": null
-            },
-            {
-              "country": "Canada",
-              "value": "—",
-              "link": null
-            },
-            {
-              "country": "Nepal",
+              "country": "Italy",
               "value": "",
               "link": null
             },
             {
-              "country": "Singapore",
+              "country": "Spain",
               "value": "",
               "link": null
             },
             {
-              "country": "Thailand",
+              "country": "Denmark",
               "value": "",
               "link": null
             },
             {
-              "country": "Philippines",
+              "country": "Norway",
               "value": "",
               "link": null
             },
-            {
-              "country": "Japan",
-              "value": "",
-              "link": null
-            },
-            {
-              "country": "Malaysia",
-              "value": "",
-              "link": null
-            }
-          ]
-        },
-        {
-          "label": "EV loan approvals",
-          "source": "CommBank, NAB",
-          "values": [
             {
               "country": "US",
-              "value": "—",
-              "link": null
-            },
-            {
-              "country": "Australia",
-              "value": "Loans +161% MoM (CommBank)",
-              "link": "https://www.commbank.com.au/articles/newsroom/2026/04/fuel-crisis-drives-record-aussie-electric-car-sales.html"
-            },
-            {
-              "country": "UK",
               "value": "",
               "link": null
             },
             {
-              "country": "Germany",
+              "country": "Vietnam",
               "value": "—",
               "link": null
             },
             {
-              "country": "France",
+              "country": "Nepal",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Pakistan",
               "value": "—",
               "link": null
             },
@@ -364,43 +363,23 @@
               "link": null
             },
             {
-              "country": "Vietnam",
+              "country": "China",
               "value": "—",
               "link": null
             },
             {
-              "country": "New Zealand",
-              "value": "",
-              "link": null
-            },
-            {
-              "country": "China",
-              "value": "",
-              "link": null
-            },
-            {
               "country": "India",
-              "value": "",
+              "value": "—",
               "link": null
-            },
-            {
-              "country": "Pakistan",
-              "value": "PAVE subsidy 270K applications (7x target)",
-              "link": "https://tribune.com.pk/story/2601483/soaring-costs-fuel-shortage-fears-drive-pakistan-to-electric-motorbikes"
             },
             {
               "country": "Cambodia",
-              "value": "",
+              "value": "—",
               "link": null
             },
             {
               "country": "Canada",
-              "value": "EVAP $2.275B portal launched Mar 31",
-              "link": "https://www.canada.ca"
-            },
-            {
-              "country": "Nepal",
-              "value": "",
+              "value": "—",
               "link": null
             },
             {
@@ -435,33 +414,58 @@
           "source": "",
           "values": [
             {
-              "country": "US",
-              "value": "Q1 +12% YoY\n\navg $34,600 (Cox)",
-              "link": "https://www.recurrentauto.com/research/used-electric-vehicle-buying-report"
-            },
-            {
               "country": "Australia",
               "value": "Used EV demand surging amid stock shortages",
-              "link": "https://cleantechnica.com/2026/04/04/car-yards-empty-as-ev-sales-surge-in-australia/"
+              "link": null
+            },
+            {
+              "country": "New Zealand",
+              "value": "Used BEV stock running short on dealer lots; used EV imports delayed (shipping constraints)",
+              "link": null
             },
             {
               "country": "UK",
-              "value": "Used EVs 19.5% of 0-5yr leads (ATH, AutoTrader)\n\nOctopus 4x in 6 months\n\nMarketcheck daily sales 1,100+/day post-war vs 561-965 pre-war",
-              "link": "https://www.motortrader.com/motor-trader-news/automotive-news/middle-east-fuel-crisis-sparks-sharp-rise-in-ev-interest-online-27-03-2026"
+              "value": "Used EVs 19.5% of 0-5yr leads (ATH, AutoTrader)\n\nMarketcheck daily sales 1,100+/day post-war vs 561-965 pre-war",
+              "link": null
             },
             {
               "country": "Germany",
               "value": "mobile.de used EV dealer enquiries +66%",
-              "link": "https://www.timeslive.co.za/motoring/2026-03-26-used-ev-sales-jump-in-europe-as-iran-war-drives-up-petrol-prices/"
+              "link": null
+            },
+            {
+              "country": "Sweden",
+              "value": "Used EV sales +40% first 3 weeks Mar YoY; fuel prices cited as 'strong contributing reason' (Dagens PS)",
+              "link": null
             },
             {
               "country": "France",
               "value": "Aramis Auto EV sales share 6.5% → 12.7% (2x)",
-              "link": "https://www.timeslive.co.za/motoring/2026-03-26-used-ev-sales-jump-in-europe-as-iran-war-drives-up-petrol-prices/"
+              "link": null
             },
             {
-              "country": "South Korea",
-              "value": "—",
+              "country": "Italy",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Spain",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Denmark",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Norway",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "US",
+              "value": "Cox March EV Monitor (pending)",
               "link": null
             },
             {
@@ -470,9 +474,19 @@
               "link": null
             },
             {
-              "country": "New Zealand",
-              "value": "Inventory shortages; dealer lots reportedly running short on used BEV stock",
-              "link": "https://cleantechnica.com/2026/04/04/car-yards-empty-as-ev-sales-surge-in-australia/"
+              "country": "Nepal",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Pakistan",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "South Korea",
+              "value": "—",
+              "link": null
             },
             {
               "country": "China",
@@ -485,22 +499,12 @@
               "link": null
             },
             {
-              "country": "Pakistan",
-              "value": "",
-              "link": null
-            },
-            {
               "country": "Cambodia",
               "value": "",
               "link": null
             },
             {
               "country": "Canada",
-              "value": "",
-              "link": null
-            },
-            {
-              "country": "Nepal",
               "value": "",
               "link": null
             },
@@ -536,28 +540,73 @@
           "source": "",
           "values": [
             {
-              "country": "US",
-              "value": "—",
-              "link": null
-            },
-            {
               "country": "Australia",
               "value": "BEV inventory shortages (CleanTechnica)",
               "link": "https://cleantechnica.com/2026/04/04/car-yards-empty-as-ev-sales-surge-in-australia/"
             },
             {
+              "country": "New Zealand",
+              "value": "Auckland/Christchurch dealer EV sales +30-50% MoM; enquiries 5x normal",
+              "link": null
+            },
+            {
               "country": "UK",
               "value": "Polestar 3x\n\nKia +84% YoY (Mirage News)",
-              "link": "https://www.miragenews.com/tesla-polestar-sales-surge-amid-global-fuel-1649512/"
+              "link": "https://www.motortrader.com/motor-trader-news/automotive-news/middle-east-fuel-crisis-sparks-sharp-rise-in-ev-interest-online-27-03-2026"
             },
             {
               "country": "Germany",
               "value": "—",
-              "link": null
+              "link": "https://www.timeslive.co.za/motoring/2026-03-26-used-ev-sales-jump-in-europe-as-iran-war-drives-up-petrol-prices/"
+            },
+            {
+              "country": "Sweden",
+              "value": "7 in 10 BEVs registered to corporate fleets (Mobility Sweden); fuel-driven private buyer shift emerging",
+              "link": "https://www.dagensps.se/motor/begagnatpriserna-pa-elbilar-sjunker-trots-rekordintresse/"
             },
             {
               "country": "France",
               "value": "—",
+              "link": "https://www.timeslive.co.za/motoring/2026-03-26-used-ev-sales-jump-in-europe-as-iran-war-drives-up-petrol-prices/"
+            },
+            {
+              "country": "Italy",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Spain",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Denmark",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Norway",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "US",
+              "value": "—",
+              "link": null
+            },
+            {
+              "country": "Vietnam",
+              "value": "Showroom traffic 4x (VinFast / Bloomberg)",
+              "link": "https://cleantechnica.com/2026/04/06/new-zealand-car-yards-empty-as-electric-vehicle-sales-surge/"
+            },
+            {
+              "country": "Nepal",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Pakistan",
+              "value": "E-motorbike sales +70% MoM at retail outlets",
               "link": null
             },
             {
@@ -566,42 +615,22 @@
               "link": null
             },
             {
-              "country": "Vietnam",
-              "value": "Showroom traffic 4x (VinFast / Bloomberg)",
-              "link": "https://vietnamnet.vn/en/affordable-electric-cars-reshape-vietnam-s-auto-market-in-2026-2503290.html"
-            },
-            {
-              "country": "New Zealand",
-              "value": "Auckland/Christchurch dealer EV sales +30-50% MoM",
-              "link": "https://www.nzherald.co.nz/nz/fuel-price-spike-sees-ev-sales-jump-up-to-50-in-auckland-chr"
-            },
-            {
               "country": "China",
               "value": "",
               "link": null
             },
             {
               "country": "India",
-              "value": "",
+              "value": "https://tribune.com.pk/story/2601483/soaring-costs-fuel-shortage-fears-drive-pakistan-to-electric-motorbikes",
               "link": null
-            },
-            {
-              "country": "Pakistan",
-              "value": "E-motorbike sales +70% MoM at retail outlets",
-              "link": "https://tribune.com.pk/story/2601483/soaring-costs-fuel-shortage-fears-drive-pakistan-to-electric-motorbikes"
             },
             {
               "country": "Cambodia",
               "value": "Monthly EV registrations doubled Jan→Feb (488→1,078)",
-              "link": "https://www.akp.gov.kh/post/detail/366087"
-            },
-            {
-              "country": "Canada",
-              "value": "",
               "link": null
             },
             {
-              "country": "Nepal",
+              "country": "Canada",
               "value": "",
               "link": null
             },
@@ -637,19 +666,19 @@
           "source": "",
           "values": [
             {
-              "country": "US",
-              "value": "Tesla Supercharger Q1 global: 53M sessions (+26% YoY), 1.8 TWh (+22% YoY); Q1 matched record Q3 2025",
-              "link": "https://evchargingstations.com/chargingnews/tesla-supercharging-q1-2026/"
-            },
-            {
               "country": "Australia",
               "value": "NRMA network +19% WoW (wk Mar 22); Mondays +30%; Easter +100% YoY energy delivered. RAA Adelaide session times 2x over Easter",
-              "link": "https://www.mynrma.com.au/open-road/news/2026/ev-charger-use-jumps"
+              "link": "https://cleantechnica.com/2026/04/04/car-yards-empty-as-ev-sales-surge-in-australia/"
+            },
+            {
+              "country": "New Zealand",
+              "value": "",
+              "link": null
             },
             {
               "country": "UK",
-              "value": "Octopus: EV charger sales +20% in March; EV enquiries +36% since conflict; home EV tariff cut 7p→5.5p/kWh from Apr 1 (deliberate counterweight to pump spike)",
-              "link": "https://electrek.co/2026/03/27/iran-war-spikes-energy-prices-uk-homes-ditch-fossil-fuels-fast/"
+              "value": "Octopus: EV charger sales +20% in March; home EV tariff cut 7p→5.5p/kWh from Apr 1 (deliberate counterweight to pump spike)",
+              "link": "https://www.miragenews.com/tesla-polestar-sales-surge-amid-global-fuel-1649512/"
             },
             {
               "country": "Germany",
@@ -657,24 +686,59 @@
               "link": null
             },
             {
+              "country": "Sweden",
+              "value": "https://mobilitysweden.se/statistik/Nyregistreringar_per_manad_1/nyregistreringar-2026/stark-marsmanad-lyfter-kvartalet-elfordon-okar-i-samtliga-segment",
+              "link": "https://mobilitysweden.se/statistik/Nyregistreringar_per_manad_1/nyregistreringar-2026/stark-marsmanad-lyfter-kvartalet-elfordon-okar-i-samtliga-segment"
+            },
+            {
               "country": "France",
               "value": "",
               "link": null
             },
             {
-              "country": "South Korea",
-              "value": "SK Electlink charging app +2 positions (Sensor Tower)",
+              "country": "Italy",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Spain",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Denmark",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Norway",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "US",
+              "value": "",
               "link": null
             },
             {
               "country": "Vietnam",
               "value": "V-Green (VinFast CPO) VND10T ($380M) for 99 fast-charging sites across 34 provinces; VinFast 'Trade Gas for Electric' in VN/IN/ID/PH",
-              "link": "https://www.electrive.com/2026/03/20/v-green-to-build-99-fast-charging-stations-in-vietnam/"
+              "link": "https://www.nzherald.co.nz/nz/fuel-price-spike-sees-ev-sales-jump-up-to-50-in-auckland-christchurch/Y2HR5STM6NHQZEMBUS7HIRVLSY/"
             },
             {
-              "country": "New Zealand",
+              "country": "Nepal",
               "value": "",
               "link": null
+            },
+            {
+              "country": "Pakistan",
+              "value": "https://www.akp.gov.kh/post/detail/366087",
+              "link": "https://www.akp.gov.kh/post/detail/366087"
+            },
+            {
+              "country": "South Korea",
+              "value": "SK Electlink charging app +2 positions (Sensor Tower)",
+              "link": "https://vietnamnet.vn/en/affordable-electric-cars-reshape-vietnam-s-auto-market-in-2026-2503290.html"
             },
             {
               "country": "China",
@@ -683,13 +747,8 @@
             },
             {
               "country": "India",
-              "value": "",
-              "link": null
-            },
-            {
-              "country": "Pakistan",
-              "value": "",
-              "link": null
+              "value": "https://tribune.com.pk/story/2601483/soaring-costs-fuel-shortage-fears-drive-pakistan-to-electric-motorbikes",
+              "link": "https://tribune.com.pk/story/2601483/soaring-costs-fuel-shortage-fears-drive-pakistan-to-electric-motorbikes"
             },
             {
               "country": "Cambodia",
@@ -702,19 +761,14 @@
               "link": null
             },
             {
-              "country": "Nepal",
-              "value": "",
-              "link": null
-            },
-            {
               "country": "Singapore",
-              "value": "",
+              "value": "https://www.bloomberg.com/news/articles/2026-03-31/largest-thai-oil-retailer-to-double-ev-chargers-as-fuel-crunch-bites",
               "link": null
             },
             {
               "country": "Thailand",
               "value": "PTT Oil & Retail (OR) to >2x EV charger network by 2030; fuel-crunch-cited (Bloomberg 3/31)",
-              "link": "https://www.bloomberg.com/news/articles/2026-03-31/largest-thai-oil-retailer-to-double-ev-chargers-as-fuel-crunch-bites"
+              "link": null
             },
             {
               "country": "Philippines",
@@ -738,44 +792,79 @@
           "source": "carsales, Cox, JD Power",
           "values": [
             {
-              "country": "US",
-              "value": "+3% +24% +32% +58% +84% --> +61%",
-              "link": "https://www.pewresearch.org/science/2026/04/03/how-appealing-are-electric-vehicles-and-hybrids-to-americans/"
+              "country": "Australia",
+              "value": "+53% +144% +173% +274% +143% +80% --> +54%",
+              "link": "https://www.mynrma.com.au/open-road/news/2026/ev-charger-use-jumps"
             },
             {
-              "country": "Australia",
-              "value": "+54% +151% +181% +262% +145% --> +90%",
-              "link": "https://www.carsales.com.au/editorial/details/ev-consideration-skyrockets-in-australia-151687/"
+              "country": "New Zealand",
+              "value": "-3% +78% +110% +156% +93% +55% --> +14%",
+              "link": null
             },
             {
               "country": "UK",
-              "value": "+10% +33% +34% +34% +23% --> +20%",
-              "link": null
+              "value": "+8% +32% +32% +39% +24% +19% --> +29%",
+              "link": "https://electrek.co/2026/03/27/iran-war-spikes-energy-prices-uk-homes-ditch-fossil-fuels-fast/"
             },
             {
               "country": "Germany",
-              "value": "+33% +54% +50% +60% +63% --> +129%",
-              "link": "https://www.reuters.com/business/autos-transportation/gasoline-price-hike-iran-war-could-push-consumers-toward-evs-hybrids-2026-03-18/"
-            },
-            {
-              "country": "France",
-              "value": "+20% +57% +56% +81% +113% --> +142%",
+              "value": "+34% +57% +54% +66% +65% +130% --> +129%",
               "link": null
             },
             {
-              "country": "South Korea",
-              "value": "-3% +3% +3% -1% -2% --> -3%",
+              "country": "Sweden",
+              "value": "+2% +22% +31% +31% +33% +94% --> +43%",
+              "link": null
+            },
+            {
+              "country": "France",
+              "value": "+21% +53% +53% +79% +112% +169% --> +463%",
+              "link": null
+            },
+            {
+              "country": "Italy",
+              "value": "+17% +27% +33% +34% +33% +132% --> +49%",
+              "link": null
+            },
+            {
+              "country": "Spain",
+              "value": "+4% +22% +25% +36% +26% +25% --> +29%",
+              "link": null
+            },
+            {
+              "country": "Denmark",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Norway",
+              "value": "-6% +5% +30% +44% +40% +59% --> +141%",
+              "link": null
+            },
+            {
+              "country": "US",
+              "value": "+2% +23% +31% +81% +81% +64% --> +80%",
               "link": null
             },
             {
               "country": "Vietnam",
-              "value": "+11% +80% +47% +74% +34% --> +29%",
+              "value": "+10% +74% +46% +67% +34% +31% --> +29%",
               "link": null
             },
             {
-              "country": "New Zealand",
+              "country": "Nepal",
               "value": "",
               "link": null
+            },
+            {
+              "country": "Pakistan",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "South Korea",
+              "value": "-4% +2% +0% +3% -3% -7% --> -26%",
+              "link": "https://www.electrive.com/2026/03/20/v-green-to-build-99-fast-charging-stations-in-vietnam/"
             },
             {
               "country": "China",
@@ -784,12 +873,7 @@
             },
             {
               "country": "India",
-              "value": "E2W buyers responding to fuel supply news rather than current pump prices",
-              "link": null
-            },
-            {
-              "country": "Pakistan",
-              "value": "",
+              "value": "-6% +13% +17% +19% -2% -13% --> -10%",
               "link": null
             },
             {
@@ -799,32 +883,27 @@
             },
             {
               "country": "Canada",
-              "value": "",
-              "link": null
-            },
-            {
-              "country": "Nepal",
-              "value": "",
+              "value": "-6% +14% +27% +30% +20% +11% --> +12%",
               "link": null
             },
             {
               "country": "Singapore",
-              "value": "",
-              "link": null
+              "value": "-18% +14% +9% +22% -20% +3% --> -10%",
+              "link": "https://www.bloomberg.com/news/articles/2026-03-31/largest-thai-oil-retailer-to-double-ev-chargers-as-fuel-crunch-bites"
             },
             {
               "country": "Thailand",
-              "value": "",
+              "value": "+21% +34% +81% +134% +115% +88% --> +48%",
               "link": null
             },
             {
               "country": "Philippines",
-              "value": "",
+              "value": "+18% +115% +150% +150% +102% +97% --> +61%",
               "link": null
             },
             {
               "country": "Japan",
-              "value": "",
+              "value": "+6% +46% +31% +8% +0% +2% --> +13%",
               "link": null
             },
             {
@@ -839,43 +918,78 @@
           "source": "Google Trends",
           "values": [
             {
-              "country": "US",
-              "value": "+15% +12% +25% +21% +5% --> +7%",
-              "link": null
+              "country": "Australia",
+              "value": "+16% +60% +93% +181% +137% +154% --> +105%",
+              "link": "https://www.carsales.com.au/editorial/details/ev-consideration-skyrockets-in-australia-151687/"
             },
             {
-              "country": "Australia",
-              "value": "+16% +60% +92% +173% +138% --> +165%",
+              "country": "New Zealand",
+              "value": "+20% +74% +147% +190% +152% +101% --> +52%",
               "link": null
             },
             {
               "country": "UK",
-              "value": "+10% +19% +20% +33% +25% --> +19%",
+              "value": "+9% +19% +20% +38% +25% +21% --> +20%",
               "link": null
             },
             {
               "country": "Germany",
-              "value": "+33% +54% +50% +60% +63% --> +129%",
+              "value": "+49% +73% +70% +92% +79% +93% --> +59%",
+              "link": "https://www.reuters.com/business/autos-transportation/gasoline-price-hike-iran-war-could-push-consumers-toward-evs-hybrids-2026-03-18/"
+            },
+            {
+              "country": "Sweden",
+              "value": "-14% +10% +8% +9% -20% -20% --> -29%",
               "link": null
             },
             {
               "country": "France",
-              "value": "+20% +57% +56% +81% +113% --> +142%",
+              "value": "-30% +21% +29% +41% +51% +159% --> +64%",
+              "link": null
+            },
+            {
+              "country": "Italy",
+              "value": "-1% +12% +5% +9% -26% -28% --> -14%",
+              "link": null
+            },
+            {
+              "country": "Spain",
+              "value": "-1% +7% +5% +13% -36% -31% --> -42%",
+              "link": null
+            },
+            {
+              "country": "Denmark",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Norway",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "US",
+              "value": "+11% +8% +23% +27% +2% +8% --> +3%",
+              "link": "https://www.pewresearch.org/science/2026/04/03/how-appealing-are-electric-vehicles-and-hybrids-to-americans/"
+            },
+            {
+              "country": "Vietnam",
+              "value": "+4% +35% +23% +32% +16% +7% --> -3%",
+              "link": null
+            },
+            {
+              "country": "Nepal",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Pakistan",
+              "value": "",
               "link": null
             },
             {
               "country": "South Korea",
-              "value": "-3% +3% +3% -1% -2% --> -3%",
-              "link": null
-            },
-            {
-              "country": "Vietnam",
-              "value": "+11% +80% +47% +74% +34% --> +29%",
-              "link": null
-            },
-            {
-              "country": "New Zealand",
-              "value": "+8% +132% +166% +202% +154% --> +115%",
+              "value": "-8% +32% +12% +18% -47% -53% --> -63%",
               "link": null
             },
             {
@@ -885,12 +999,7 @@
             },
             {
               "country": "India",
-              "value": "-5% +14% +17% +17% -2% --> -19%",
-              "link": null
-            },
-            {
-              "country": "Pakistan",
-              "value": "Limited GT data",
+              "value": "+5% +13% +12% +26% +18% +9% --> +23%",
               "link": null
             },
             {
@@ -904,11 +1013,6 @@
               "link": null
             },
             {
-              "country": "Nepal",
-              "value": "",
-              "link": null
-            },
-            {
               "country": "Singapore",
               "value": "",
               "link": null
@@ -940,18 +1044,18 @@
           "source": "",
           "values": [
             {
-              "country": "US",
-              "value": "+32% +52% +41% +36% +11% --> +8%",
-              "link": null
-            },
-            {
               "country": "Australia",
               "value": "+14% +59% +91% +166% +132% --> +192%",
               "link": null
             },
             {
+              "country": "New Zealand",
+              "value": "",
+              "link": null
+            },
+            {
               "country": "UK",
-              "value": "+35% +80% +64% +62% +41% --> +62%",
+              "value": "+53% +75% +63% +68% +44% +62% --> +48%",
               "link": null
             },
             {
@@ -960,13 +1064,38 @@
               "link": null
             },
             {
+              "country": "Sweden",
+              "value": "",
+              "link": null
+            },
+            {
               "country": "France",
               "value": "+20% +57% +56% +75% +111% --> +151%",
               "link": null
             },
             {
-              "country": "South Korea",
-              "value": "-5% +2% +0% -5% -3% --> +6%",
+              "country": "Italy",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Spain",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Denmark",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Norway",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "US",
+              "value": "+31% +48% +37% +53% +9% +9% --> +7%",
               "link": null
             },
             {
@@ -975,8 +1104,18 @@
               "link": null
             },
             {
-              "country": "New Zealand",
+              "country": "Nepal",
               "value": "",
+              "link": null
+            },
+            {
+              "country": "Pakistan",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "South Korea",
+              "value": "-5% +2% +0% -5% -3% --> +6%",
               "link": null
             },
             {
@@ -990,123 +1129,12 @@
               "link": null
             },
             {
-              "country": "Pakistan",
-              "value": "",
-              "link": null
-            },
-            {
               "country": "Cambodia",
               "value": "",
               "link": null
             },
             {
               "country": "Canada",
-              "value": "",
-              "link": null
-            },
-            {
-              "country": "Nepal",
-              "value": "",
-              "link": null
-            },
-            {
-              "country": "Singapore",
-              "value": "",
-              "link": null
-            },
-            {
-              "country": "Thailand",
-              "value": "",
-              "link": null
-            },
-            {
-              "country": "Philippines",
-              "value": "",
-              "link": null
-            },
-            {
-              "country": "Japan",
-              "value": "",
-              "link": null
-            },
-            {
-              "country": "Malaysia",
-              "value": "",
-              "link": null
-            }
-          ]
-        },
-        {
-          "label": "Google: \"used EV\" (weekly % chg since Feb 28)",
-          "source": "",
-          "values": [
-            {
-              "country": "US",
-              "value": "+29% +50% +36% +21% +6% --> +11%",
-              "link": null
-            },
-            {
-              "country": "Australia",
-              "value": "—",
-              "link": null
-            },
-            {
-              "country": "UK",
-              "value": "+38% +71% +54% +34% +34% --> +130%",
-              "link": null
-            },
-            {
-              "country": "Germany",
-              "value": "—",
-              "link": null
-            },
-            {
-              "country": "France",
-              "value": "+20% +92% +56% +76% +99% --> +111%",
-              "link": null
-            },
-            {
-              "country": "South Korea",
-              "value": "—",
-              "link": null
-            },
-            {
-              "country": "Vietnam",
-              "value": "-1% +124% +36% +71% +46% --> +34%",
-              "link": null
-            },
-            {
-              "country": "New Zealand",
-              "value": "",
-              "link": null
-            },
-            {
-              "country": "China",
-              "value": "—",
-              "link": null
-            },
-            {
-              "country": "India",
-              "value": "— (declined -33%)",
-              "link": null
-            },
-            {
-              "country": "Pakistan",
-              "value": "",
-              "link": null
-            },
-            {
-              "country": "Cambodia",
-              "value": "",
-              "link": null
-            },
-            {
-              "country": "Canada",
-              "value": "",
-              "link": null
-            },
-            {
-              "country": "Nepal",
               "value": "",
               "link": null
             },
@@ -1147,13 +1175,13 @@
           "source": "EIA, IEA, ASPI",
           "values": [
             {
-              "country": "US",
-              "value": "~30% imported (~7% via Hormuz; ~2% of total petroleum consumption)",
+              "country": "Australia",
+              "value": "~90% refined products imported (~30% effectively via Hormuz through Asian refiners)",
               "link": null
             },
             {
-              "country": "Australia",
-              "value": "~90% refined products imported (~30% effectively via Hormuz through Asian refiners)",
+              "country": "New Zealand",
+              "value": "~99% imported (~30-40% via Hormuz, similar to AU)",
               "link": null
             },
             {
@@ -1167,13 +1195,38 @@
               "link": null
             },
             {
+              "country": "Sweden",
+              "value": "~100% imported (low Hormuz exposure — North Sea, Russia)",
+              "link": null
+            },
+            {
               "country": "France",
               "value": "~99% imported (small Hormuz share via diversified sources)",
               "link": null
             },
             {
-              "country": "South Korea",
-              "value": "~97% imported (~70% via Hormuz pre-war; 61% of crude)",
+              "country": "Italy",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Spain",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Denmark",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Norway",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "US",
+              "value": "~30% imported (~7% via Hormuz; ~2% of total petroleum consumption)",
               "link": null
             },
             {
@@ -1182,8 +1235,18 @@
               "link": null
             },
             {
-              "country": "New Zealand",
-              "value": "~99% imported (~30-40% via Hormuz, similar to AU)",
+              "country": "Nepal",
+              "value": "~100% imported (all via India; IOC sole supplier)",
+              "link": null
+            },
+            {
+              "country": "Pakistan",
+              "value": "~80% imported, all via Gulf/Hormuz; among most exposed economies",
+              "link": null
+            },
+            {
+              "country": "South Korea",
+              "value": "~97% imported (~70% via Hormuz pre-war; 61% of crude)",
               "link": null
             },
             {
@@ -1197,11 +1260,6 @@
               "link": null
             },
             {
-              "country": "Pakistan",
-              "value": "~80% imported, all via Gulf/Hormuz; among most exposed economies",
-              "link": null
-            },
-            {
               "country": "Cambodia",
               "value": "Net importer of refined products; small absolute volumes",
               "link": null
@@ -1209,11 +1267,6 @@
             {
               "country": "Canada",
               "value": "Net oil exporter (Western Canada); BC/Atlantic provinces import refined",
-              "link": null
-            },
-            {
-              "country": "Nepal",
-              "value": "~100% imported (all via India; IOC sole supplier)",
               "link": null
             },
             {
@@ -1248,13 +1301,13 @@
           "source": "Various",
           "values": [
             {
-              "country": "US",
+              "country": "Australia",
               "value": "",
               "link": null
             },
             {
-              "country": "Australia",
-              "value": "",
+              "country": "New Zealand",
+              "value": "~642 BEV (Feb baseline)",
               "link": null
             },
             {
@@ -1268,13 +1321,38 @@
               "link": null
             },
             {
+              "country": "Sweden",
+              "value": "~7,800 BEV (Feb baseline, ~35% share)",
+              "link": null
+            },
+            {
               "country": "France",
               "value": "32,370 BEV | 25%+ | +27.8% YoY",
               "link": null
             },
             {
-              "country": "South Korea",
-              "value": "37,200 BEV | 30% pen. (record)",
+              "country": "Italy",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Spain",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Denmark",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Norway",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "US",
+              "value": "",
               "link": null
             },
             {
@@ -1283,8 +1361,18 @@
               "link": null
             },
             {
-              "country": "New Zealand",
-              "value": "~642 BEV (Feb baseline)",
+              "country": "Nepal",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Pakistan",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "South Korea",
+              "value": "37,200 BEV | 30% pen. (record)",
               "link": null
             },
             {
@@ -1298,22 +1386,12 @@
               "link": null
             },
             {
-              "country": "Pakistan",
-              "value": "",
-              "link": null
-            },
-            {
               "country": "Cambodia",
               "value": "",
               "link": null
             },
             {
               "country": "Canada",
-              "value": "",
-              "link": null
-            },
-            {
-              "country": "Nepal",
               "value": "",
               "link": null
             },
@@ -1349,13 +1427,13 @@
           "source": "Various",
           "values": [
             {
-              "country": "US",
-              "value": "~75K | 5.8% | -28% YoY (Q1)",
+              "country": "Australia",
+              "value": "15,839 BEV | 14.6% | +95% YoY",
               "link": null
             },
             {
-              "country": "Australia",
-              "value": "15,839 BEV | 14.6% | +95% YoY",
+              "country": "New Zealand",
+              "value": "~2,422 BEV | +278% YoY | fleet crossed 100K",
               "link": null
             },
             {
@@ -1369,13 +1447,38 @@
               "link": null
             },
             {
+              "country": "Sweden",
+              "value": "~10,897 BEV (+26.7% YoY, 41% share)",
+              "link": null
+            },
+            {
               "country": "France",
               "value": "49,406 BEV | 28% | +69% YoY",
               "link": null
             },
             {
-              "country": "South Korea",
-              "value": "~37K+ | 30% pen.",
+              "country": "Italy",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Spain",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Denmark",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "Norway",
+              "value": "",
+              "link": null
+            },
+            {
+              "country": "US",
+              "value": "~75K | 5.8% | -28% YoY (Q1)",
               "link": null
             },
             {
@@ -1384,8 +1487,18 @@
               "link": null
             },
             {
-              "country": "New Zealand",
-              "value": "~2,422 BEV | +278% YoY | fleet crossed 100K",
+              "country": "Nepal",
+              "value": "EVs 73% of 4W imports (FY24/25); 7,434 EVs vs 3,251 ICE Jul 25-Mar 26",
+              "link": null
+            },
+            {
+              "country": "Pakistan",
+              "value": "EVs >10% of monthly 2W sales for first time",
+              "link": null
+            },
+            {
+              "country": "South Korea",
+              "value": "~37K+ | 30% pen.",
               "link": null
             },
             {
@@ -1399,11 +1512,6 @@
               "link": null
             },
             {
-              "country": "Pakistan",
-              "value": "EVs >10% of monthly 2W sales for first time",
-              "link": null
-            },
-            {
               "country": "Cambodia",
               "value": "Feb 1,078 BEV (+121% MoM from Jan 488)",
               "link": null
@@ -1411,11 +1519,6 @@
             {
               "country": "Canada",
               "value": "—",
-              "link": null
-            },
-            {
-              "country": "Nepal",
-              "value": "EVs 73% of 4W imports (FY24/25); 7,434 EVs vs 3,251 ICE Jul 25-Mar 26",
               "link": null
             },
             {
